@@ -17,7 +17,7 @@ public class Log {
             SimpleDateFormat format = new SimpleDateFormat("dd-MMM-yy hh-mm-ss");
             Date date = new Date();
             boolean append = true;
-            FileHandler fh = new FileHandler("src\\main\\java\\testrecorddl\\recordDDL"+format.format(date)+".log", append);
+            FileHandler fh = new FileHandler("src\\log\\recordDDL"+format.format(date)+".log", append);
             //fh.setFormatter(new XMLFormatter());
             fh.setFormatter(new SimpleFormatter());
             logger = Logger.getLogger("recordDDL");
