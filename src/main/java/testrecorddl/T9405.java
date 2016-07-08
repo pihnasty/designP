@@ -9,7 +9,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 
@@ -18,7 +20,7 @@ public class T9405 {
 
     public static void main(String[] args) throws Exception {
         Log.logger.info("Assessment of the duration of the recording DDL expressions Redshift");
-        List<String> commands = XmlRW.readCommands("src\\data\\commandsList.xml");     // XmlRW.readCommands("src\\data\\commands.xml");
+        List<String> commands = XmlRW.readCommands("src\\data\\commandsListBatch.xml");     // XmlRW.readCommands("src\\data\\commands.xml");
         //XmlRW.writeCommands("src\\data\\commandsWrite1000ListWriteL.xml", commands, "statements", "statement");
         recordDDL("rsdbb01.cqcwekr1qlta.us-west-2.redshift.amazonaws.com", 5439, "dev", "rsdbbmaster", "T8ickAvKbet3", commands);
     }
@@ -34,7 +36,7 @@ public class T9405 {
         Log.logger.info(url);
         FileWriter writer = null;
         try {
-            writer = new FileWriter("src\\log\\result.txt", false);
+            writer = new FileWriter("src\\log\\result-"+new SimpleDateFormat("dd-MMM-yy hh-mm-ss").format(new Date())+".txt", false);
         } catch (IOException ex) {
             Log.logger.log(Level.SEVERE, null, ex);
         }
@@ -48,7 +50,7 @@ public class T9405 {
         int count = 1;
         int countFAIL = 0;
 
-        int size = commands.size();
+        int size = 10; // commands.size();
         Log.logger.info("                                                 The number of commands: " + size);
         Log.logger.info("                                                 totalConnectionClosingTime : connectionClosingTime : statementClosingTime : executeTime");
 
@@ -60,7 +62,9 @@ public class T9405 {
         }
 
 
-        for (String command : commands) {
+        //for (String command : commands) {
+           for (int i=0; i<size; i++) {
+             String command = commands.get(i);
             long startConnectTime;
             long startClosingTime;
             long closingStatementTime;
@@ -112,7 +116,7 @@ public class T9405 {
                 average_closingConnectionTime += closingConnectionTime;
 
                 String arrStr[] = command.split("\n");
-                Log.logger.info(String.format("                                 %5d :          %8.3f :         %8.3f :      %8.3f :             %8.3f :              %8.3f :        %8s : %s      ",
+                Log.logger.info(String.format("                                         %5d :          %8.3f :         %8.3f :      %8.3f :             %8.3f :              %8.3f :        %8s : %s      ",
                         count, getConnectionTime / 1000.0, getStatementTime / 1000.0, executionTime / 1000.0, closingStatementTime / 1000.0, closingConnectionTime / 1000.0, executionResult,
                         arrStr[0].trim()));
                 try {
@@ -136,7 +140,7 @@ public class T9405 {
         }
 
 
-        Log.logger.info(String.format("                                         average  value:  %8.3f :         %8.3f :      %8.3f :             %8.3f :              %8.3f :        %8s :      ",
+        Log.logger.info(String.format("                     average  value:  %8.3f :         %8.3f :      %8.3f :             %8.3f :              %8.3f :        %8s :      ",
                 average_getConnectionTime / 1000.0 / size, average_getStatementTime / 1000.0 / size, average_executionTime / 1000.0 / size, average_closingStatementTime / 1000.0 / size,
                 average_closingConnectionTime / 1000.0 / size, "FAIL=" + countFAIL));
 

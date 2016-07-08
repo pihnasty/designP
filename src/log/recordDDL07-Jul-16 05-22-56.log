@@ -1,0 +1,32 @@
+Jul 07, 2016 5:22:56 PM testrecorddl.T9405 main
+INFO: Assessment of the duration of the recording DDL expressions Redshift
+Jul 07, 2016 5:22:56 PM testrecorddl.T9405 recordDDL
+INFO: jdbc:redshift://rsdbb01.cqcwekr1qlta.us-west-2.redshift.amazonaws.com:5439/dev
+Jul 07, 2016 5:22:56 PM testrecorddl.T9405 recordDDL
+INFO:                                                  The number of commands: 10
+Jul 07, 2016 5:22:56 PM testrecorddl.T9405 recordDDL
+INFO:                                                  totalConnectionClosingTime : connectionClosingTime : statementClosingTime : executeTime
+Jul 07, 2016 5:22:59 PM testrecorddl.T9405 recordDDL
+INFO:                                              1 :             1.353 :            0.009 :         0.329 :                1.716 :                 1.719 :         SUCCESS : DROP SCHEMA IF EXISTS test_batch CASCADE      
+Jul 07, 2016 5:23:02 PM testrecorddl.T9405 recordDDL
+INFO:                                              2 :             0.610 :            0.000 :         0.205 :                1.981 :                 1.981 :         SUCCESS : CREATE SCHEMA IF NOT EXISTS test_batch      
+Jul 07, 2016 5:23:05 PM testrecorddl.T9405 recordDDL
+INFO:                                              3 :             0.595 :            0.000 :         0.453 :                2.353 :                 2.355 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.d_cur(      
+Jul 07, 2016 5:23:09 PM testrecorddl.T9405 recordDDL
+INFO:                                              4 :             0.603 :            0.000 :         0.563 :                2.185 :                 2.185 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_intval_num(      
+Jul 07, 2016 5:23:14 PM testrecorddl.T9405 recordDDL
+INFO:                                              5 :             0.600 :            0.000 :         0.505 :                3.714 :                 3.716 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_intval_date(      
+Jul 07, 2016 5:23:17 PM testrecorddl.T9405 recordDDL
+INFO:                                              6 :             0.615 :            0.000 :         0.437 :                1.798 :                 1.800 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype3(      
+Jul 07, 2016 5:23:19 PM testrecorddl.T9405 recordDDL
+INFO:                                              7 :             0.598 :            0.000 :         0.508 :                1.787 :                 1.789 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_ref_parent(      
+Jul 07, 2016 5:23:23 PM testrecorddl.T9405 recordDDL
+INFO:                                              8 :             0.610 :            0.000 :         0.471 :                2.053 :                 2.054 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.dr$idx_tbl_ind_dmn$i(      
+Jul 07, 2016 5:23:26 PM testrecorddl.T9405 recordDDL
+INFO:                                              9 :             0.599 :            0.000 :         0.540 :                2.652 :                 2.653 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_acc_cust_cls(      
+Jul 07, 2016 5:23:29 PM testrecorddl.T9405 recordDDL
+INFO:                                             10 :             0.584 :            0.000 :         0.600 :                1.858 :                 1.859 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_list(      
+Jul 07, 2016 5:23:29 PM testrecorddl.T9405 recordDDL
+INFO: ----------------------------------------------------------------------------------------------------------------------------------------
+Jul 07, 2016 5:23:29 PM testrecorddl.T9405 recordDDL
+INFO:                       average  value:     0.677 :            0.001 :         0.461 :                2.210 :                 2.211 :          FAIL=0 :      

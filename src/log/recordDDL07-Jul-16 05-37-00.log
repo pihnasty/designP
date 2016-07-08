@@ -1,0 +1,10 @@
+Jul 07, 2016 5:37:00 PM testrecorddl_OneConnect.T9405 main
+INFO: Assessment of the duration of the recording DDL expressions Redshift
+Jul 07, 2016 5:37:00 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO: jdbc:redshift://rsdbb01.cqcwekr1qlta.us-west-2.redshift.amazonaws.com:5439/dev
+Jul 07, 2016 5:37:00 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                                  The number of commands: 10
+Jul 07, 2016 5:37:00 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                                  totalConnectionClosingTime : connectionClosingTime : statementClosingTime : executeTime
+Jul 07, 2016 5:37:01 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                      1 :             0.740 :            0.006 :         0.218 :         SUCCESS : DROP SCHEMA IF EXISTS test_batch CASCADE      

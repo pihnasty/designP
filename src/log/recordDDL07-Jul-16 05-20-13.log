@@ -1,0 +1,32 @@
+Jul 07, 2016 5:20:13 PM testrecorddl_OneConnect.T9405 main
+INFO: Assessment of the duration of the recording DDL expressions Redshift
+Jul 07, 2016 5:20:14 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO: jdbc:redshift://rsdbb01.cqcwekr1qlta.us-west-2.redshift.amazonaws.com:5439/dev
+Jul 07, 2016 5:20:14 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                                  The number of commands: 10
+Jul 07, 2016 5:20:14 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                                  totalConnectionClosingTime : connectionClosingTime : statementClosingTime : executeTime
+Jul 07, 2016 5:20:19 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                      1 :             1.213 :            0.004 :         0.443 :                3.266 :                 3.269 :         SUCCESS : DROP SCHEMA IF EXISTS test_batch CASCADE      
+Jul 07, 2016 5:20:21 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                      2 :             0.581 :            0.000 :         0.196 :                2.023 :                 2.025 :         SUCCESS : CREATE SCHEMA IF NOT EXISTS test_batch      
+Jul 07, 2016 5:20:24 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                      3 :             0.596 :            0.000 :         0.407 :                1.902 :                 1.903 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.d_cur(      
+Jul 07, 2016 5:20:27 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                      4 :             0.603 :            0.000 :         0.560 :                1.814 :                 1.815 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_intval_num(      
+Jul 07, 2016 5:20:32 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                      5 :             0.610 :            0.000 :         1.138 :                2.727 :                 2.729 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_intval_date(      
+Jul 07, 2016 5:20:36 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                      6 :             0.592 :            0.000 :         1.020 :                2.098 :                 2.100 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype3(      
+Jul 07, 2016 5:20:39 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                      7 :             0.605 :            0.000 :         0.536 :                2.727 :                 2.729 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_ref_parent(      
+Jul 07, 2016 5:20:43 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                      8 :             0.603 :            0.000 :         0.593 :                2.178 :                 2.181 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.dr$idx_tbl_ind_dmn$i(      
+Jul 07, 2016 5:20:47 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                      9 :             0.612 :            0.000 :         0.852 :                2.602 :                 2.603 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_acc_cust_cls(      
+Jul 07, 2016 5:20:50 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                     10 :             0.590 :            0.000 :         0.542 :                2.234 :                 2.236 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_list(      
+Jul 07, 2016 5:20:50 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO: ----------------------------------------------------------------------------------------------------------------------------------------
+Jul 07, 2016 5:20:50 PM testrecorddl_OneConnect.T9405 recordDDL
+INFO:                                          average  value:     0.661 :            0.000 :         0.629 :                2.357 :                 2.359 :          FAIL=0 :      
