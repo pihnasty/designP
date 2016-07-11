@@ -1,4 +1,4 @@
-package testrecorddl_OneConnect;
+package testrecordddl_OneConnectBatch;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -20,7 +20,7 @@ public class T9405 {
 
     public static void main(String[] args) throws Exception {
         Log.logger.info("Assessment of the duration of the recording DDL expressions Redshift");
-        List<String> commands = XmlRW.readCommands("src\\data\\commandsList.xml");     // XmlRW.readCommands("src\\data\\commands.xml");
+        List<String> commands = XmlRW.readCommands("src\\data\\commandsListBatch.xml");     // XmlRW.readCommands("src\\data\\commands.xml");
         //XmlRW.writeCommands("src\\data\\commandsWrite1000ListWriteL.xml", commands, "statements", "statement");
         recordDDL("rsdbb01.cqcwekr1qlta.us-west-2.redshift.amazonaws.com", 5439, "dev", "rsdbbmaster", "T8ickAvKbet3", commands);
     }
@@ -84,7 +84,7 @@ public class T9405 {
         try {
             startConnectTime = System.currentTimeMillis();
             con = DriverManager.getConnection(url, username, password);
-            con.setAutoCommit(true);
+            con.setAutoCommit(false);
             getConnectionTime = System.currentTimeMillis() - startConnectTime;
             average_getConnectionTime += getConnectionTime;
 
@@ -94,57 +94,43 @@ public class T9405 {
             average_getStatementTime += getStatementTime;
 
 
-
-               //for (String command : commands) {
-            size =15;
-            for (int i=0; i<size; i++) {
-                executionResult = "SUCCESS";
-                String command = commands.get(i);
-
-                tempTime = System.currentTimeMillis();
-                try {
-                    st.executeUpdate(command);
-                } catch (SQLException sqlEx) {
-                    executionResult = "FAIL";
-                    countFAIL++;
-                    testrecorddl_OneConnect_Error.Log.logger.warning(sqlEx.getStackTrace().toString());
-                    sqlEx.printStackTrace();
-//                    if (st != null) st.close();
-//                    st = con.createStatement();
-
-                }
-
-                executionTime = System.currentTimeMillis() - tempTime;
-                average_executionTime += executionTime;
-
-                String arrStr[] = command.split("\n");
-                Log.logger.info(String.format("                                 %5d :          %8.3f :        %8s : %s      ",
-                        count, executionTime / 1000.0, executionResult,     arrStr[0].trim()));
-
-                writer.write(String.format(":%5d :          %8.3f :        %8s : %s      ",
-                        count++,executionTime / 1000.0, executionResult,     arrStr[0].trim()));
-                writer.append('\n');
-
-
-            }
-//--------- batch -----------------------------------------------------------------------------------
-//           for (String command : commands) {
-////                for (int i=0; i<2; i++) {
-////                         String command = commands.get(i);
 //
-//                st.addBatch(command);
+//               for (String command : commands) {
+//
+//                tempTime = System.currentTimeMillis();
+//                st.executeUpdate(command);
+//
+//                executionTime = System.currentTimeMillis() - tempTime;
+//                average_executionTime += executionTime;
+//
+//                String arrStr[] = command.split("\n");
+//                Log.logger.info(String.format("                                 %5d :          %8.3f :        %8s : %s      ",
+//                        count, executionTime / 1000.0, executionResult,     arrStr[0].trim()));
+//
+//                writer.write(String.format(":%5d :          %8.3f :        %8s : %s      ",
+//                        count++,executionTime / 1000.0, executionResult,     arrStr[0].trim()));
+//                writer.append('\n');
+//
+//
 //            }
-//            tempTime = System.currentTimeMillis();
-//            st.executeBatch();
-//            executionTime = System.currentTimeMillis() - tempTime;
-//
-//
-//            Log.logger.info(String.format("                                                %8.3f :                      ",
-//                     executionTime / 1000.0));
-//
-//            writer.write(String.format(":    :          %8.3f :            :         ",
-//                    executionTime / 1000.0));
-//            writer.append('\n');
+//--------- batch -----------------------------------------------------------------------------------
+           for (String command : commands) {
+//                for (int i=0; i<2; i++) {
+//                         String command = commands.get(i);
+
+                st.addBatch(command);
+            }
+            tempTime = System.currentTimeMillis();
+            st.executeBatch();
+            executionTime = System.currentTimeMillis() - tempTime;
+
+
+            Log.logger.info(String.format("                                                %8.3f :                      ",
+                     executionTime / 1000.0));
+
+            writer.write(String.format(":    :          %8.3f :            :         ",
+                    executionTime / 1000.0));
+            writer.append('\n');
 //--------- batch -----------------------------------------------------------------------------------
 
 

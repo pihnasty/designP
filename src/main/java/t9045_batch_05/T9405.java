@@ -1,7 +1,9 @@
-package testrecorddl_OneConnect;
+package t9045_batch_05;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import testrecorddl_OneConnect.Log;
+import testrecorddl_OneConnect.XmlRW;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -20,7 +22,7 @@ public class T9405 {
 
     public static void main(String[] args) throws Exception {
         Log.logger.info("Assessment of the duration of the recording DDL expressions Redshift");
-        List<String> commands = XmlRW.readCommands("src\\data\\commandsList.xml");     // XmlRW.readCommands("src\\data\\commands.xml");
+        List<String> commands = XmlRW.readCommands("src\\data\\commandsListBatch.xml");     // XmlRW.readCommands("src\\data\\commands.xml");
         //XmlRW.writeCommands("src\\data\\commandsWrite1000ListWriteL.xml", commands, "statements", "statement");
         recordDDL("rsdbb01.cqcwekr1qlta.us-west-2.redshift.amazonaws.com", 5439, "dev", "rsdbbmaster", "T8ickAvKbet3", commands);
     }
@@ -63,10 +65,10 @@ public class T9405 {
         }
 
 
-        long startConnectTime;
+        long startConnectTime = 0;
         long startClosingTime;
         long closingStatementTime;
-        long closingConnectionTime;
+        long closingConnectionTime = 0;
 
         long getConnectionTime = 0;
 
@@ -83,73 +85,33 @@ public class T9405 {
 
         try {
             startConnectTime = System.currentTimeMillis();
+
+            tempTime = System.currentTimeMillis();
             con = DriverManager.getConnection(url, username, password);
-            con.setAutoCommit(true);
+            Log.logger.info(" con = DriverManager.getConnection(url, username, password); --------------------------------"+(System.currentTimeMillis() - tempTime)/1000.0);
+            con.setAutoCommit(false);
+
             getConnectionTime = System.currentTimeMillis() - startConnectTime;
             average_getConnectionTime += getConnectionTime;
 
             tempTime = System.currentTimeMillis();
             st = con.createStatement();
-            getStatementTime = System.currentTimeMillis() - tempTime;
+            Log.logger.info(" con.createStatement(); --------------------------------"+(System.currentTimeMillis() - tempTime)/1000.0);
             average_getStatementTime += getStatementTime;
 
-
-
-               //for (String command : commands) {
-            size =15;
-            for (int i=0; i<size; i++) {
-                executionResult = "SUCCESS";
-                String command = commands.get(i);
-
-                tempTime = System.currentTimeMillis();
-                try {
-                    st.executeUpdate(command);
-                } catch (SQLException sqlEx) {
-                    executionResult = "FAIL";
-                    countFAIL++;
-                    testrecorddl_OneConnect_Error.Log.logger.warning(sqlEx.getStackTrace().toString());
-                    sqlEx.printStackTrace();
-//                    if (st != null) st.close();
-//                    st = con.createStatement();
-
-                }
-
-                executionTime = System.currentTimeMillis() - tempTime;
-                average_executionTime += executionTime;
-
-                String arrStr[] = command.split("\n");
-                Log.logger.info(String.format("                                 %5d :          %8.3f :        %8s : %s      ",
-                        count, executionTime / 1000.0, executionResult,     arrStr[0].trim()));
-
-                writer.write(String.format(":%5d :          %8.3f :        %8s : %s      ",
-                        count++,executionTime / 1000.0, executionResult,     arrStr[0].trim()));
-                writer.append('\n');
-
-
+//--------- batch -----------------------------------------------------------------------------------
+            tempTime = System.currentTimeMillis();
+           for (String command : commands) {
+                st.addBatch(command);
             }
+            Log.logger.info("  st.addBatch(command); --------------------------------"+(System.currentTimeMillis() - tempTime)/1000.0);
+            tempTime = System.currentTimeMillis();
+
+            st.executeBatch();
+            Log.logger.info("  st.executeBatch(); ---------------------------------"+(System.currentTimeMillis() - tempTime)/1000.0);
+
+            writer.append('\n');
 //--------- batch -----------------------------------------------------------------------------------
-//           for (String command : commands) {
-////                for (int i=0; i<2; i++) {
-////                         String command = commands.get(i);
-//
-//                st.addBatch(command);
-//            }
-//            tempTime = System.currentTimeMillis();
-//            st.executeBatch();
-//            executionTime = System.currentTimeMillis() - tempTime;
-//
-//
-//            Log.logger.info(String.format("                                                %8.3f :                      ",
-//                     executionTime / 1000.0));
-//
-//            writer.write(String.format(":    :          %8.3f :            :         ",
-//                    executionTime / 1000.0));
-//            writer.append('\n');
-//--------- batch -----------------------------------------------------------------------------------
-
-
-
-
         } catch (SQLException sqlEx) {
             executionResult = "FAIL";
             countFAIL++;
@@ -157,15 +119,18 @@ public class T9405 {
             sqlEx.printStackTrace();
         } finally {
             startClosingTime = System.currentTimeMillis();
+
+            tempTime = System.currentTimeMillis();
             con.commit();
+            Log.logger.info(" con.commit(); --------------------------------------"+(System.currentTimeMillis() - tempTime)/1000.0);
+            tempTime = System.currentTimeMillis();
             if (st != null) st.close();
-            closingStatementTime = System.currentTimeMillis() - startClosingTime;
-            average_closingStatementTime += closingStatementTime;
+            Log.logger.info(" st.close();   --------------------------------------"+(System.currentTimeMillis() - tempTime)/1000.0);
 
+            tempTime = System.currentTimeMillis();
             if (con != null) con.close();
-            closingConnectionTime = System.currentTimeMillis() - startClosingTime;
-            average_closingConnectionTime += closingConnectionTime;
-
+            Log.logger.info(" con.close(); --------------------------------------"+(System.currentTimeMillis() - tempTime)/1000.0);
+            closingConnectionTime = System.currentTimeMillis();
 
         }
 
@@ -180,18 +145,14 @@ public class T9405 {
         }
 
 
-        Log.logger.info(String.format("                         average  value:          %8.3f : %s      ",
-                average_executionTime / 1000.0 / size,  "FAIL=" + countFAIL));
+        Log.logger.info(String.format("        closingConnectionTime-startConnectTime:          %8.3f       ",
+                (closingConnectionTime-startConnectTime) / 1000.0 ));
 
-        writer.write(String.format(" average  value:  %8.3f : %s      ",
-                 average_executionTime / 1000.0 / size,  "FAIL=" + countFAIL));
+
+        writer.write(String.format("        closingConnectionTime-startConnectTime:          %8.3f       ",
+                (closingConnectionTime-startConnectTime) / 1000.0 ));
         writer.append('\n');
-        writer.write(String.format(" Sum      value:  %8.3f                  Min:   %8.3f    ",
-                average_executionTime / 1000.0, average_executionTime / 1000.0/60.0 ));
-        writer.append('\n');
-        writer.write(String.format(" Amount   value:  %8d ",
-                size ));
-        writer.append('\n');
+
 
         try {
             writer.close();

@@ -1,4 +1,4 @@
-package testrecorddl_OneConnect;
+package testrecorddl_OneConnect_Error;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -15,12 +15,12 @@ import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 
-public class T9405 {
+public class T9405_error {
 
 
     public static void main(String[] args) throws Exception {
         Log.logger.info("Assessment of the duration of the recording DDL expressions Redshift");
-        List<String> commands = XmlRW.readCommands("src\\data\\commandsList.xml");     // XmlRW.readCommands("src\\data\\commands.xml");
+        List<String> commands = XmlRW.readCommands("src\\data\\commandsListError.xml");     // XmlRW.readCommands("src\\data\\commands.xml");
         //XmlRW.writeCommands("src\\data\\commandsWrite1000ListWriteL.xml", commands, "statements", "statement");
         recordDDL("rsdbb01.cqcwekr1qlta.us-west-2.redshift.amazonaws.com", 5439, "dev", "rsdbbmaster", "T8ickAvKbet3", commands);
     }
@@ -63,10 +63,11 @@ public class T9405 {
         }
 
 
-        long startConnectTime;
+        long startConnectTime = 0;
         long startClosingTime;
         long closingStatementTime;
         long closingConnectionTime;
+        long ConnectionTime;
 
         long getConnectionTime = 0;
 
@@ -75,16 +76,18 @@ public class T9405 {
         long executionTime = 0;
         long tempTime = 0;
 
-        String executionResult = "SUCCESS";
+
         String description = "";
 
         Connection con = null;
         Statement st = null;
-
+        String executionResult = "";
         try {
             startConnectTime = System.currentTimeMillis();
             con = DriverManager.getConnection(url, username, password);
+
             con.setAutoCommit(true);
+
             getConnectionTime = System.currentTimeMillis() - startConnectTime;
             average_getConnectionTime += getConnectionTime;
 
@@ -95,80 +98,52 @@ public class T9405 {
 
 
 
-               //for (String command : commands) {
-            size =15;
-            for (int i=0; i<size; i++) {
-                executionResult = "SUCCESS";
+        //    for (String command : commands) {
+              size = 5;
+                for (int i=0; i<size; i++) {
                 String command = commands.get(i);
-
+                executionResult = "SUCCESS";
                 tempTime = System.currentTimeMillis();
                 try {
                     st.executeUpdate(command);
                 } catch (SQLException sqlEx) {
                     executionResult = "FAIL";
                     countFAIL++;
-                    testrecorddl_OneConnect_Error.Log.logger.warning(sqlEx.getStackTrace().toString());
+                    Log.logger.warning(sqlEx.getStackTrace().toString());
                     sqlEx.printStackTrace();
 //                    if (st != null) st.close();
 //                    st = con.createStatement();
 
                 }
+          //      con.commit();
 
                 executionTime = System.currentTimeMillis() - tempTime;
                 average_executionTime += executionTime;
 
                 String arrStr[] = command.split("\n");
                 Log.logger.info(String.format("                                 %5d :          %8.3f :        %8s : %s      ",
-                        count, executionTime / 1000.0, executionResult,     arrStr[0].trim()));
+                        count, executionTime / 1000.0, executionResult, arrStr[0].trim()));
 
                 writer.write(String.format(":%5d :          %8.3f :        %8s : %s      ",
-                        count++,executionTime / 1000.0, executionResult,     arrStr[0].trim()));
+                        count++, executionTime / 1000.0, executionResult, arrStr[0].trim()));
                 writer.append('\n');
 
-
             }
-//--------- batch -----------------------------------------------------------------------------------
-//           for (String command : commands) {
-////                for (int i=0; i<2; i++) {
-////                         String command = commands.get(i);
-//
-//                st.addBatch(command);
-//            }
-//            tempTime = System.currentTimeMillis();
-//            st.executeBatch();
-//            executionTime = System.currentTimeMillis() - tempTime;
-//
-//
-//            Log.logger.info(String.format("                                                %8.3f :                      ",
-//                     executionTime / 1000.0));
-//
-//            writer.write(String.format(":    :          %8.3f :            :         ",
-//                    executionTime / 1000.0));
-//            writer.append('\n');
-//--------- batch -----------------------------------------------------------------------------------
-
-
-
 
         } catch (SQLException sqlEx) {
-            executionResult = "FAIL";
-            countFAIL++;
-            Log.logger.warning(sqlEx.getStackTrace().toString());
-            sqlEx.printStackTrace();
+
         } finally {
-            startClosingTime = System.currentTimeMillis();
+
             con.commit();
+            startClosingTime = System.currentTimeMillis();
             if (st != null) st.close();
             closingStatementTime = System.currentTimeMillis() - startClosingTime;
-            average_closingStatementTime += closingStatementTime;
 
+            tempTime = System.currentTimeMillis();
             if (con != null) con.close();
-            closingConnectionTime = System.currentTimeMillis() - startClosingTime;
-            average_closingConnectionTime += closingConnectionTime;
-
-
+            ConnectionTime = System.currentTimeMillis() - startConnectTime;
+            closingConnectionTime = System.currentTimeMillis() - tempTime;
         }
-
 
         Log.logger.info("----------------------------------------------------------------------------------------------------------------------------------------");
 
@@ -181,17 +156,26 @@ public class T9405 {
 
 
         Log.logger.info(String.format("                         average  value:          %8.3f : %s      ",
-                average_executionTime / 1000.0 / size,  "FAIL=" + countFAIL));
+                average_executionTime / 1000.0 / size, "FAIL=" + countFAIL));
 
         writer.write(String.format(" average  value:  %8.3f : %s      ",
-                 average_executionTime / 1000.0 / size,  "FAIL=" + countFAIL));
+                average_executionTime / 1000.0 / size, "FAIL=" + countFAIL));
         writer.append('\n');
+
         writer.write(String.format(" Sum      value:  %8.3f                  Min:   %8.3f    ",
-                average_executionTime / 1000.0, average_executionTime / 1000.0/60.0 ));
+                average_executionTime / 1000.0, average_executionTime / 1000.0 / 60.0));
         writer.append('\n');
-        writer.write(String.format(" Amount   value:  %8d ",
-                size ));
+
+
+        writer.write(String.format("  closingStatementTime:  %8.3f  ", closingStatementTime / 1000.0));
         writer.append('\n');
+
+        writer.write(String.format("  closingConnectionTime:  %8.3f  ", closingConnectionTime / 1000.0));
+        writer.append('\n');
+
+        writer.write(String.format("       ConnectionTime:   %8.3f  ", ConnectionTime / 1000.0));
+        writer.append('\n');
+
 
         try {
             writer.close();

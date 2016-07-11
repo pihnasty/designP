@@ -1,26 +1,24 @@
-package testrecorddl_OneConnect;
+package testrecorddl_OneConnect_Error;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 
-public class T9405 {
+
+public class T9405_error2 {
 
 
     public static void main(String[] args) throws Exception {
-        Log.logger.info("Assessment of the duration of the recording DDL expressions Redshift");
-        List<String> commands = XmlRW.readCommands("src\\data\\commandsList.xml");     // XmlRW.readCommands("src\\data\\commands.xml");
+        testrecorddl_OneConnect.Log.logger.info("Assessment of the duration of the recording DDL expressions Redshift");
+        List<String> commands = testrecorddl_OneConnect.XmlRW.readCommands("src\\data\\commandsListError.xml");     // XmlRW.readCommands("src\\data\\commands.xml");
         //XmlRW.writeCommands("src\\data\\commandsWrite1000ListWriteL.xml", commands, "statements", "statement");
         recordDDL("rsdbb01.cqcwekr1qlta.us-west-2.redshift.amazonaws.com", 5439, "dev", "rsdbbmaster", "T8ickAvKbet3", commands);
     }
@@ -34,12 +32,12 @@ public class T9405 {
     public static void recordDDL(String serverName, int port, String dbName, String username, String password, List<String> commands) throws Exception {
         Class.forName("com.amazon.redshift.jdbc41.Driver");
         String url = "jdbc:redshift://" + serverName + ":" + port + "/" + dbName;
-        Log.logger.info(url);
+        testrecorddl_OneConnect.Log.logger.info(url);
         FileWriter writer = null;
         try {
             writer = new FileWriter("src\\log\\result-" + new SimpleDateFormat("dd-MMM-yy hh-mm-ss").format(new Date()) + ".txt", false);
         } catch (IOException ex) {
-            Log.logger.log(Level.SEVERE, null, ex);
+            testrecorddl_OneConnect.Log.logger.log(Level.SEVERE, null, ex);
         }
 
         long average_getConnectionTime = 0;
@@ -52,14 +50,14 @@ public class T9405 {
         int countFAIL = 0;
 
         int size = commands.size();
-        Log.logger.info("                                                 The number of commands: " + size);
-        Log.logger.info("                                             executionTime : executionResult : description  ");
+        testrecorddl_OneConnect.Log.logger.info("                                                 The number of commands: " + size);
+        testrecorddl_OneConnect.Log.logger.info("                                             executionTime : executionResult : description  ");
 
         try {
             writer.write(":   ID : executionTime     : executionResult : description  ");
             writer.append('\n');
         } catch (IOException ex) {
-            Log.logger.log(Level.SEVERE, null, ex);
+            testrecorddl_OneConnect.Log.logger.log(Level.SEVERE, null, ex);
         }
 
 
@@ -95,22 +93,26 @@ public class T9405 {
 
 
 
-               //for (String command : commands) {
+            //for (String command : commands) {
             size =15;
             for (int i=0; i<size; i++) {
                 executionResult = "SUCCESS";
                 String command = commands.get(i);
 
                 tempTime = System.currentTimeMillis();
+                Savepoint savepoint = null;
                 try {
+                    savepoint = con.setSavepoint();
                     st.executeUpdate(command);
                 } catch (SQLException sqlEx) {
+                    con.rollback(savepoint);
                     executionResult = "FAIL";
                     countFAIL++;
                     testrecorddl_OneConnect_Error.Log.logger.warning(sqlEx.getStackTrace().toString());
                     sqlEx.printStackTrace();
 //                    if (st != null) st.close();
 //                    st = con.createStatement();
+                    System.out.println("/////////////////////////////////////////////////////////");
 
                 }
 
@@ -118,7 +120,7 @@ public class T9405 {
                 average_executionTime += executionTime;
 
                 String arrStr[] = command.split("\n");
-                Log.logger.info(String.format("                                 %5d :          %8.3f :        %8s : %s      ",
+                testrecorddl_OneConnect.Log.logger.info(String.format("                                 %5d :          %8.3f :        %8s : %s      ",
                         count, executionTime / 1000.0, executionResult,     arrStr[0].trim()));
 
                 writer.write(String.format(":%5d :          %8.3f :        %8s : %s      ",
@@ -153,7 +155,7 @@ public class T9405 {
         } catch (SQLException sqlEx) {
             executionResult = "FAIL";
             countFAIL++;
-            Log.logger.warning(sqlEx.getStackTrace().toString());
+            testrecorddl_OneConnect.Log.logger.warning(sqlEx.getStackTrace().toString());
             sqlEx.printStackTrace();
         } finally {
             startClosingTime = System.currentTimeMillis();
@@ -170,21 +172,21 @@ public class T9405 {
         }
 
 
-        Log.logger.info("----------------------------------------------------------------------------------------------------------------------------------------");
+        testrecorddl_OneConnect.Log.logger.info("----------------------------------------------------------------------------------------------------------------------------------------");
 
         try {
             writer.write("-------------------------------------------------------------------------------------------------------------------------------------------------");
             writer.append('\n');
         } catch (IOException ex) {
-            Log.logger.log(Level.SEVERE, null, ex);
+            testrecorddl_OneConnect.Log.logger.log(Level.SEVERE, null, ex);
         }
 
 
-        Log.logger.info(String.format("                         average  value:          %8.3f : %s      ",
+        testrecorddl_OneConnect.Log.logger.info(String.format("                         average  value:          %8.3f : %s      ",
                 average_executionTime / 1000.0 / size,  "FAIL=" + countFAIL));
 
         writer.write(String.format(" average  value:  %8.3f : %s      ",
-                 average_executionTime / 1000.0 / size,  "FAIL=" + countFAIL));
+                average_executionTime / 1000.0 / size,  "FAIL=" + countFAIL));
         writer.append('\n');
         writer.write(String.format(" Sum      value:  %8.3f                  Min:   %8.3f    ",
                 average_executionTime / 1000.0, average_executionTime / 1000.0/60.0 ));
@@ -196,10 +198,8 @@ public class T9405 {
         try {
             writer.close();
         } catch (IOException ex) {
-            Log.logger.log(Level.SEVERE, null, ex);
+            testrecorddl_OneConnect.Log.logger.log(Level.SEVERE, null, ex);
         }
     }
 
 }
-
-
