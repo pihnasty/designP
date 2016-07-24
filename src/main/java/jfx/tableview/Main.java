@@ -88,13 +88,13 @@ public class Main extends Application {
 
         lastNameCol.setCellValueFactory(cellData -> cellData.getValue().typObjProperty());
         lastNameCol.setCellFactory(comboBoxCellFactory);
-        lastNameCol.setOnEditCommit(
-                (TableColumn.CellEditEvent<Person, Typ> t) -> {
-                    ((Person) t.getTableView().getItems()
-                            .get(t.getTablePosition().getRow()))
-                            .setTypObj(t.getNewValue());
-
-                });
+//        lastNameCol.setOnEditCommit(
+//                (TableColumn.CellEditEvent<Person, Typ> t) -> {
+//                    ((Person) t.getTableView().getItems()
+//                            .get(t.getTablePosition().getRow()))
+//                            .setTypObj(t.getNewValue());
+//
+//                });
 
         TableColumn<Person, Date> emailCol = new TableColumn("Geburtstag");
         emailCol.setMinWidth(200);
