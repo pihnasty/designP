@@ -1,0 +1,11 @@
+------------------------------------------------------------------------------------------------------------------------
+Callback<TableColumn<cL, RowModelmachine>, TableCell<cL, RowModelmachine>> comboBoxCellFactory
+= param -> new ComboBoxEditingCell();
+..................................................................................................
+Callback<TableColumn<cL, RowModelmachine>, TableCell<cL, RowModelmachine>> comboBoxCellFactory =
+new Callback<TableColumn<cL, RowModelmachine>, TableCell<cL, RowModelmachine>>() {
+      @Override
+      public TableCell<cL, RowModelmachine> call(TableColumn<cL, RowModelmachine> param) {
+          return new ComboBoxEditingCell();
+      }
+  };
