@@ -1,7 +1,6 @@
 package brus.brus_723_System_InputOutput.b781_GZIPcompress;
 
-//: io/GZIPcompress.java
-// {Args: GZIPcompress.java}
+
 import java.util.zip.*;
 import java.io.*;
 
