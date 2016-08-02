@@ -1,0 +1,26 @@
+1: package brus.brus_723_System_InputOutput.b746_BasicFileOutput;
+2: 
+3: //: io/BasicFileOutput.java
+4: 
+5: import brus.brus_723_System_InputOutput.b743_BufferedInputFile.BufferedInputFile;
+6: 
+7: import java.io.*;
+8: 
+9: public class BasicFileOutput {
+10:     static String file = "src\\main\\java\\brus\\brus_723_System_InputOutput\\b746_BasicFileOutput\\BasicFileOutput.out";
+11:     public static void main(String[] args)
+12:             throws IOException {
+13:         BufferedReader in = new BufferedReader(
+14:                 new StringReader(
+15:                         BufferedInputFile.read("src\\main\\java\\brus\\brus_723_System_InputOutput\\b746_BasicFileOutput\\BasicFileOutput.java")));
+16:         PrintWriter out = new PrintWriter(
+17:                 new BufferedWriter(new FileWriter(file)));
+18:         int lineCount = 1;
+19:         String s;
+20:         while((s = in.readLine()) != null )
+21:             out.println(lineCount++ + ": " + s);
+22:         out.close();
+23:         // Вывод содержимого файла
+24:         System.out.println(BufferedInputFile.read(file));
+25:     }
+26: } /* (Execute to see output) *///:~
