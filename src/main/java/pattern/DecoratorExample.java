@@ -1,14 +1,12 @@
 package pattern;
 
-interface InterfaceComponent {
-    void doOperation();
-}
+interface InterfaceComponent {  void doOperation();   }
 
 class MainComponent implements InterfaceComponent {
 
     @Override
     public void doOperation() {
-        System.out.print("World!");
+        System.out.println("World!");
     }
 }
 
@@ -29,64 +27,64 @@ abstract class Decorator implements InterfaceComponent {
     }
 }
 
-class DecoratorSpace extends Decorator{
+class Decorator1 extends Decorator{
 
-    public DecoratorSpace(InterfaceComponent c) {
+    public Decorator1(InterfaceComponent c) {
         super(c);
     }
 
     @Override
     public void doOperation() {
-        System.out.print(" ");
+        System.out.print(" 1 ");
         super.doOperation();
     }
 
     @Override
     public void newOperation() {
-        System.out.println("New space operation");
+        System.out.println("New1New");
     }
 }
 
-class DecoratorComma extends Decorator {
+class Decorator2 extends Decorator {
 
-    public DecoratorComma(InterfaceComponent c) {
+    public Decorator2(InterfaceComponent c) {
         super(c);
     }
 
     @Override
     public void doOperation() {
-        System.out.print(",");
+        System.out.print(" 2 ");
         super.doOperation();
     }
 
     @Override
     public void newOperation() {
-        System.out.println("New comma operation");
+        System.out.println("New2New");
     }
 }
 
-class DecoratorHello extends Decorator {
+class Decorator3 extends Decorator {
 
-    public DecoratorHello(InterfaceComponent c) {
+    public Decorator3(InterfaceComponent c) {
         super(c);
     }
 
     @Override
     public void doOperation() {
-        System.out.print("Hello");
+        System.out.print(" 3 ");
         super.doOperation();
     }
 
     @Override
     public void newOperation() {
-        System.out.println("New hello operation");
+        System.out.println("New3New");
     }
 }
 
 public class DecoratorExample {
 
     public static void main (String... s) {
-        Decorator c = new DecoratorHello(new DecoratorComma(new DecoratorSpace(new MainComponent())));
+        Decorator c = new Decorator3(new Decorator2(new Decorator3(new MainComponent())));
         c.doOperation(); // Результат выполнения программы "Hello, World!"
         c.newOperation(); // New hello operation
     }
