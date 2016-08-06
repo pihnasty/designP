@@ -18,6 +18,7 @@ public class ZipCompress {
         BufferedOutputStream out = new BufferedOutputStream(zos);
         zos.setComment("A test of Java Zipping");
         // No corresponding getComment(), though.
+        BufferedWriter bw = new BufferedWriter(    new OutputStreamWriter(out));
         for(String arg : args) {
             arg = path + arg;
             print("Writing file " + arg);
@@ -25,11 +26,16 @@ public class ZipCompress {
             zos.putNextEntry(new ZipEntry(arg));
             int c;
             while((c = in.read()) != -1)
-                out.write(c);
+                bw.write("IIIIII");
             in.close();
             out.flush();
         }
         out.close();
+
+
+
+
+
         // Checksum valid only after the file has been closed!
         print("Checksum: " + csum.getChecksum().getValue());
         // Now extract the files:
@@ -62,3 +68,35 @@ public class ZipCompress {
         System.out.println(s);
     }
 }
+
+
+
+//    BufferedWriter bw = new BufferedWriter(
+//            new OutputStreamWriter(
+//                    new BufferedOutputStream (
+//                            new ZipOutputStream(
+//
+//                                    new CheckedOutputStream(new FileOutputStream(filepath.toFile()), new Adler32())
+//
+//
+//
+//
+//                            )
+//                    ),
+//                    "UTF-8"
+//            )
+//    );
+
+//    public void readZIP () throws FileNotFoundException {
+//        try {
+//            BufferedReader rw = new BufferedReader(
+//                    new InputStreamReader(
+//                            new ZipInputStream(new FileInputStream(filepath.toFile())),
+//                            "UTF-8"
+//                    )
+//            );
+//            String s = "";
+//            while ( ( s = rw.readLine()) !=null  ) System.out.println(s);
+//        } catch (IOException e) {   e.printStackTrace();    }
+//
+//    }
