@@ -1,0 +1,1006 @@
+:   ID : executionTime     : executionResult : description  
+:    1 :             0.465 :         SUCCESS : DROP SCHEMA IF EXISTS test_batch CASCADE      
+:    2 :             0.206 :         SUCCESS : CREATE SCHEMA IF NOT EXISTS test_batch      
+:    3 :             0.232 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.d_cur(      
+:    4 :             0.358 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_intval_num(      
+:    5 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_intval_date(      
+:    6 :             0.260 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype3(      
+:    7 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_ref_parent(      
+:    8 :             0.362 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.dr$idx_tbl_ind_dmn$i(      
+:    9 :             0.367 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_acc_cust_cls(      
+:   10 :             0.233 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_list(      
+:   11 :             0.222 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.f_f1(      
+:   12 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_ind_btm(      
+:   13 :             0.328 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.test(      
+:   14 :             0.300 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.test_character(      
+:   15 :             0.210 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_not_part_pk(      
+:   16 :             0.224 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_hash_range(      
+:   17 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_not_part_ind(      
+:   18 :             0.224 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_updt(      
+:   19 :             0.223 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.destination(      
+:   20 :             0.334 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_acc_cust(      
+:   21 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_account_state(      
+:   22 :             0.243 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.fact_table2(      
+:   23 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_acc_cust_othr(      
+:   24 :             0.223 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_ins(      
+:   25 :             0.329 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.emp(      
+:   26 :             0.210 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype_date(      
+:   27 :             0.228 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_promotions_var1(      
+:   28 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype_other1(      
+:   29 :             0.246 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype5(      
+:   30 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.d_cust(      
+:   31 :             0.387 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_hash_pk(      
+:   32 :             0.222 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_type_cast(      
+:   33 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_hash_pk(      
+:   34 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_acc_ins(      
+:   35 :             0.229 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_dept(      
+:   36 :             0.207 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_del(      
+:   37 :             0.284 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_varchar(      
+:   38 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.test_func_table(      
+:   39 :             0.224 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_account_4updt_dtl(      
+:   40 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_acc_cust_open(      
+:   41 :             0.263 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.source(      
+:   42 :             0.318 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_reserv_wrd(      
+:   43 :             0.213 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.test_un_char(      
+:   44 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.unicode_test1(      
+:   45 :             0.207 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_intval(      
+:   46 :             0.224 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype_undernumber(      
+:   47 :             0.210 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_chr_test(      
+:   48 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.dept(      
+:   49 :             0.229 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_gl_temp(      
+:   50 :             0.207 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype_7(      
+:   51 :             0.224 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_iot_labor_hour(      
+:   52 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_employees3_ins(      
+:   53 :             0.421 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_account(      
+:   54 :             0.210 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_ind_fnc(      
+:   55 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_acc_state_iden_col(      
+:   56 :             0.222 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_locations_demo_5(      
+:   57 :             0.229 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.dimension3(      
+:   58 :             0.207 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_bank_resp_mngr(      
+:   59 :             0.255 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_employees3(      
+:   60 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.test_index_script(      
+:   61 :             0.211 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_locations_demo(      
+:   62 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_hash_pk_ind(      
+:   63 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_bank(      
+:   64 :             0.336 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_divisions(      
+:   65 :             0.207 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_not_part_pk_ind(      
+:   66 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_hash_range_pk(      
+:   67 :             0.226 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_ref(      
+:   68 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_emp_mrg_src(      
+:   69 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_warehouses(      
+:   70 :             0.210 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.err$_tbl_employees3(      
+:   71 :             0.241 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_list_ins(      
+:   72 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype2(      
+:   73 :             0.223 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.dimension1(      
+:   74 :             0.207 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.dimension2(      
+:   75 :             0.336 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.dr$idx_tbl_ind_dmn$r(      
+:   76 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.dimension4(      
+:   77 :             0.207 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype_varchar(      
+:   78 :             0.206 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_list_pk(      
+:   79 :             0.227 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.f_f2(      
+:   80 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.d_cust_cat(      
+:   81 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.fact_table1(      
+:   82 :             0.449 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.dr$idx_tbl_ind_dmn$k(      
+:   83 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_employees(      
+:   84 :             0.207 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype4(      
+:   85 :             0.248 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_account_state_seq(      
+:   86 :             0.207 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_pk(      
+:   87 :             0.363 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_emp_bldfun(      
+:   88 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_list_pk(      
+:   89 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.dr$idx_tbl_ind_dmn$n(      
+:   90 :             0.207 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_demo_fk_1(      
+:   91 :             0.222 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_promotions_var2(      
+:   92 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_inventories(      
+:   93 :             0.282 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.d_cust_type(      
+:   94 :             0.210 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_account_unpivot(      
+:   95 :             0.207 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_emp(      
+:   96 :             0.221 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_list(      
+:   97 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.test_nanvl(      
+:   98 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_hash(      
+:   99 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype_float(      
+:  100 :             0.224 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.d_f2(      
+:  101 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_pk_ind(      
+:  102 :             0.228 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype1(      
+:  103 :             0.237 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_currency(      
+:  104 :             0.207 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_list_pk_ind(      
+:  105 :             0.209 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.test_table_cf_employees(      
+:  106 :             0.234 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.lineorder_test_index(      
+:  107 :             0.207 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_acc_resp_mng(      
+:  108 :             0.207 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_intval_pk_ind(      
+:  109 :             0.208 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype_other2(      
+:  110 :             0.722 :         SUCCESS : ALTER TABLE test_batch.dr$idx_tbl_ind_dmn$r      
+:  111 :             0.237 :         SUCCESS : ALTER TABLE test_batch.f_f2      
+:  112 :             0.288 :         SUCCESS : ALTER TABLE test_batch.dimension2      
+:  113 :             0.266 :         SUCCESS : ALTER TABLE test_batch.tbl_iot_labor_hour      
+:  114 :             0.245 :         SUCCESS : ALTER TABLE test_batch.d_cur      
+:  115 :             0.313 :         SUCCESS : ALTER TABLE test_batch.tbl_promotions_var1      
+:  116 :             0.227 :         SUCCESS : ALTER TABLE test_batch.d_cust_cat      
+:  117 :             0.299 :         SUCCESS : ALTER TABLE test_batch.tbl_part_list_pk      
+:  118 :             0.255 :         SUCCESS : ALTER TABLE test_batch.tbl_employees3      
+:  119 :             0.491 :         SUCCESS : ALTER TABLE test_batch.dr$idx_tbl_ind_dmn$k      
+:  120 :             0.229 :         SUCCESS : ALTER TABLE test_batch.tbl_acc_ins      
+:  121 :             0.238 :         SUCCESS : ALTER TABLE test_batch.tbl_part_ref_parent      
+:  122 :             0.246 :         SUCCESS : ALTER TABLE test_batch.tbl_part_hash_range_pk      
+:  123 :             0.235 :         SUCCESS : ALTER TABLE test_batch.fact_table1      
+:  124 :             0.295 :         SUCCESS : ALTER TABLE test_batch.tbl_part_range_hash_pk      
+:  125 :             0.262 :         SUCCESS : ALTER TABLE test_batch.d_cust      
+:  126 :             0.230 :         SUCCESS : ALTER TABLE test_batch.tbl_part_range_hash_pk_ind      
+:  127 :             0.234 :         SUCCESS : ALTER TABLE test_batch.fact_table1      
+:  128 :             0.216 :         SUCCESS : ALTER TABLE test_batch.f_f1      
+:  129 :             0.302 :         SUCCESS : ALTER TABLE test_batch.tbl_part_range_list_pk      
+:  130 :             0.207 :         SUCCESS : ALTER TABLE test_batch.fact_table2      
+:  131 :             0.250 :         SUCCESS : ALTER TABLE test_batch.tbl_part_hash_pk      
+:  132 :             0.279 :         SUCCESS : ALTER TABLE test_batch.d_f2      
+:  133 :             0.240 :         SUCCESS : ALTER TABLE test_batch.dr$idx_tbl_ind_dmn$n      
+:  134 :             0.355 :         SUCCESS : ALTER TABLE test_batch.dimension3      
+:  135 :             0.263 :         SUCCESS : ALTER TABLE test_batch.tbl_promotions_var2      
+:  136 :             0.207 :         SUCCESS : ALTER TABLE test_batch.fact_table2      
+:  137 :             0.234 :         SUCCESS : ALTER TABLE test_batch.d_cust_type      
+:  138 :             0.251 :         SUCCESS : ALTER TABLE test_batch.tbl_employees3_ins      
+:  139 :             0.431 :         SUCCESS : ALTER TABLE test_batch.tbl_part_range_pk      
+:  140 :             0.226 :         SUCCESS : ALTER TABLE test_batch.tbl_part_range_pk_ind      
+:  141 :             0.221 :         SUCCESS : ALTER TABLE test_batch.tbl_part_ref      
+:  142 :             0.253 :         SUCCESS : ALTER TABLE test_batch.tbl_not_part_pk_ind      
+:  143 :             0.231 :         SUCCESS : ALTER TABLE test_batch.fact_table2      
+:  144 :             0.509 :         SUCCESS : ALTER TABLE test_batch.dimension4      
+:  145 :             0.246 :         SUCCESS : ALTER TABLE test_batch.f_f1      
+:  146 :             0.298 :         SUCCESS : ALTER TABLE test_batch.tbl_not_part_pk      
+:  147 :             0.229 :         SUCCESS : ALTER TABLE test_batch.tbl_locations_demo      
+:  148 :             0.258 :         SUCCESS : ALTER TABLE test_batch.tbl_part_range_list_pk_ind      
+:  149 :             0.553 :         SUCCESS : ALTER TABLE test_batch.tbl_part_range_intval_pk_ind      
+:  150 :             0.287 :         SUCCESS : ALTER TABLE test_batch.tbl_part_ref      
+:  151 :             0.228 :         SUCCESS : ALTER TABLE test_batch.f_f2      
+:  152 :             0.235 :         SUCCESS : ALTER TABLE test_batch.dimension1      
+:  153 :             0.206 :         SUCCESS : ALTER TABLE test_batch.fact_table2      
+:  154 :             0.395 :         SUCCESS : ALTER TABLE test_batch.f_f2      
+:  155 :             0.211 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_round1 (col1) AS      
+:  156 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min22 (text, error_msg) AS      
+:  157 :             0.225 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_trunc3 (col1) AS      
+:  158 :             0.225 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_19 (col1) AS      
+:  159 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_multi_byte (text, error_msg) AS      
+:  160 :             0.335 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_replace2 (col1) AS      
+:  161 :             0.234 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lead8 (col1, col2, col3, col4, col5) AS      
+:  162 :             0.231 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_median1 (col1, col2, col3, col4, col5) AS      
+:  163 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min2 (col1, col2, col3, col4, col5) AS      
+:  164 :             0.228 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_deref (text, error_msg) AS      
+:  165 :             0.252 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_nested_subq_mlt_cols (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  166 :             0.316 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_5 (col1) AS      
+:  167 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp7 (col1, col2, col3, col4, col5) AS      
+:  168 :             0.223 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_pre_tbl_tst (acc_id, cust_id, acc_no, currency, amount) AS      
+:  169 :             0.238 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_5_2 (col1) AS      
+:  170 :             0.220 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_sys_context3 (text, error_msg) AS      
+:  171 :             0.394 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value14 (col1, col2, col3, col4, col5) AS      
+:  172 :             0.233 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_lpad2 (col1) AS      
+:  173 :             0.297 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min6 (text, error_msg) AS      
+:  174 :             0.446 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop18 (text, error_msg) AS      
+:  175 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min11 (col1, col2, col3, col4, col5) AS      
+:  176 :             0.320 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_nullif (col1) AS      
+:  177 :             0.257 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max5 (text, error_msg) AS      
+:  178 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_like_cond (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  179 :             0.219 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_literal_date (col1) AS      
+:  180 :             0.227 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_ntile3 (col1, col2, col3, col4, col5) AS      
+:  181 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value16 (col1, col2, col3, col4, col5) AS      
+:  182 :             0.229 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_user (col1) AS      
+:  183 :             0.238 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_rowidtonchar (text, error_msg) AS      
+:  184 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_count3 (col1) AS      
+:  185 :             0.213 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp17 (col1, col2, col3, col4, col5) AS      
+:  186 :             0.264 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_median4 (col1, col2, col3, col4, col5) AS      
+:  187 :             0.267 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop11 (col1, col2, col3, col4, col5) AS      
+:  188 :             0.229 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_row_number2 (col1, col2, col3, col4, col5) AS      
+:  189 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev8 (col1, col2, col3, col4, col5) AS      
+:  190 :             0.219 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_like_escape (id, first_name, last_name, salary, comm1, comm2) AS      
+:  191 :             0.224 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp14 (col1, col2, col3, col4, col5) AS      
+:  192 :             0.216 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_sum1 (col1) AS      
+:  193 :             0.340 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_to_yminterval (text, error_msg) AS      
+:  194 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count8 (col1, col2, col3, col4, col5) AS      
+:  195 :             0.225 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count11 (col1, col2, col3, col4, col5) AS      
+:  196 :             0.315 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max18 (text, error_msg) AS      
+:  197 :             0.210 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max14 (col1, col2, col3, col4, col5) AS      
+:  198 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance1 (col1, col2, col3, col4, col5) AS      
+:  199 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_count2 (col1) AS      
+:  200 :             0.223 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop7 (col1, col2, col3, col4, col5) AS      
+:  201 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_tbl_reserv_wrd (pub_date, main_url, "tag") AS      
+:  202 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_12 (col1) AS      
+:  203 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum6 (text, error_msg) AS      
+:  204 :             0.235 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_instr2 (col1) AS      
+:  205 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_22 (col1) AS      
+:  206 :             0.224 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp1 (col1, col2, col3, col4, col5) AS      
+:  207 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_ratio_to_report2 (col1, col2, col3, col4, col5) AS      
+:  208 :             0.231 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_group_by_cube_ext (currencyid, stateid, sum_acc_bal, avg_acc_bal) AS      
+:  209 :             0.313 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev16 (col1, col2, col3, col4, col5) AS      
+:  210 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_disc5 (text, error_msg) AS      
+:  211 :             0.223 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance5 (text, error_msg) AS      
+:  212 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value4 (text, error_msg) AS      
+:  213 :             0.214 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_cont6 (text, error_msg) AS      
+:  214 :             0.225 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_count5 (col1) AS      
+:  215 :             0.290 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_disc8 (text, error_msg) AS      
+:  216 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_make_ref (text, error_msg) AS      
+:  217 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_regr_sxx (text, error_msg) AS      
+:  218 :             0.274 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp16 (col1, col2, col3, col4, col5) AS      
+:  219 :             0.279 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop4 (text, error_msg) AS      
+:  220 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_median3 (col1, col2, col3, col4, col5) AS      
+:  221 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_dual_01 (col) AS      
+:  222 :             0.227 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_stddev_pop1 (col1) AS      
+:  223 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_arf_oper_chr (col1) AS      
+:  224 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_comp_cond_any_some (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  225 :             0.228 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_chartorowid (text, error_msg) AS      
+:  226 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_23 (text, error_msg) AS      
+:  227 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance22 (text, error_msg) AS      
+:  228 :             0.216 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_nchar4 (text, error_msg) AS      
+:  229 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max4 (text, error_msg) AS      
+:  230 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_rownum_01 (accountno, currencyid, description) AS      
+:  231 :             0.217 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_cardinality (text, error_msg) AS      
+:  232 :             0.307 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_concat (col1) AS      
+:  233 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_empty_clob (col1) AS      
+:  234 :             0.225 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_months_between (col1) AS      
+:  235 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum1 (col1, col2, col3, col4, col5) AS      
+:  236 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_count4 (col1) AS      
+:  237 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract14 (text, error_msg) AS      
+:  238 :             0.335 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_number1 (text, error_msg) AS      
+:  239 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_instr1 (col1) AS      
+:  240 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_power (col1) AS      
+:  241 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_sum2 (col1) AS      
+:  242 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg18 (text, error_msg) AS      
+:  243 :             0.502 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_full_join_in_from (accountno, cust_last_name, currencyid, accountbalance) AS      
+:  244 :             0.478 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg15 (text, error_msg) AS      
+:  245 :             0.284 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lead4 (col1, col2, col3, col4, col5) AS      
+:  246 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count2 (col1, col2, col3, col4, col5) AS      
+:  247 :             0.224 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_dump (text, error_msg) AS      
+:  248 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_localtimestamp2 (text, error_msg) AS      
+:  249 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_new_time (text, error_msg) AS      
+:  250 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop8 (col1, col2, col3, col4, col5) AS      
+:  251 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop13 (col1, col2, col3, col4, col5) AS      
+:  252 :             0.228 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop11 (col1, col2, col3, col4, col5) AS      
+:  253 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev21 (text, error_msg) AS      
+:  254 :             0.587 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_trim5 (col1) AS      
+:  255 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_sin (col1) AS      
+:  256 :             0.447 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_tz_offset (text, error_msg) AS      
+:  257 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_ntile1 (col1, col2, col3, col4, col5) AS      
+:  258 :             0.656 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance14 (col1, col2, col3, col4, col5) AS      
+:  259 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count6 (text, error_msg) AS      
+:  260 :             0.438 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance16 (col1, col2, col3, col4, col5) AS      
+:  261 :             0.537 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_nchar2 (text, error_msg) AS      
+:  262 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_sqrt (col1) AS      
+:  263 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_nls_charset_name (text, error_msg) AS      
+:  264 :             0.226 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max20 (text, error_msg) AS      
+:  265 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop15 (text, error_msg) AS      
+:  266 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_replace1 (col1) AS      
+:  267 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop7 (col1, col2, col3, col4, col5) AS      
+:  268 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract15 (text, error_msg) AS      
+:  269 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp19 (text, error_msg) AS      
+:  270 :             0.287 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract4 (col1) AS      
+:  271 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg20 (text, error_msg) AS      
+:  272 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract16 (text, error_msg) AS      
+:  273 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lead9 (text, error_msg) AS      
+:  274 :             0.375 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count22 (text, error_msg) AS      
+:  275 :             0.239 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_reftohex (text, error_msg) AS      
+:  276 :             0.226 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_row_number3 (col1, col2, col3, col4, col5) AS      
+:  277 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_trim7 (col1) AS      
+:  278 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg21 (text, error_msg) AS      
+:  279 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_to_dsinterval (text, error_msg) AS      
+:  280 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum7 (col1, col2, col3, col4, col5) AS      
+:  281 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_char6 (col1) AS      
+:  282 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_ltrim1 (col1) AS      
+:  283 :             0.226 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_tbl_column_aliases (acc_no, acc_cur, acc_descr) AS      
+:  284 :             0.221 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_covar_samp (text, error_msg) AS      
+:  285 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev3 (col1, col2, col3, col4, col5) AS      
+:  286 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_median (text, error_msg) AS      
+:  287 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_trunc5 (col1) AS      
+:  288 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_avg4 (col1) AS      
+:  289 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_numtodsinterval2 (text, error_msg) AS      
+:  290 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev2 (col1, col2, col3, col4, col5) AS      
+:  291 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev10 (col1, col2, col3, col4, col5) AS      
+:  292 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_max3 (col1) AS      
+:  293 :             0.371 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_stddev2 (col1) AS      
+:  294 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_initcap (col1) AS      
+:  295 :             0.462 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_17 (col1) AS      
+:  296 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev5 (text, error_msg) AS      
+:  297 :             0.256 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_char1 (text, error_msg) AS      
+:  298 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_comp_cond_less_oper (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  299 :             1.862 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp12 (col1, col2, col3, col4, col5) AS      
+:  300 :             1.210 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value3 (col1, col2, col3, col4, col5) AS      
+:  301 :             0.228 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_nstd_subq_mlt_row_02 (last_name, first_name) AS      
+:  302 :             0.253 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_var_pop2 (col1) AS      
+:  303 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max7 (col1, col2, col3, col4, col5) AS      
+:  304 :             0.229 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg17 (col1, col2, col3, col4, col5) AS      
+:  305 :             0.226 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_tan (col1) AS      
+:  306 :             0.332 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp17 (col1, col2, col3, col4, col5) AS      
+:  307 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value15 (text, error_msg) AS      
+:  308 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max1 (col1, col2, col3, col4, col5) AS      
+:  309 :             0.323 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_compose (text, error_msg) AS      
+:  310 :             0.412 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_percentile_disc (text, error_msg) AS      
+:  311 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_16 (col1) AS      
+:  312 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_regr_count (text, error_msg) AS      
+:  313 :             0.210 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum4 (text, error_msg) AS      
+:  314 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp15 (text, error_msg) AS      
+:  315 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_atan1 (col1) AS      
+:  316 :             0.320 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value9 (col1, col2, col3, col4, col5) AS      
+:  317 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_concat_grouping_sets (bankid, currencyid, stateid, sum_acc_bal, avg_acc_bal) AS      
+:  318 :             0.312 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_mod (col1) AS      
+:  319 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance15 (text, error_msg) AS      
+:  320 :             0.264 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_tbl_tab1_version_pseudo_col (text, error_msg) AS      
+:  321 :             0.221 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_var_samp1 (col1) AS      
+:  322 :             0.300 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_covar_samp (text, error_msg) AS      
+:  323 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_variance4 (col1) AS      
+:  324 :             0.227 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_char4 (text, error_msg) AS      
+:  325 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg19 (text, error_msg) AS      
+:  326 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_dense_rank (text, error_msg) AS      
+:  327 :             0.210 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_null_cond (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  328 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop16 (col1, col2, col3, col4, col5) AS      
+:  329 :             0.210 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_median6 (col1, col2, col3, col4, col5) AS      
+:  330 :             0.274 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp4 (text, error_msg) AS      
+:  331 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_scalar_subquery (last_name, first_name, max_bal) AS      
+:  332 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_variance1 (col1) AS      
+:  333 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value6 (text, error_msg) AS      
+:  334 :             0.212 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_between_cond (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  335 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_variance2 (col1) AS      
+:  336 :             0.324 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_trim1 (col1) AS      
+:  337 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value11 (col1, col2, col3, col4, col5) AS      
+:  338 :             0.224 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lead3 (col1, col2, col3, col4, col5) AS      
+:  339 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg2 (col1, col2, col3, col4, col5) AS      
+:  340 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_single_byte (text, error_msg) AS      
+:  341 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_trunc2 (col1) AS      
+:  342 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_current_timestamp (col1) AS      
+:  343 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_11 (col1) AS      
+:  344 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp6 (text, error_msg) AS      
+:  345 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min18 (text, error_msg) AS      
+:  346 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count23 (text, error_msg) AS      
+:  347 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value19 (text, error_msg) AS      
+:  348 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp10 (col1, col2, col3, col4, col5) AS      
+:  349 :             0.242 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_trim2 (col1) AS      
+:  350 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_abs (col1) AS      
+:  351 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_replace2 (col1) AS      
+:  352 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_set (text, error_msg) AS      
+:  353 :             0.221 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp9 (col1, col2, col3, col4, col5) AS      
+:  354 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_13 (col1) AS      
+:  355 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_convert (text, error_msg) AS      
+:  356 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_regr_sxy (text, error_msg) AS      
+:  357 :             0.210 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_asciistr (text, error_msg) AS      
+:  358 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp7 (col1, col2, col3, col4, col5) AS      
+:  359 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp11 (col1, col2, col3, col4, col5) AS      
+:  360 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_trunc2 (col1) AS      
+:  361 :             0.224 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lag5 (col1, col2, col3, col4, col5) AS      
+:  362 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance3 (col1, col2, col3, col4, col5) AS      
+:  363 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_left_join_in_from (accountno, cust_last_name, currencyid, accountbalance) AS      
+:  364 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_disc6 (text, error_msg) AS      
+:  365 :             0.283 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_substr3 (col1) AS      
+:  366 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_replace4 (col1) AS      
+:  367 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_rank3 (col1, col2, col3, col4, col5) AS      
+:  368 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg14 (col1, col2, col3, col4, col5) AS      
+:  369 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_31 (col1) AS      
+:  370 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_ro (accountno, currencyid, description) AS      
+:  371 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max15 (text, error_msg) AS      
+:  372 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_chr (col1) AS      
+:  373 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_case_exp_01 (acc_bal_lvl) AS      
+:  374 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop14 (col1, col2, col3, col4, col5) AS      
+:  375 :             0.229 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_add_months (col1) AS      
+:  376 :             0.314 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count21 (col1, col2, col3, col4, col5) AS      
+:  377 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop19 (text, error_msg) AS      
+:  378 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_nls_charset_decl_len (text, error_msg) AS      
+:  379 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_collect (text, error_msg) AS      
+:  380 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_trim3 (col1) AS      
+:  381 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_ln (col1) AS      
+:  382 :             0.216 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_row_number1 (col1, col2, col3, col4, col5) AS      
+:  383 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value7 (col1, col2, col3, col4, col5) AS      
+:  384 :             0.252 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum17 (col1, col2, col3, col4, col5) AS      
+:  385 :             0.228 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev1 (col1, col2, col3, col4, col5) AS      
+:  386 :             0.210 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_regr_avgy (text, error_msg) AS      
+:  387 :             0.224 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance11 (col1, col2, col3, col4, col5) AS      
+:  388 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_2 (col1) AS      
+:  389 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_01 (customerid, accountno, opendate) AS      
+:  390 :             0.242 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg3 (col1, col2, col3, col4, col5) AS      
+:  391 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_trunc4 (col1) AS      
+:  392 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_nlssort (text, error_msg) AS      
+:  393 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count7 (col1, col2, col3, col4, col5) AS      
+:  394 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum9 (col1, col2, col3, col4, col5) AS      
+:  395 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_asin (col1) AS      
+:  396 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop6 (text, error_msg) AS      
+:  397 :             0.345 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_scn_to_timestamp (text, error_msg) AS      
+:  398 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max22 (text, error_msg) AS      
+:  399 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_avg2 (col1) AS      
+:  400 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_round2 (col1) AS      
+:  401 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_nchar7 (text, error_msg) AS      
+:  402 :             0.367 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop3 (col1, col2, col3, col4, col5) AS      
+:  403 :             0.225 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_full_join_in_where (accountno, cust_last_name, currencyid, accountbalance) AS      
+:  404 :             0.210 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_substr1 (col1) AS      
+:  405 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev11 (col1, col2, col3, col4, col5) AS      
+:  406 :             0.218 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_concat_02 (concat_col) AS      
+:  407 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value15 (text, error_msg) AS      
+:  408 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_30 (col1) AS      
+:  409 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count17 (col1, col2, col3, col4, col5) AS      
+:  410 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp6 (text, error_msg) AS      
+:  411 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value16 (col1, col2, col3, col4, col5) AS      
+:  412 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_grouping (text, error_msg) AS      
+:  413 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min13 (col1, col2, col3, col4, col5) AS      
+:  414 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_21 (col1) AS      
+:  415 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max9 (col1, col2, col3, col4, col5) AS      
+:  416 :             0.226 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum12 (col1, col2, col3, col4, col5) AS      
+:  417 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_cume_dist (text, error_msg) AS      
+:  418 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_case_exp_02 (acc_bal_grp) AS      
+:  419 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_nls_upper (text, error_msg) AS      
+:  420 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max10 (col1, col2, col3, col4, col5) AS      
+:  421 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_decompose (text, error_msg) AS      
+:  422 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop9 (col1, col2, col3, col4, col5) AS      
+:  423 :             0.250 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop20 (text, error_msg) AS      
+:  424 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_round11 (col1) AS      
+:  425 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count12 (col1, col2, col3, col4, col5) AS      
+:  426 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_dual_02 (dummy) AS      
+:  427 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_value (text, error_msg) AS      
+:  428 :             0.881 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp5 (text, error_msg) AS      
+:  429 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_acc_hh_to_mi_ss_intval (id, opendate, col1, col2, col3) AS      
+:  430 :             1.868 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop5 (text, error_msg) AS      
+:  431 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp8 (col1, col2, col3, col4, col5) AS      
+:  432 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_numtoyminterval1 (text, error_msg) AS      
+:  433 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_round9 (col1) AS      
+:  434 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_tbl_employees3_ins (id, last_name, salary, comm2) AS      
+:  435 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_trunc8 (col1) AS      
+:  436 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value4 (text, error_msg) AS      
+:  437 :             0.223 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract9 (text, error_msg) AS      
+:  438 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_like_escape_bckslsh (id, first_name, last_name, salary, comm1, comm2) AS      
+:  439 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value11 (col1, col2, col3, col4, col5) AS      
+:  440 :             0.211 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance18 (text, error_msg) AS      
+:  441 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lead2 (col1, col2, col3, col4, col5) AS      
+:  442 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count15 (text, error_msg) AS      
+:  443 :             0.243 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_comp_cond_grtr_oper (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  444 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_avg1 (col1) AS      
+:  445 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_percentile_cont (text, error_msg) AS      
+:  446 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_sign (col1) AS      
+:  447 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min16 (col1, col2, col3, col4, col5) AS      
+:  448 :             0.238 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop19 (text, error_msg) AS      
+:  449 :             0.228 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_trunc12 (col1) AS      
+:  450 :             0.234 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg9 (col1, col2, col3, col4, col5) AS      
+:  451 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_width_bucket (text, error_msg) AS      
+:  452 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_count1 (col1) AS      
+:  453 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_trim10 (col1) AS      
+:  454 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_ratio_to_report1 (col1, col2, col3, col4, col5) AS      
+:  455 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_regr_avgx (text, error_msg) AS      
+:  456 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_max1 (col1) AS      
+:  457 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_char3 (col1) AS      
+:  458 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_disc7 (text, error_msg) AS      
+:  459 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value7 (col1, col2, col3, col4, col5) AS      
+:  460 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max3 (col1, col2, col3, col4, col5) AS      
+:  461 :             0.211 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg22 (text, error_msg) AS      
+:  462 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_1 (col1) AS      
+:  463 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp10 (col1, col2, col3, col4, col5) AS      
+:  464 :             0.210 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp16 (col1, col2, col3, col4, col5) AS      
+:  465 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_substr1 (col1) AS      
+:  466 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_coalesce (col1) AS      
+:  467 :             0.210 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count26 (text, error_msg) AS      
+:  468 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_3 (col1) AS      
+:  469 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value20 (text, error_msg) AS      
+:  470 :             0.219 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_cos (col1) AS      
+:  471 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev18 (text, error_msg) AS      
+:  472 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_var_pop1 (col1) AS      
+:  473 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance4 (text, error_msg) AS      
+:  474 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_length (col1) AS      
+:  475 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_trunc9 (col1) AS      
+:  476 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_cosh (col1) AS      
+:  477 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp3 (col1, col2, col3, col4, col5) AS      
+:  478 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_min3 (col1) AS      
+:  479 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account (accountno, annual_accountbalance) AS      
+:  480 :             0.250 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance9 (col1, col2, col3, col4, col5) AS      
+:  481 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop2 (col1, col2, col3, col4, col5) AS      
+:  482 :             0.221 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_cume_dist2 (col1, col2, col3, col4, col5) AS      
+:  483 :             0.762 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_remainder (col1) AS      
+:  484 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_to_timestamp (text, error_msg) AS      
+:  485 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_last_day (col1) AS      
+:  486 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop12 (col1, col2, col3, col4, col5) AS      
+:  487 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_trunc10 (col1) AS      
+:  488 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_14 (col1) AS      
+:  489 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev17 (col1, col2, col3, col4, col5) AS      
+:  490 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum10 (col1, col2, col3, col4, col5) AS      
+:  491 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_round10 (col1) AS      
+:  492 :             0.224 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_chr2 (text, error_msg) AS      
+:  493 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp11 (col1, col2, col3, col4, col5) AS      
+:  494 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_unique (accountno, currencyid, description) AS      
+:  495 :             0.216 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min12 (col1, col2, col3, col4, col5) AS      
+:  496 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count25 (text, error_msg) AS      
+:  497 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lag1 (col1, col2, col3, col4, col5) AS      
+:  498 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_ntile2 (col1, col2, col3, col4, col5) AS      
+:  499 :             0.223 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count20 (col1, col2, col3, col4, col5) AS      
+:  500 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_4 (col1) AS      
+:  501 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_stddev_samp1 (col1) AS      
+:  502 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum13 (col1, col2, col3, col4, col5) AS      
+:  503 :             0.210 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max16 (col1, col2, col3, col4, col5) AS      
+:  504 :             0.218 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg1 (col1, col2, col3, col4, col5) AS      
+:  505 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_stddev_pop2 (col1) AS      
+:  506 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop8 (col1, col2, col3, col4, col5) AS      
+:  507 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_median5 (col1, col2, col3, col4, col5) AS      
+:  508 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_4_1 (col1) AS      
+:  509 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min1 (col1, col2, col3, col4, col5) AS      
+:  510 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_trim6 (col1) AS      
+:  511 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum16 (col1, col2, col3, col4, col5) AS      
+:  512 :             0.231 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_rownum_02 (accountno, currencyid, description) AS      
+:  513 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_number2 (col1) AS      
+:  514 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_cont3 (text, error_msg) AS      
+:  515 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance13 (col1, col2, col3, col4, col5) AS      
+:  516 :             0.220 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_round5 (col1) AS      
+:  517 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp13 (col1, col2, col3, col4, col5) AS      
+:  518 :             0.294 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_comp_cond_gr_eq_oper (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  519 :             0.216 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_nchar1 (text, error_msg) AS      
+:  520 :             0.215 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_natural_join_02 (bankid, id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bank) AS      
+:  521 :             0.227 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance8 (col1, col2, col3, col4, col5) AS      
+:  522 :             0.215 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_round6 (col1) AS      
+:  523 :             0.215 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract6 (col1) AS      
+:  524 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_from_tz (text, error_msg) AS      
+:  525 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop1 (col1, col2, col3, col4, col5) AS      
+:  526 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min19 (text, error_msg) AS      
+:  527 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min9 (col1, col2, col3, col4, col5) AS      
+:  528 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop13 (col1, col2, col3, col4, col5) AS      
+:  529 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop15 (text, error_msg) AS      
+:  530 :             0.210 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_log_cond_or (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  531 :             0.252 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_4_2 (col1) AS      
+:  532 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev7 (col1, col2, col3, col4, col5) AS      
+:  533 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_tbl_tab1_tst (text, error_msg) AS      
+:  534 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_comp_cond_eq_oper (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  535 :             0.216 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance21 (text, error_msg) AS      
+:  536 :             0.212 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_in_cond (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  537 :             0.228 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count10 (col1, col2, col3, col4, col5) AS      
+:  538 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_cross_join_01 (accountno, cust_last_name, currencyid, accountbalance) AS      
+:  539 :             0.229 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_order_by_nulls (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  540 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_soundex (col1) AS      
+:  541 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev20 (text, error_msg) AS      
+:  542 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum20 (text, error_msg) AS      
+:  543 :             0.210 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_trim9 (col1) AS      
+:  544 :             0.464 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count16 (col1, col2, col3, col4, col5) AS      
+:  545 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count24 (text, error_msg) AS      
+:  546 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_sys_context2 (col1) AS      
+:  547 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_sum3 (col1) AS      
+:  548 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_5_1 (col1) AS      
+:  549 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_regr_r2 (text, error_msg) AS      
+:  550 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count28 (text, error_msg) AS      
+:  551 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_lower (col1) AS      
+:  552 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_covar_pop (text, error_msg) AS      
+:  553 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_max4 (col1) AS      
+:  554 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value19 (text, error_msg) AS      
+:  555 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_tbl_name (acc_no, acc_cur, acc_descr) AS      
+:  556 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_dbtimezone (text, error_msg) AS      
+:  557 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_variance3 (col1) AS      
+:  558 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_ora_hash (text, error_msg) AS      
+:  559 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min15 (text, error_msg) AS      
+:  560 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_nls_lower (text, error_msg) AS      
+:  561 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp3 (col1, col2, col3, col4, col5) AS      
+:  562 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_rowidtochar (text, error_msg) AS      
+:  563 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_lnnvl (text, error_msg) AS      
+:  564 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg7 (col1, col2, col3, col4, col5) AS      
+:  565 :             0.214 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_9 (col1) AS      
+:  566 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value1 (col1, col2, col3, col4, col5) AS      
+:  567 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg11 (col1, col2, col3, col4, col5) AS      
+:  568 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value17 (col1, col2, col3, col4, col5) AS      
+:  569 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_cont5 (text, error_msg) AS      
+:  570 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_cont8 (text, error_msg) AS      
+:  571 :             0.264 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_trim4 (col1) AS      
+:  572 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_vsize (text, error_msg) AS      
+:  573 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_nstd_subq_mlt_row_04 (text, error_msg) AS      
+:  574 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_grp_by_grpg_sets_ext (bankid, currencyid, stateid, sum_acc_bal, avg_acc_bal) AS      
+:  575 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_regr_syy (text, error_msg) AS      
+:  576 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_inner_join_in_where (customerid, last_name, currencyid, accountbalance) AS      
+:  577 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_cont2 (text, error_msg) AS      
+:  578 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value9 (col1, col2, col3, col4, col5) AS      
+:  579 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_dual_03 (col) AS      
+:  580 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_exp (col1) AS      
+:  581 :             0.230 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_hint (accountno, currencyid, description) AS      
+:  582 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop5 (text, error_msg) AS      
+:  583 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_dense_rank3 (col1, col2, col3, col4, col5) AS      
+:  584 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_trunc1 (col1) AS      
+:  585 :             0.216 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_concat_01 (concat_col) AS      
+:  586 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min7 (col1, col2, col3, col4, col5) AS      
+:  587 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_numtodsinterval3 (text, error_msg) AS      
+:  588 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_ceil (col1) AS      
+:  589 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp9 (col1, col2, col3, col4, col5) AS      
+:  590 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_correlated_subquery (last_name, first_name) AS      
+:  591 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_left_join_in_where (accountno, cust_last_name, currencyid, accountbalance) AS      
+:  592 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_uid (col1) AS      
+:  593 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_binary_double (text, error_msg) AS      
+:  594 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_userenv2 (text, error_msg) AS      
+:  595 :             0.284 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_floor (col1) AS      
+:  596 :             0.278 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_min1 (col1) AS      
+:  597 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max21 (text, error_msg) AS      
+:  598 :             0.221 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_dense_rank2 (col1, col2, col3, col4, col5) AS      
+:  599 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_tbl_employees3_updt (id, last_name, salary, comm2) AS      
+:  600 :             0.245 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev14 (col1, col2, col3, col4, col5) AS      
+:  601 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_translate (col1) AS      
+:  602 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance20 (text, error_msg) AS      
+:  603 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_asterisk (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  604 :             0.712 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_replace1 (col1) AS      
+:  605 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_right_join_in_from (accountno, cust_last_name, currencyid, accountbalance) AS      
+:  606 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_cont7 (text, error_msg) AS      
+:  607 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_sys_typeid (text, error_msg) AS      
+:  608 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_tanh (col1) AS      
+:  609 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value14 (col1, col2, col3, col4, col5) AS      
+:  610 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_instr2 (col1) AS      
+:  611 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_comp_cond_ineq_oper (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  612 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance17 (col1, col2, col3, col4, col5) AS      
+:  613 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_avg3 (col1) AS      
+:  614 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum22 (text, error_msg) AS      
+:  615 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_instr1 (col1) AS      
+:  616 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_instr5 (col1) AS      
+:  617 :             0.291 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_bin_to_num (text, error_msg) AS      
+:  618 :             0.249 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lag8 (col1, col2, col3, col4, col5) AS      
+:  619 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_emp_sal_02 (customerid, accountno, opendate) AS      
+:  620 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_to_timestamp_tz (text, error_msg) AS      
+:  621 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum3 (col1, col2, col3, col4, col5) AS      
+:  622 :             0.261 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_tbl_tab1_ora_rowscn_p_col (text, error_msg) AS      
+:  623 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_acc_dd_to_hh_mi_ss_intval (id, opendate, col1, col2, col3, col4) AS      
+:  624 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev6 (text, error_msg) AS      
+:  625 :             0.236 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_regr_intercept (text, error_msg) AS      
+:  626 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_inline_subquery (last_name, accountbalance) AS      
+:  627 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min5 (text, error_msg) AS      
+:  628 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum2 (col1, col2, col3, col4, col5) AS      
+:  629 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp2 (col1, col2, col3, col4, col5) AS      
+:  630 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_sinh (col1) AS      
+:  631 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_count2 (col1) AS      
+:  632 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value1 (col1, col2, col3, col4, col5) AS      
+:  633 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_char7 (text, error_msg) AS      
+:  634 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_rank (text, error_msg) AS      
+:  635 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_log_cond_not (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  636 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_trim8 (col1) AS      
+:  637 :             0.445 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value8 (col1, col2, col3, col4, col5) AS      
+:  638 :             0.229 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp1 (col1, col2, col3, col4, col5) AS      
+:  639 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_nvl2 (col1) AS      
+:  640 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_substr2 (col1) AS      
+:  641 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_binary_float (text, error_msg) AS      
+:  642 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_round4 (col1) AS      
+:  643 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_rownum_03 (accountno, currencyid, description) AS      
+:  644 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_sessiontimezone (text, error_msg) AS      
+:  645 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_rpad2 (col1) AS      
+:  646 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_round7 (col1) AS      
+:  647 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value2 (col1, col2, col3, col4, col5) AS      
+:  648 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_stddev4 (col1) AS      
+:  649 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count27 (text, error_msg) AS      
+:  650 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_clob (text, error_msg) AS      
+:  651 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg8 (col1, col2, col3, col4, col5) AS      
+:  652 :             0.280 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_cume_dist3 (col1, col2, col3, col4, col5) AS      
+:  653 :             0.382 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_right_join_in_where (accountno, cust_last_name, currencyid, accountbalance) AS      
+:  654 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_min4 (col1) AS      
+:  655 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev9 (col1, col2, col3, col4, col5) AS      
+:  656 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max17 (col1, col2, col3, col4, col5) AS      
+:  657 :             0.225 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop17 (col1, col2, col3, col4, col5) AS      
+:  658 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_ltrim2 (col1) AS      
+:  659 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_least (col1) AS      
+:  660 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_round3 (col1) AS      
+:  661 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp5 (text, error_msg) AS      
+:  662 :             0.216 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_trunc13 (col1) AS      
+:  663 :             0.210 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_nvl (col1) AS      
+:  664 :             0.215 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_instr3 (col1) AS      
+:  665 :             0.297 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_sys_connect_by_path (text, error_msg) AS      
+:  666 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_year_month_intval (id, opendate, col1, col2, col3, col4) AS      
+:  667 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_inner_join_in_from (customerid, last_name, currencyid, accountbalance) AS      
+:  668 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value17 (col1, col2, col3, col4, col5) AS      
+:  669 :             0.226 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_disc3 (text, error_msg) AS      
+:  670 :             0.213 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_char5 (text, error_msg) AS      
+:  671 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_union (accountno, currencyid, accountbalance) AS      
+:  672 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp14 (col1, col2, col3, col4, col5) AS      
+:  673 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_unistr (text, error_msg) AS      
+:  674 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_group_by_rollup_ext (currencyid, stateid, sum_acc_bal, avg_acc_bal) AS      
+:  675 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_date2 (col1) AS      
+:  676 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_rawtohex (col1) AS      
+:  677 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum18 (text, error_msg) AS      
+:  678 :             0.214 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_rank1 (col1, col2, col3, col4, col5) AS      
+:  679 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_sys_extract_utc (text, error_msg) AS      
+:  680 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_flt_pred_in_where_02 (accountno, cust_last_name, currencyid, accountbalance) AS      
+:  681 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_round13 (col1) AS      
+:  682 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum19 (text, error_msg) AS      
+:  683 :             0.220 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_upper (col1) AS      
+:  684 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_numtodsinterval4 (text, error_msg) AS      
+:  685 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_corr (text, error_msg) AS      
+:  686 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_trunc11 (col1) AS      
+:  687 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_cont4 (text, error_msg) AS      
+:  688 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value13 (col1, col2, col3, col4, col5) AS      
+:  689 :             0.211 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_instr4 (col1) AS      
+:  690 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_comp_cond_ls_eq_oper (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  691 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max2 (col1, col2, col3, col4, col5) AS      
+:  692 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_trim11 (col1) AS      
+:  693 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_10 (col1) AS      
+:  694 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lead6 (col1, col2, col3, col4, col5) AS      
+:  695 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_cont1 (text, error_msg) AS      
+:  696 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop4 (text, error_msg) AS      
+:  697 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_sys_guid (text, error_msg) AS      
+:  698 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_not_in_cond (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  699 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg4 (text, error_msg) AS      
+:  700 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_not_like_cond (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  701 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp19 (text, error_msg) AS      
+:  702 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percent_rank3 (col1, col2, col3, col4, col5) AS      
+:  703 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_asciistr (text, error_msg) AS      
+:  704 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value13 (col1, col2, col3, col4, col5) AS      
+:  705 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value3 (col1, col2, col3, col4, col5) AS      
+:  706 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lag4 (col1, col2, col3, col4, col5) AS      
+:  707 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance10 (col1, col2, col3, col4, col5) AS      
+:  708 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_intersect (stateid, currencyid) AS      
+:  709 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value18 (text, error_msg) AS      
+:  710 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_corr1 (text, error_msg) AS      
+:  711 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_asterisk_alias (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  712 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_disc4 (text, error_msg) AS      
+:  713 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp2 (col1, col2, col3, col4, col5) AS      
+:  714 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_8 (col1) AS      
+:  715 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_stddev1 (col1) AS      
+:  716 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_nls_charset_id (text, error_msg) AS      
+:  717 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_rpad1 (col1) AS      
+:  718 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract1 (col1) AS      
+:  719 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_order_by_asc (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  720 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_count1 (col1) AS      
+:  721 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_having (currencyid, stateid, sum_acc_bal, avg_acc_bal) AS      
+:  722 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_corr2 (text, error_msg) AS      
+:  723 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_stddev3 (col1) AS      
+:  724 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop20 (text, error_msg) AS      
+:  725 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_greatest (col1) AS      
+:  726 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev19 (text, error_msg) AS      
+:  727 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_ascii (col1) AS      
+:  728 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lag7 (col1, col2, col3, col4, col5) AS      
+:  729 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_rank2 (col1, col2, col3, col4, col5) AS      
+:  730 :             0.258 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev13 (col1, col2, col3, col4, col5) AS      
+:  731 :             0.269 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_hextoraw (col1) AS      
+:  732 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max19 (text, error_msg) AS      
+:  733 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_sysdate (col1) AS      
+:  734 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_acos (col1) AS      
+:  735 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_lpad1 (col1) AS      
+:  736 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_numtoyminterval2 (text, error_msg) AS      
+:  737 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_18 (col1) AS      
+:  738 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_tbl_tab1_rowid_pseudo_col (text, error_msg) AS      
+:  739 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min8 (col1, col2, col3, col4, col5) AS      
+:  740 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop10 (col1, col2, col3, col4, col5) AS      
+:  741 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_dd_hh_mi_ss_intval (id, opendate, col1, col2, col3, col4) AS      
+:  742 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_round2 (col1) AS      
+:  743 :             0.294 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp20 (text, error_msg) AS      
+:  744 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count18 (col1, col2, col3, col4, col5) AS      
+:  745 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_nchar6 (text, error_msg) AS      
+:  746 :             0.284 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop2 (col1, col2, col3, col4, col5) AS      
+:  747 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count19 (text, error_msg) AS      
+:  748 :             0.695 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop9 (col1, col2, col3, col4, col5) AS      
+:  749 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_not_between_cond (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  750 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value2 (col1, col2, col3, col4, col5) AS      
+:  751 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value20 (text, error_msg) AS      
+:  752 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lead1 (col1, col2, col3, col4, col5) AS      
+:  753 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract2 (col1) AS      
+:  754 :             0.212 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_02 (customerid, accountno, opendate) AS      
+:  755 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_nchar5 (text, error_msg) AS      
+:  756 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_disc2 (text, error_msg) AS      
+:  757 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_atan2 (col1) AS      
+:  758 :             0.223 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_trunc6 (col1) AS      
+:  759 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum15 (text, error_msg) AS      
+:  760 :             0.389 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract13 (text, error_msg) AS      
+:  761 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value6 (text, error_msg) AS      
+:  762 :             0.216 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_6 (col1) AS      
+:  763 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_minus (stateid, currencyid) AS      
+:  764 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop17 (col1, col2, col3, col4, col5) AS      
+:  765 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_trunc1 (col1) AS      
+:  766 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop16 (col1, col2, col3, col4, col5) AS      
+:  767 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev15 (text, error_msg) AS      
+:  768 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_log (col1) AS      
+:  769 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp18 (text, error_msg) AS      
+:  770 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_nested_subq_mlt_rows (last_name, first_name) AS      
+:  771 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_substr4 (col1) AS      
+:  772 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_mult_tbl_join (acc_id, accountno, accountbalance, cur_id, cur_name, acc_st_id, acc_st_name, emp_id, emp_first_name) AS      
+:  773 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_comp_cond_all (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  774 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_max2 (col1) AS      
+:  775 :             0.454 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_sys_context1 (col1) AS      
+:  776 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_tbl_employees3_del (id, last_name, salary, comm2) AS      
+:  777 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_nstd_subq_mlt_row_03 (id, last_name, first_name) AS      
+:  778 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min17 (col1, col2, col3, col4, col5) AS      
+:  779 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_flt_pred_in_where_01 (accountno, cust_last_name, currencyid, accountbalance) AS      
+:  780 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg16 (col1, col2, col3, col4, col5) AS      
+:  781 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_rtrim1 (col1) AS      
+:  782 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_trunc7 (col1) AS      
+:  783 :             0.219 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_order_by_col_posn (stateid, currencyid, opendate, accountno, accountbalance) AS      
+:  784 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_char2 (col1) AS      
+:  785 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_date (col1) AS      
+:  786 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lead7 (col1, col2, col3, col4, col5) AS      
+:  787 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_union_all (stateid, currencyid) AS      
+:  788 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_numtodsinterval1 (text, error_msg) AS      
+:  789 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value10 (col1, col2, col3, col4, col5) AS      
+:  790 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_pop12 (col1, col2, col3, col4, col5) AS      
+:  791 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract7 (text, error_msg) AS      
+:  792 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_nested_subq_sgl_row (last_name, first_name) AS      
+:  793 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_arithmetic_oper (acc_no, acc_cur, calc) AS      
+:  794 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg13 (col1, col2, col3, col4, col5) AS      
+:  795 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_nchar3 (text, error_msg) AS      
+:  796 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max11 (col1, col2, col3, col4, col5) AS      
+:  797 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_decode (col1) AS      
+:  798 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count14 (col1, col2, col3, col4, col5) AS      
+:  799 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_systimestamp (col1) AS      
+:  800 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp18 (text, error_msg) AS      
+:  801 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_sum4 (col1) AS      
+:  802 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_translate (text, error_msg) AS      
+:  803 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_timestamp_to_scn (text, error_msg) AS      
+:  804 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max6 (text, error_msg) AS      
+:  805 :             0.216 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count3 (col1, col2, col3, col4, col5) AS      
+:  806 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_median2 (col1, col2, col3, col4, col5) AS      
+:  807 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_column_aliases (acc_no, acc_cur, acc_descr) AS      
+:  808 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev22 (text, error_msg) AS      
+:  809 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percent_rank2 (col1, col2, col3, col4, col5) AS      
+:  810 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min20 (text, error_msg) AS      
+:  811 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_round8 (col1) AS      
+:  812 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_covar_pop (text, error_msg) AS      
+:  813 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp13 (col1, col2, col3, col4, col5) AS      
+:  814 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract8 (text, error_msg) AS      
+:  815 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop3 (col1, col2, col3, col4, col5) AS      
+:  816 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_literal_timestamp (col1, col2, col3, col4) AS      
+:  817 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_ratio_to_report3 (col1, col2, col3, col4, col5) AS      
+:  818 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_min2 (col1) AS      
+:  819 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count1 (col1, col2, col3, col4, col5) AS      
+:  820 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_cume_dist1 (col1, col2, col3, col4, col5) AS      
+:  821 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value12 (col1, col2, col3, col4, col5) AS      
+:  822 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count4 (text, error_msg) AS      
+:  823 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop10 (col1, col2, col3, col4, col5) AS      
+:  824 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_distinct (accountno, currencyid, description) AS      
+:  825 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min3 (col1, col2, col3, col4, col5) AS      
+:  826 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg12 (col1, col2, col3, col4, col5) AS      
+:  827 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_order_by_desc (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  828 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg10 (col1, col2, col3, col4, col5) AS      
+:  829 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum11 (col1, col2, col3, col4, col5) AS      
+:  830 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_15 (col1) AS      
+:  831 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_ref (text, error_msg) AS      
+:  832 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lag2 (col1, col2, col3, col4, col5) AS      
+:  833 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lead5 (col1, col2, col3, col4, col5) AS      
+:  834 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lag6 (col1, col2, col3, col4, col5) AS      
+:  835 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_number3 (text, error_msg) AS      
+:  836 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance2 (col1, col2, col3, col4, col5) AS      
+:  837 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_set_oper_order (accountno, currencyid, accountbalance) AS      
+:  838 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_arf_oper_date (opendate, add_365_days, minus_10_days, add_1_hour, add_1_minute, add_1_second) AS      
+:  839 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_current_date (col1) AS      
+:  840 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_nclob (text, error_msg) AS      
+:  841 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum14 (col1, col2, col3, col4, col5) AS      
+:  842 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_group_by (currencyid, stateid, sum_acc_bal, avg_acc_bal) AS      
+:  843 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_substr2 (col1) AS      
+:  844 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min10 (col1, col2, col3, col4, col5) AS      
+:  845 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_next_day (col1) AS      
+:  846 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lag9 (text, error_msg) AS      
+:  847 :             0.209 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev4 (text, error_msg) AS      
+:  848 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_bfilename (text, error_msg) AS      
+:  849 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_date3 (text, error_msg) AS      
+:  850 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value18 (text, error_msg) AS      
+:  851 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max12 (col1, col2, col3, col4, col5) AS      
+:  852 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp12 (col1, col2, col3, col4, col5) AS      
+:  853 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value8 (col1, col2, col3, col4, col5) AS      
+:  854 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_first_value10 (col1, col2, col3, col4, col5) AS      
+:  855 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min21 (text, error_msg) AS      
+:  856 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max13 (col1, col2, col3, col4, col5) AS      
+:  857 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_empty_blob (col1) AS      
+:  858 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_rtrim2 (col1) AS      
+:  859 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value12 (col1, col2, col3, col4, col5) AS      
+:  860 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract5 (col1) AS      
+:  861 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_count3 (col1) AS      
+:  862 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_rawtonhex (col1) AS      
+:  863 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_last_value5 (text, error_msg) AS      
+:  864 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_to_date1 (text, error_msg) AS      
+:  865 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev12 (col1, col2, col3, col4, col5) AS      
+:  866 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_acc_mi_to_ss_intval (id, opendate, col1, col2) AS      
+:  867 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp15 (text, error_msg) AS      
+:  868 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_dense_rank1 (col1, col2, col3, col4, col5) AS      
+:  869 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_all (accountno, currencyid, description) AS      
+:  870 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_other_userenv1 (col1) AS      
+:  871 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_var_samp2 (col1) AS      
+:  872 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop6 (text, error_msg) AS      
+:  873 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percentile_disc1 (text, error_msg) AS      
+:  874 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance19 (text, error_msg) AS      
+:  875 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum21 (text, error_msg) AS      
+:  876 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_7 (col1) AS      
+:  877 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_nanvl (text, error_msg) AS      
+:  878 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop1 (col1, col2, col3, col4, col5) AS      
+:  879 :             0.208 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count13 (col1, col2, col3, col4, col5) AS      
+:  880 :             0.248 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_pop14 (col1, col2, col3, col4, col5) AS      
+:  881 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_lag3 (col1, col2, col3, col4, col5) AS      
+:  882 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_localtimestamp1 (col1) AS      
+:  883 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_var_samp8 (col1, col2, col3, col4, col5) AS      
+:  884 :             0.230 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance7 (col1, col2, col3, col4, col5) AS      
+:  885 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min14 (col1, col2, col3, col4, col5) AS      
+:  886 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract12 (text, error_msg) AS      
+:  887 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg5 (text, error_msg) AS      
+:  888 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_conv_cast_20 (col1) AS      
+:  889 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_list_of_columns (accountno, currencyid, description) AS      
+:  890 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance12 (col1, col2, col3, col4, col5) AS      
+:  891 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract11 (text, error_msg) AS      
+:  892 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_num_bitand (col1) AS      
+:  893 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_round12 (col1) AS      
+:  894 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_natural_join_01 (bankid, id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bank) AS      
+:  895 :             0.211 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_min4 (text, error_msg) AS      
+:  896 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum8 (col1, col2, col3, col4, col5) AS      
+:  897 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_stddev_samp2 (col1) AS      
+:  898 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_variance6 (text, error_msg) AS      
+:  899 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract10 (text, error_msg) AS      
+:  900 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_sum5 (text, error_msg) AS      
+:  901 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp20 (text, error_msg) AS      
+:  902 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_log_cond_and (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  903 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_regexp_replace5 (col1) AS      
+:  904 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_max8 (col1, col2, col3, col4, col5) AS      
+:  905 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_char_unistr (text, error_msg) AS      
+:  906 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_avg6 (text, error_msg) AS      
+:  907 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_account_not_null_cond (id, accountno, currencyid, description, customerid, stateid, accountbalance, blockedamount, opendate, closedate, respmanagerid, bankid) AS      
+:  908 :             0.226 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_agr_regr_slope (text, error_msg) AS      
+:  909 :             0.206 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_date_extract3 (col1) AS      
+:  910 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_stddev_samp4 (text, error_msg) AS      
+:  911 :             0.205 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_percent_rank1 (col1, col2, col3, col4, col5) AS      
+:  912 :             0.207 :         SUCCESS : CREATE OR REPLACE VIEW test_batch.v_win_count5 (text, error_msg) AS      
+:  913 :             0.215 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_trim_both(char1 CHARACTER VARYING(32767), exc CHARACTER VARYING(32767))      
+:  914 :             0.206 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.to_char_nls_test()      
+:  915 :             0.206 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_in_datatype1(in_nnum NUMERIC(38,18), in_cchar CHARACTER VARYING(32767), in_vvar CHARACTER VARYING(32767), in_vvar2 CHARACTER VARYING(32767), in_ncchar CHARACTER VARYING(32767), in_nvar2 CHARACTER VARYING(32767))      
+:  916 :             0.205 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_soundex(char1 CHARACTER VARYING(32767))      
+:  917 :             0.205 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_rtrim(char1 CHARACTER VARYING(32767))      
+:  918 :             0.343 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_lpad(char1 CHARACTER VARYING(32767), len NUMERIC(38,18))      
+:  919 :             0.205 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_sqrt(n NUMERIC(38,18))      
+:  920 :             0.205 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_date_trunc2()      
+:  921 :             0.205 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_ltrim(char1 CHARACTER VARYING(32767))      
+:  922 :             0.224 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_conv_rawtohex(char1 CHARACTER VARYING(32767))      
+:  923 :             0.206 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_regexp_replace1(source_char CHARACTER VARYING(32767), pattern CHARACTER VARYING(32767))      
+:  924 :             0.205 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.p_to_char2(char1 TIMESTAMP WITHOUT TIME ZONE)      
+:  925 :             0.205 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_upper_ex(char1 CHARACTER VARYING(32767))      
+:  926 :             0.205 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_date_last_day()      
+:  927 :             0.205 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_create_4(var_01 TIMESTAMP WITHOUT TIME ZONE, var_03 CHARACTER VARYING(40), var_05 CHARACTER VARYING(40))      
+:  928 :             0.241 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.nls_charset_id_test(char1 CHARACTER VARYING(32767))      
+:  929 :             0.230 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_atan2(n1 NUMERIC(38,18), n2 NUMERIC(38,18))      
+:  930 :             0.231 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.p_to_char3(char1 TIMESTAMP WITHOUT TIME ZONE, format CHARACTER VARYING(32767))      
+:  931 :             0.227 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_nullif(arg1 CHARACTER VARYING(32767), arg2 CHARACTER VARYING(32767))      
+:  932 :             0.230 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_instr2(char1 CHARACTER VARYING(32767), substr CHARACTER VARYING(32767), pos NUMERIC(38,18))      
+:  933 :             0.269 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_regexp_count2(source_char CHARACTER VARYING(32767), pattern CHARACTER VARYING(32767), pos NUMERIC(38,18))      
+:  934 :             0.234 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_trim2(char1 CHARACTER VARYING(32767), exc CHARACTER VARYING(32767))      
+:  935 :             0.221 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_sign(n NUMERIC(38,18))      
+:  936 :             0.227 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_replace2(char1 CHARACTER VARYING(32767), search CHARACTER VARYING(32767), arg CHARACTER VARYING(32767))      
+:  937 :             0.243 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_conv_to_number2(char1 CHARACTER VARYING(32767), format CHARACTER VARYING(32767))      
+:  938 :             0.350 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_cosh(n NUMERIC(38,18))      
+:  939 :             0.395 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_regexp_substr1(source_char CHARACTER VARYING(32767), pattern CHARACTER VARYING(32767))      
+:  940 :             0.234 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_conv_rawtonhex(char1 CHARACTER VARYING(32767))      
+:  941 :             0.235 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_replace(char1 CHARACTER VARYING(32767), search CHARACTER VARYING(32767))      
+:  942 :             0.216 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_conv_to_char1(char1 CHARACTER VARYING(32767))      
+:  943 :             0.345 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_ltrim2(char1 CHARACTER VARYING(32767), set CHARACTER VARYING(32767))      
+:  944 :             0.445 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_date_trunc1()      
+:  945 :             0.227 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_date_sysdate()      
+:  946 :             0.233 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_round(n NUMERIC(38,18), ex NUMERIC(38,18))      
+:  947 :             0.281 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_sin(n NUMERIC(38,18))      
+:  948 :             0.252 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_trunc(n NUMERIC(38,18))      
+:  949 :             0.375 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_regexp_substr4(source_char CHARACTER VARYING(32767), pattern CHARACTER VARYING(32767), pos NUMERIC(38,18), occurrence NUMERIC(38,18), match_parameter CHARACTER VARYING(32767))      
+:  950 :             0.230 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_regexp_substr2(source_char CHARACTER VARYING(32767), pattern CHARACTER VARYING(32767), pos NUMERIC(38,18))      
+:  951 :             0.227 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_ln(n NUMERIC(38,18))      
+:  952 :             0.225 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.p_to_char1(char1 CHARACTER VARYING(32767))      
+:  953 :             0.218 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.trunc_test(val NUMERIC(38,18), decimal_places NUMERIC(38,18))      
+:  954 :             0.325 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_log(n1 NUMERIC(38,18), n2 NUMERIC(38,18))      
+:  955 :             0.223 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_trim_trailing(char1 CHARACTER VARYING(32767), exc CHARACTER VARYING(32767))      
+:  956 :             0.225 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_date_extract_year()      
+:  957 :             0.230 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_regexp_replace5(source_char CHARACTER VARYING(32767), pattern CHARACTER VARYING(32767), replace_string CHARACTER VARYING(32767), pos NUMERIC(38,18), occurrence NUMERIC(38,18), match_parameter CHARACTER VARYING(32767))      
+:  958 :             0.494 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_date_round2()      
+:  959 :             0.261 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_acos(n NUMERIC(38,18))      
+:  960 :             0.228 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_asin(n NUMERIC(38,18))      
+:  961 :             0.232 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_create_3(var_09 CHARACTER VARYING(32767))      
+:  962 :             0.226 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.p_rawtonhex(char1 CHARACTER VARYING(32767))      
+:  963 :             0.225 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_replace_ex(char1 CHARACTER VARYING(32767), search CHARACTER VARYING(32767), arg CHARACTER VARYING(32767))      
+:  964 :             0.249 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_hextoraw(char1 CHARACTER VARYING(32767))      
+:  965 :             0.297 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_bitand(n1 NUMERIC(38,18), n2 NUMERIC(38,18))      
+:  966 :             0.206 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_length(char1 CHARACTER VARYING(32767))      
+:  967 :             0.204 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_instr3(char1 CHARACTER VARYING(32767), substr CHARACTER VARYING(32767), pos NUMERIC(38,18), num NUMERIC(38,18))      
+:  968 :             0.213 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_rtrim2(char1 CHARACTER VARYING(32767), set CHARACTER VARYING(32767))      
+:  969 :             0.206 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_in_datatype5(var6 CHARACTER VARYING(32767), var7 CHARACTER VARYING(32767), var8 CHARACTER VARYING(32767), var9 CHARACTER VARYING(max), var10 CHARACTER VARYING(32767), var11 CHAR(255), var12 CHARACTER VARYING(max), var13 CHARACTER VARYING(max))      
+:  970 :             0.347 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.get_respmanagerid(rec_acc CHARACTER VARYING(max))      
+:  971 :             0.233 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_smpl_sql(i_acc_id NUMERIC(38,18))      
+:  972 :             0.233 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_cos(n NUMERIC(38,18))      
+:  973 :             0.225 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_in_datatype2(var1 DOUBLE PRECISION, var2 DOUBLE PRECISION, var3 CHARACTER VARYING(max), var4 CHARACTER VARYING(max), var5 TIMESTAMP WITHOUT TIME ZONE, var6 NUMERIC(38,18), var7 NUMERIC(38,18))      
+:  974 :             0.233 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_regexp_count1(source_char CHARACTER VARYING(32767), pattern CHARACTER VARYING(32767))      
+:  975 :             0.324 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_power(n1 NUMERIC(38,18), n2 NUMERIC(38,18))      
+:  976 :             0.233 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_trim_leading(char1 CHARACTER VARYING(32767), exc CHARACTER VARYING(32767))      
+:  977 :             0.226 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_rpad2(char1 CHARACTER VARYING(32767), len NUMERIC(38,18), pad CHARACTER VARYING(32767))      
+:  978 :             0.224 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_date_add_months(d TIMESTAMP WITHOUT TIME ZONE, n NUMERIC(38,18))      
+:  979 :             0.243 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_in_out(acc_no CHARACTER VARYING(32767), acc_bal NUMERIC(38,18), nvar NUMERIC(38,18))      
+:  980 :             0.288 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.deductions(emp_id NUMERIC(38,18))      
+:  981 :             0.225 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.assosiate_st(population_in CHARACTER VARYING(32767))      
+:  982 :             0.242 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_atan(n NUMERIC(38,18))      
+:  983 :             0.257 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_sinh(n NUMERIC(38,18))      
+:  984 :             0.225 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_regexp_replace4(source_char CHARACTER VARYING(32767), pattern CHARACTER VARYING(32767), replace_string CHARACTER VARYING(32767), pos NUMERIC(38,18), occurrence NUMERIC(38,18))      
+:  985 :             0.230 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_conv_to_date2(char1 CHARACTER VARYING(32767), format CHARACTER VARYING(32767))      
+:  986 :             0.274 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_date_extract_minute()      
+:  987 :             0.311 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_regexp_replace3(source_char CHARACTER VARYING(32767), pattern CHARACTER VARYING(32767), replace_string CHARACTER VARYING(32767), pos NUMERIC(38,18))      
+:  988 :             0.233 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_instr_ex(char1 CHARACTER VARYING(32767), substr CHARACTER VARYING(32767), pos NUMERIC(38,18))      
+:  989 :             0.232 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_date_extract_day()      
+:  990 :             0.241 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_conv_to_nchar5(char1 NUMERIC(38,18))      
+:  991 :             0.235 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_date_extract_second()      
+:  992 :             0.265 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_regexp_count3(source_char CHARACTER VARYING(32767), pattern CHARACTER VARYING(32767), pos NUMERIC(38,18), match_param CHARACTER VARYING(32767))      
+:  993 :             0.265 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_date_months_between()      
+:  994 :             0.235 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_ltrim_ex(char1 CHARACTER VARYING(32767), set CHARACTER VARYING(32767))      
+:  995 :             0.224 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_conv_hextoraw(char1 CHARACTER VARYING(32767))      
+:  996 :             0.225 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_tanh(n NUMERIC(38,18))      
+:  997 :             0.228 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_ascii_ex(char1 CHARACTER VARYING(32767))      
+:  998 :             0.271 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_date_current_timestamp()      
+:  999 :             0.302 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_concat(char1 CHARACTER VARYING(32767), char2 CHARACTER VARYING(32767))      
+: 1000 :             0.245 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_num_floor(n NUMERIC(38,18))      
+: 1001 :             0.237 :         SUCCESS : CREATE OR REPLACE FUNCTION test_batch.f_char_regexp_instr3(source_char CHARACTER VARYING(32767), pattern CHARACTER VARYING(32767), pos NUMERIC(38,18), occurrence NUMERIC(38,18))      
+-------------------------------------------------------------------------------------------------------------------------------------------------
+ average  value:     0.235 : FAIL=0      
+ Sum      value:   234.747                  Min:      3.912    
+ Amount   value:      1001 

@@ -7,6 +7,8 @@ import java.io.*;
 public class GZIPcompress {
     public static void main(String[] args)            throws IOException {
         System.out.println(args[0]);
+        //args[0] = "AWS Schema Conversion Tool Project99.sct";
+        args[0] = "target.xml";
         if(args.length == 0) {
             System.out.println(
                     "Usage: \nGZIPcompress file\n" +
@@ -18,7 +20,10 @@ public class GZIPcompress {
         String path = "src\\main\\java\\brus\\brus_723_System_InputOutput\\b781_GZIPcompress\\";
 
         BufferedReader in = new BufferedReader( new FileReader(path+args[0]));    // args[0])
-        BufferedOutputStream out = new BufferedOutputStream( new GZIPOutputStream(new FileOutputStream(path+"test.gz")));
+     //   BufferedOutputStream out = new BufferedOutputStream( new GZIPOutputStream(new FileOutputStream("\\\\WS-Krivobok\\tmp\\test.gz")));
+
+
+        BufferedOutputStream out = new BufferedOutputStream( new FileOutputStream("\\\\WS-Krivobok\\tmp\\test.xml"));
         System.out.println("Writing file");
         int c;
         while((c = in.read()) != -1)

@@ -1,0 +1,12 @@
+Sep 19, 2016 3:40:09 PM testrecorddl.T9405 main
+INFO: Assessment of the duration of the recording DDL expressions Redshift
+Sep 19, 2016 3:40:10 PM testrecorddl.T9405 recordDDL
+INFO: jdbc:redshift://rsdbb01.cqcwekr1qlta.us-west-2.redshift.amazonaws.com:5439/dev
+Sep 19, 2016 3:40:10 PM testrecorddl.T9405 recordDDL
+INFO:                                                  The number of commands: 10
+Sep 19, 2016 3:40:10 PM testrecorddl.T9405 recordDDL
+INFO:                                                  totalConnectionClosingTime : connectionClosingTime : statementClosingTime : executeTime
+Sep 19, 2016 3:40:25 PM testrecorddl.T9405 recordDDL
+INFO:                                              1 :             0.745 :            0.005 :         0.970 :               13.603 :                13.616 :         SUCCESS : DROP SCHEMA IF EXISTS test_batch CASCADE      
+Sep 19, 2016 3:40:41 PM testrecorddl.T9405 recordDDL
+INFO:                                              2 :             0.613 :            0.001 :         0.654 :               14.656 :                14.659 :         SUCCESS : CREATE SCHEMA IF NOT EXISTS test_batch      

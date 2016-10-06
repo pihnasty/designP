@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree>
+  <complex-attributes>
+    <type name="materialized-view">
+      <attr name="sql"></attr>
+    </type>
+    <type name="view">
+      <attr name="sql"></attr>
+    </type>
+    <type name="metadata">
+      <attr name="vendor-engine"></attr>
+    </type>
+    <type name="function">
+      <attr name="sql"></attr>
+    </type>
+    <type name="constraint">
+      <attr name="check-clause"></attr>
+    </type>
+    <type name="trigger">
+      <attr name="trigger-definition"></attr>
+      <attr name="comment"></attr>
+      <attr name="sql"></attr>
+    </type>
+  </complex-attributes>
+  <metadata _I_D="fc23bb10-0c14-41ae-ba95-7cd713b4feee" vendor="POSTGRESQL" name="min_privs@ec2-52-33-224-137.us-west-2.compute.amazonaws.com:5432/test_2" product-version="9.4.6.0" nonquoted-case="lower" allow-similarly-named-objects="y" quoted-case="specified" vendor-engine-version="9.4.6" last-update-tree="2016-08-25 16:46:05">
+    <complex-attribute name="vendor-engine"><![CDATA[PostgreSQL 9.4.6 on x86_64-unknown-linux-gnu, compiled by gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-4), 64-bit]]></complex-attribute>
+    <category _I_D="b877156c-8aba-41cf-b6f8-baa1c6276563" name="Schemas" order-num="0" child-type="schema" objects-loading="extended" subcategories-loading="part">
+      <schema _I_D="18231b70-1a50-414b-bc1e-549c7b51880d" name="public" schema-owner="postgres" context="public" subcategories-loading="none" object-loading="extended">
+        <category _I_D="0b2fb455-e51b-485e-a11f-bb9c89ebabfb" name="Tables" order-num="0" child-type="table" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="8ebfd1aa-1cd7-4081-bb59-5307c34ed3a3" name="Views" order-num="1" child-type="view" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="71ea4332-a2cd-479c-9a9c-8d1e56d64068" name="Collations" order-num="2" child-type="collation" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="ffbb97ad-19cb-4ed2-8a38-a83998a8fd32" name="Operators" order-num="3" child-type="operator" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="a89cf4b7-d123-42f1-bfeb-ffba1aa0176e" name="Rules" order-num="4" child-type="rule" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="f2382cc6-0c3b-48f5-b1ce-891b43e5c4b3" name="TFS Configurations" order-num="5" child-type="tfsconfiguration" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="d06a4ff1-65fa-4c56-ab4f-9ea84c5c0bb9" name="TFS Dictionaries" order-num="6" child-type="tfsdictionary" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="c042b2e1-85bc-4c81-a9c9-2930fa9105cb" name="Functions" order-num="7" child-type="function" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="95df9900-76fd-4f8b-b2a4-e469ec69b26d" name="Trigger functions" order-num="8" child-type="function" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="7475c2ec-13fb-4d76-8da2-2e7ad6501d84" name="Sequences" order-num="9" child-type="sequence" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="ae4bcc80-76f1-4b48-91b9-804ecf8c869b" name="User defined types" order-num="10" child-type="type" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="3242311c-9523-45ed-82af-269ffaf52e09" name="Domains" order-num="11" child-type="domain" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="bd5d3084-ccac-4d9f-914c-494c1ca97cf2" name="Materialized Views" order-num="12" child-type="materialized-view" objects-loading="empty" subcategories-loading="full"></category>
+      </schema>
+      <schema _I_D="08b83c2e-e86b-48de-a7cc-2ef46707a4da" name="test" schema-owner="dba_gbuser" context="test" subcategories-loading="none" object-loading="extended">
+        <category _I_D="370c9379-a00f-4d3d-857a-92b7718ac281" name="Tables" order-num="0" child-type="table" objects-loading="main" subcategories-loading="part">
+          <table _I_D="2625550c-3c72-4fbb-aa22-39a0c809f733" name="constraint_auto_inc" context="constraint_auto_inc" subcategories-loading="none" object-loading="main">
+            <category _I_D="bfac5d5d-77c9-4fe9-9929-08c5c8c062a5" name="Columns" order-num="0" child-type="column" objects-loading="none" subcategories-loading="none"></category>
+            <category _I_D="99a0715b-d453-40f2-a6e0-46187b61d1a8" name="Constraints" order-num="1" child-type="constraint" objects-loading="none" subcategories-loading="none"></category>
+            <category _I_D="46c2b56e-c2d2-49b4-b30d-b2ac1171cdba" name="Indexes" order-num="2" child-type="index" objects-loading="none" subcategories-loading="none"></category>
+            <category _I_D="899bbd23-3a9d-4f3d-8825-8713e9aceb36" name="Triggers" order-num="3" child-type="trigger" objects-loading="none" subcategories-loading="none"></category>
+          </table>
+          <table _I_D="12fdf52b-a418-4486-ab6b-51dcc2629b4c" name="datatype_appl" context="datatype_appl" subcategories-loading="none" object-loading="main">
+            <category _I_D="99b1b117-305d-4cc6-81ac-52ee4c135ccb" name="Columns" order-num="0" child-type="column" objects-loading="none" subcategories-loading="none"></category>
+            <category _I_D="b8f0d348-68cc-42b4-a507-d332d9975543" name="Constraints" order-num="1" child-type="constraint" objects-loading="none" subcategories-loading="none"></category>
+            <category _I_D="57dfc475-6385-4053-b1d8-bcd73a7fbba7" name="Indexes" order-num="2" child-type="index" objects-loading="none" subcategories-loading="none"></category>
+            <category _I_D="d9ff6727-db5c-462f-ad2f-d9ab71d652a7" name="Triggers" order-num="3" child-type="trigger" objects-loading="none" subcategories-loading="none"></category>
+          </table>
+          <table _I_D="17ec011e-0cb2-41df-ae98-b167fbe2cedd" name="simple_table" context="simple_table" subcategories-loading="none" object-loading="main">
+            <category _I_D="ae54dbde-61ab-446a-9e65-eb16e1b71b30" name="Columns" order-num="0" child-type="column" objects-loading="none" subcategories-loading="none"></category>
+            <category _I_D="2d39ddc2-5a0d-44ec-9777-31ed4fc25526" name="Constraints" order-num="1" child-type="constraint" objects-loading="none" subcategories-loading="none"></category>
+            <category _I_D="5d3757af-d745-485e-a9ea-e7544c0dd483" name="Indexes" order-num="2" child-type="index" objects-loading="none" subcategories-loading="none"></category>
+            <category _I_D="215921af-0bb7-4d7b-b078-48dc9e205ce4" name="Triggers" order-num="3" child-type="trigger" objects-loading="none" subcategories-loading="none"></category>
+          </table>
+        </category>
+        <category _I_D="61929d2b-845f-4487-93fa-67e2a4f2c4fa" name="Views" order-num="1" child-type="view" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="e6e7ea17-2fec-491a-885d-3216116f8190" name="Collations" order-num="2" child-type="collation" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="07cc1a37-b334-4d3f-b652-72aa592d4a1e" name="Operators" order-num="3" child-type="operator" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="4087ca80-f6e3-4f41-88ff-958736f8da21" name="Rules" order-num="4" child-type="rule" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="5944c5fd-5d7b-4e65-9670-31cb5a3fa4d2" name="TFS Configurations" order-num="5" child-type="tfsconfiguration" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="254303b1-6ed3-4f35-9366-2493715061a0" name="TFS Dictionaries" order-num="6" child-type="tfsdictionary" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="2d3c92c6-bc78-4037-b8bf-2914a2253422" name="Functions" order-num="7" child-type="function" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="cfb922c9-01ae-45f5-8487-0ca09b3a4fdb" name="Trigger functions" order-num="8" child-type="function" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="22077454-b110-4d79-8f7f-f4f464ab38c9" name="Sequences" order-num="9" child-type="sequence" objects-loading="main" subcategories-loading="part">
+          <sequence _I_D="b54a8908-1e01-4589-9840-2c78feec1bf7" name="constraint_auto_inc_ai_big_seq" data-type="bigint" start-value="1" minimum-value="1" maximum-value="9223372036854775807" increment="1" cycle-option="NO" context="constraint_auto_inc_ai_big_seq" subcategories-loading="full" object-loading="main"></sequence>
+          <sequence _I_D="198a8ee3-cd45-4711-8f31-8d7ef64bd961" name="constraint_auto_inc_ai_int_seq" data-type="bigint" start-value="1" minimum-value="1" maximum-value="9223372036854775807" increment="1" cycle-option="NO" context="constraint_auto_inc_ai_int_seq" subcategories-loading="full" object-loading="main"></sequence>
+          <sequence _I_D="0c6d422a-efe9-4990-8d94-8aa6745a08a1" name="constraint_auto_inc_ai_small_seq" data-type="bigint" start-value="1" minimum-value="1" maximum-value="9223372036854775807" increment="1" cycle-option="NO" context="constraint_auto_inc_ai_small_seq" subcategories-loading="full" object-loading="main"></sequence>
+        </category>
+        <category _I_D="7e1bf00e-0533-4f43-9645-cf3dcb6d357e" name="User defined types" order-num="10" child-type="type" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="9f7fd55c-102e-4fd9-aa20-c436c1ad3768" name="Domains" order-num="11" child-type="domain" objects-loading="empty" subcategories-loading="full"></category>
+        <category _I_D="0374d4d9-6d3a-42ad-9099-b9d5bee6db85" name="Materialized Views" order-num="12" child-type="materialized-view" objects-loading="empty" subcategories-loading="full"></category>
+      </schema>
+    </category>
+  </metadata>
+</tree>
