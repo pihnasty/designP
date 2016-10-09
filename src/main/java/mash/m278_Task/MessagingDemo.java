@@ -44,6 +44,10 @@ public class MessagingDemo extends Application {
             }
         };
 
+
+
+
+
         label.textProperty().bind(task.messageProperty());
 
         // java 8 construct, replace with java 7 code if using java 7.
