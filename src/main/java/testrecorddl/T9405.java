@@ -50,7 +50,7 @@ public class T9405 {
         int count = 1;
         int countFAIL = 0;
 
-        int size = 10; // commands.size();
+        int size = 10; //commands.size();
         Log.logger.info("                                                 The number of commands: " + size);
         Log.logger.info("                                                 totalConnectionClosingTime : connectionClosingTime : statementClosingTime : executeTime");
 

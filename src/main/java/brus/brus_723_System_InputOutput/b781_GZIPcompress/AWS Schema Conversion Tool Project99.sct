@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree>
+  <instances _I_D="e02d6a4e-1399-45db-9291-69878cb264be">
+    <ProjectModel _I_D="4e30d027-ebde-4e6f-a8cf-ef7135da5030" application_version="1.0.1404" dialectPair="POSTGRESQL_TO_POSTGRESQL" directory="\\WS-Krivobok\tmp" projectName="AWS Schema Conversion Tool Project99" sourceVendor="POSTGRESQL" targetVendor="POSTGRESQL" dbEngineType="OLTP">
+      <ConnectionModel _I_D="5e958d04-d0de-4046-8a8a-c1e58226cd3f" vendor="POSTGRESQL" origin="SOURCE" serverName="ec2-52-33-224-137.us-west-2.compute.amazonaws.com" serverPort="5432" userName="min_privs" sid="test_2" serviceName="" tnsAlias="" tnsFilePath="" tnsConnectIdentifier="" useSsl="false" sslAuthentication="false" encryptConnection="false" trustServerCertificate="false" keyStore="" requireSsl="false" verifyServerCertificate="false" trustStore="" encryptData="false" name="connectionSourceModel"></ConnectionModel>
+      <ConnectionModel _I_D="033cefc5-8424-4972-abd0-9d58a8ad0f7e" vendor="POSTGRESQL" origin="TARGET" serverName="ec2-52-33-224-137.us-west-2.compute.amazonaws.com" serverPort="5432" userName="min_privs" sid="test_2" serviceName="" tnsAlias="" tnsFilePath="" tnsConnectIdentifier="" useSsl="false" sslAuthentication="false" encryptConnection="false" trustServerCertificate="false" keyStore="" requireSsl="false" verifyServerCertificate="false" trustStore="" encryptData="false" name="connectionTargetModel"></ConnectionModel>
+      <projectManagers _I_D="601ecca8-293d-489c-bfc2-4470b9f8817b">
+        <dialectPair _I_D="201f2328-1b95-45ac-9443-47ff071eed84" dp_name="POSTGRESQL_TO_MYSQL">
+          <ProjectManager _I_D="509d05f8-0435-4924-987a-e320da057bdb" idOperation="0" dialectPair="POSTGRESQL_TO_MYSQL" isDwh="false">
+            <schemaLevelSuggestionManager _I_D="5902ca0a-75b4-4d8d-9db7-28d9300833cc">
+              <DefaultSuggestionManager _I_D="5ec9a6fc-840c-4fa8-bccd-70a077df9804" className="com.amazon.sct.defaultimplementation.optimizer.DefaultSuggestionManager">
+                <suggestionFirstLevelMap _I_D="b26de440-463b-4136-97dd-1353eda6229d"></suggestionFirstLevelMap>
+                <suggestionSecondLevelMap _I_D="2fea58b2-08f2-4571-b5dc-ca5d34c15e29"></suggestionSecondLevelMap>
+                <tableRelationsMap _I_D="b148c1ae-7172-4343-ad70-3b6e7b4ad5c4"></tableRelationsMap>
+              </DefaultSuggestionManager>
+            </schemaLevelSuggestionManager>
+          </ProjectManager>
+        </dialectPair>
+        <dialectPair _I_D="171fe881-6174-4900-9002-b6e752ccd815" dp_name="ORACLE_TO_MYSQL">
+          <ProjectManager _I_D="3f95e3dc-1270-4588-8357-0774bd1787bf" idOperation="0" dialectPair="ORACLE_TO_MYSQL" isDwh="false">
+            <schemaLevelSuggestionManager _I_D="3a97655b-fbf9-4b6a-8c09-6b50ab1d0cc4">
+              <DefaultSuggestionManager _I_D="24395224-202a-4cd2-8e0f-87b0d46a3d21" className="com.amazon.sct.defaultimplementation.optimizer.DefaultSuggestionManager">
+                <suggestionFirstLevelMap _I_D="a1999369-7d5d-4177-8067-c58fdb102b1d"></suggestionFirstLevelMap>
+                <suggestionSecondLevelMap _I_D="7c2c9629-cfbd-48cb-9c9f-d835b49922f8"></suggestionSecondLevelMap>
+                <tableRelationsMap _I_D="338d8b5f-2fce-4f00-be3a-2e073638c76a"></tableRelationsMap>
+              </DefaultSuggestionManager>
+            </schemaLevelSuggestionManager>
+          </ProjectManager>
+        </dialectPair>
+        <dialectPair _I_D="54f230e4-1179-4bec-8b90-15164d1f5a36" dp_name="POSTGRESQL_TO_POSTGRESQL">
+          <ProjectManager _I_D="7d03a1fa-d8d0-4628-b083-9d13952d3498" idOperation="0" dialectPair="POSTGRESQL_TO_POSTGRESQL" isDwh="false">
+            <schemaLevelSuggestionManager _I_D="1be0173e-1da8-43c5-bfa6-45688be9a546">
+              <DefaultSuggestionManager _I_D="12085b3b-c377-4994-8e51-d9b5c300ad2a" className="com.amazon.sct.defaultimplementation.optimizer.DefaultSuggestionManager">
+                <suggestionFirstLevelMap _I_D="888e607a-3efc-4e29-8a3f-35494aed1103"></suggestionFirstLevelMap>
+                <suggestionSecondLevelMap _I_D="91f9a193-6ecb-4e63-a6ac-8857c6b9b43d"></suggestionSecondLevelMap>
+                <tableRelationsMap _I_D="9eb29729-dc7c-48ad-bb39-7f10d55865bf"></tableRelationsMap>
+              </DefaultSuggestionManager>
+            </schemaLevelSuggestionManager>
+          </ProjectManager>
+        </dialectPair>
+      </projectManagers>
+    </ProjectModel>
+    <AppCheckBoxState _I_D="4affa09a-38de-4d97-9355-d32856f5c90b">
+      <SourceCheckboxStates _I_D="942e094d-ef2f-4a5d-ad89-4bf30cbb2c9f">
+        <TreeItemState _I_D="6826cc1b-0628-4942-86fc-3a1bd16e6d15">
+          <key _I_D="93f38bec-c37b-4ef8-b228-c791c0e09143" key=""></key>
+          <value _I_D="ee35d3c8-e1c4-4bf9-abf4-6030554126ca" value="check"></value>
+        </TreeItemState>
+        <TreeItemState _I_D="5efea8e8-5ca2-46db-ab16-29cf75729cff">
+          <key _I_D="71069eab-0a0c-4180-a5cb-9d67a034cbe4" key="Applications"></key>
+          <value _I_D="c1a60ff9-bb1b-4bf9-98b7-b14264bcb82d" value="check"></value>
+        </TreeItemState>
+        <TreeItemState _I_D="bdd7f790-c6fb-4a3d-bdb0-354657f7fc13">
+          <key _I_D="1d312acf-bb9a-48a6-925d-8c668189a149" key="Schemas.public"></key>
+          <value _I_D="f9999020-5a43-4532-abe3-6ecfe503ba61" value="check"></value>
+        </TreeItemState>
+        <TreeItemState _I_D="e55c21b9-4aeb-46c5-b36c-db8e759bf2eb">
+          <key _I_D="541e1ea2-c8e2-4c8c-9cd0-2a1bc027875d" key="Schemas.test"></key>
+          <value _I_D="631c34ff-42ef-46fa-aaeb-e504290429cf" value="check"></value>
+        </TreeItemState>
+        <TreeItemState _I_D="16122073-85e2-4815-b5a7-caa04d9cd592">
+          <key _I_D="042a95fc-da32-4b86-aafe-f042dd3797b4" key="Schemas"></key>
+          <value _I_D="9cd50121-1201-4b5a-b40c-e30bf7e445cf" value="check"></value>
+        </TreeItemState>
+      </SourceCheckboxStates>
+      <TargetCheckboxStates _I_D="6de15b62-db60-4dc3-82fb-b9399b518993">
+        <TreeItemState _I_D="fceab905-6f41-4337-8fe2-47e45699e2e0">
+          <key _I_D="5cd991ca-9890-4bab-ada3-142f731ca6d2" key=""></key>
+          <value _I_D="7f55b066-ef8c-4e36-a171-b615e58ab810" value="check"></value>
+        </TreeItemState>
+        <TreeItemState _I_D="f7cabb0d-75d1-4c54-ac58-b42258e22431">
+          <key _I_D="e0ff77eb-a300-4977-9b99-e120b6d698c5" key="Schemas.public"></key>
+          <value _I_D="a7c14a59-f89a-4299-a10e-b32d3489826d" value="check"></value>
+        </TreeItemState>
+        <TreeItemState _I_D="5864ceb6-a930-4b2e-9115-8bb7b2ee035d">
+          <key _I_D="18e6cb4a-9796-4819-b729-fd0aa08e2740" key="Schemas.test"></key>
+          <value _I_D="18f87a71-e3a7-4342-b7da-96ee09bf0541" value="check"></value>
+        </TreeItemState>
+        <TreeItemState _I_D="eb77dc87-937d-4747-86ce-9c470237c2d5">
+          <key _I_D="f11f371c-2d85-47cb-8a39-9d3345e438d7" key="Schemas"></key>
+          <value _I_D="3489babf-35b7-4f4b-a6ae-1e9379483f08" value="check"></value>
+        </TreeItemState>
+      </TargetCheckboxStates>
+    </AppCheckBoxState>
+    <AppExpandTreeState _I_D="c54ece2c-ec74-492d-892d-61abf41c6122">
+      <sourceExpandModel _I_D="29caa8b8-37a0-4708-8267-f6935140b989">
+        <expandItem _I_D="4080d5a2-8883-404c-a72d-77ee73cea63a">
+          <key _I_D="bdb7f54b-48c3-4a10-b8ed-b2fe54fa8d63" key=""></key>
+          <value _I_D="ab4a34fe-7960-4c24-bee4-10ae8728caac" value="EXPANDED"></value>
+        </expandItem>
+        <expandItem _I_D="7feca896-d6ee-4368-9689-d0d8b8ec7042">
+          <key _I_D="8d8f1f70-9964-4b32-8019-131541e5850f" key="Applications"></key>
+          <value _I_D="fe3840a3-6fc7-4516-a160-5459a81b1dce" value="EXPANDED"></value>
+        </expandItem>
+        <expandItem _I_D="6dfcca6a-f52c-4e79-b792-8d6b45b582e0">
+          <key _I_D="8e889317-907b-4a4f-83ca-6afccc18a3ec" key="Schemas"></key>
+          <value _I_D="66289f76-1305-4914-814b-0be0c2a119ca" value="EXPANDED"></value>
+        </expandItem>
+      </sourceExpandModel>
+      <targetExpandModel _I_D="a0d32569-9a06-4097-aec9-15465f4a1987">
+        <expandItem _I_D="a6466e97-d954-42fc-b10a-18330d09b80a">
+          <key _I_D="7d86076d-48dd-453f-81dc-4458aa00815f" key=""></key>
+          <value _I_D="dc92dad7-6827-4a4a-a71f-2ef63594ed5d" value="EXPANDED"></value>
+        </expandItem>
+        <expandItem _I_D="09de764a-6fb3-4aa5-8fa0-3f22e84b05ac">
+          <key _I_D="53dcb0e6-4190-47a3-86cf-1755c810a8cc" key="Schemas"></key>
+          <value _I_D="c8e34469-ea46-4150-9e1e-40f99e4d4d13" value="EXPANDED"></value>
+        </expandItem>
+      </targetExpandModel>
+    </AppExpandTreeState>
+    <AppSelectState _I_D="803d45ed-0a58-4092-a9e7-7759903b5a46">
+      <sourceSelectedState _I_D="6407915e-6d95-4927-80a1-269c33ace762"></sourceSelectedState>
+      <targetSelectedState _I_D="c36fda18-7f3e-49bc-8273-85cb333fe51b"></targetSelectedState>
+    </AppSelectState>
+  </instances>
+</tree>

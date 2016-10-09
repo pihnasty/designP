@@ -1,0 +1,13 @@
+:   ID : getConnectionTime : getStatementTime : executionTime : closingStatementTime : closingConnectionTime : executionResult : description  
+:    1 :             0.910 :            0.004 :         2.756 :                1.378 :                 1.387 :         SUCCESS : DROP SCHEMA IF EXISTS test_batch CASCADE      
+:    2 :             0.610 :            0.000 :         0.205 :                0.945 :                 0.946 :         SUCCESS : CREATE SCHEMA IF NOT EXISTS test_batch      
+:    3 :             0.604 :            0.000 :         0.210 :                1.227 :                 1.229 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.d_cur(      
+:    4 :             0.630 :            0.000 :         0.407 :                1.203 :                 1.205 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_intval_num(      
+:    5 :             0.618 :            0.000 :         0.489 :                1.025 :                 1.028 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_range_intval_date(      
+:    6 :             0.601 :            0.000 :         0.207 :                0.937 :                 0.939 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_datatype3(      
+:    7 :             0.604 :            0.000 :         0.209 :                1.304 :                 1.305 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_ref_parent(      
+:    8 :             0.610 :            0.000 :         0.767 :                0.684 :                 0.687 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.dr$idx_tbl_ind_dmn$i(      
+:    9 :             0.610 :            0.000 :         0.357 :                0.984 :                 0.986 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_acc_cust_cls(      
+:   10 :             1.131 :            0.000 :         0.284 :                1.038 :                 1.039 :         SUCCESS : CREATE TABLE IF NOT EXISTS test_batch.tbl_part_list(      
+-------------------------------------------------------------------------------------------------------------------------------------------------
+ average  value:     0.693 :            0.000 :         0.589 :                1.073 :                 1.075 :          FAIL=0 :      

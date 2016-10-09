@@ -1,0 +1,14 @@
+Sep 21, 2016 11:12:45 AM testrecordddl_OneConnectBatch.T9405 main
+INFO: Assessment of the duration of the recording DDL expressions Redshift
+Sep 21, 2016 11:12:45 AM testrecordddl_OneConnectBatch.T9405 recordDDL
+INFO: jdbc:redshift://rsdbb01.cqcwekr1qlta.us-west-2.redshift.amazonaws.com:5439/dev
+Sep 21, 2016 11:12:45 AM testrecordddl_OneConnectBatch.T9405 recordDDL
+INFO:                                                  The number of commands: 1002
+Sep 21, 2016 11:12:45 AM testrecordddl_OneConnectBatch.T9405 recordDDL
+INFO:                                              executionTime : executionResult : description  
+Sep 21, 2016 11:36:50 AM testrecordddl_OneConnectBatch.T9405 recordDDL
+INFO:                                                 1443.714 :                      
+Sep 21, 2016 11:40:30 AM testrecordddl_OneConnectBatch.T9405 recordDDL
+INFO: ----------------------------------------------------------------------------------------------------------------------------------------
+Sep 21, 2016 11:40:30 AM testrecordddl_OneConnectBatch.T9405 recordDDL
+INFO:                          average  value:             0.000 : FAIL=0      
