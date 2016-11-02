@@ -1,5 +1,7 @@
 package pattern;
 
+import java.util.ArrayList;
+
 /**
  * Created by Max on 31.10.2016.
  */
@@ -7,7 +9,7 @@ public class ObjectPoolExampleGRAND_169_SoftReference {
 
 }
 
-
+//
 //class SoftObjectPool {
 //    private ArrayList pool; // коллекция содержит управляемые объекты
 //    private CreationIF creator;  // управляет количеством существующих и управляющих объектов. Ответственный за создание объектов
