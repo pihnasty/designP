@@ -31,7 +31,7 @@ public class testStringEkran {
         String doubleQuotes = new String(new char[]{(char) 0x22});
         String pipe = new String(new char[]{(char) 0x7C});
 
-        System.out.println("----------------------->"+pipe);
+        System.out.println("----------------------->"+pipe);   // =============================
 
         System.out.println(start);
 
