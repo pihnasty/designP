@@ -1,4 +1,15 @@
 package pattern;
+/*Desctription
+1.Есть Клиент [ClientFilter]. Клиент выбирает себе Управляющего [FilterManager] и задает Запрос [sendRequest("HOME");]
+Запрос [sendRequest("HOME");] - Это данные, которые должны пройти через фильтры и попасть к Цели [Target].
+2.Управляющий через композицию (хотя это не обязательно, можно использовать агрегирование) выбирает Рабочего [FilterChain],
+которому передает  Фильтры [Filter], которые он считает надо использовать для решения задачи и Цель [Target], к которой
+должен прийти прошедший через фильтры и обработанный фильтрами Запрос [sendRequest("HOME");]
+3.Рабочий [FilterChain], получив Фильтры [Filter] и Цель [Target], пропускает через Фильтры [Filter]
+Ему всеровно, какие Фильтры [Filter] и какая Цель [Target] и какие данные Запрос [sendRequest("HOME");].
+Он пропускает данные  Запрос [sendRequest("HOME");] через Фильтры [Filter] и передает Цель [Target].
+
+ */
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +30,7 @@ interface Filter {  void execute(String request);    }
 
 //  Create concrete filters. ----------------------------------------------------------------------
 class AuthenticationFilter implements Filter {
-    public void execute(String request){ System.out.println("Authenticating request: " + request); }
+    public void execute(String request){ System.out.println("Authenticating request: " + request);  request.replace("H","A H"); }
 }
 
 class DebugFilter implements Filter {
