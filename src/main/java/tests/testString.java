@@ -44,6 +44,9 @@ public class testString {
         }
 
 
+        String sIsEmpty ="";
+
+        if (sIsEmpty.isEmpty()) System.out.println("isEmpty()=true2");
 
     }
 }

@@ -1,0 +1,44 @@
+
+    private void processQueryRelatedStatistics(TreeNode node, List<StatsQueryProperty> statsQueries) throws DbLoaderException {
+
+        //   if (false)
+        if ("schema".equals(node.getType()))
+            if (node.getRoot().getAttribute("vendor") == DatabaseVendor.GREENPLUM.name()) {
+                StatsQueryProperty statsQueryHistory = null;
+                for (StatsQueryProperty statsQuery : statsQueries) {
+                    if (statsQuery.getQueryOptions().getKey().equals("load-query-history-stat-by-schema")) {
+                        String queryHistoryText = sqlStatementExecutor.getQueryCollection().get(statsQuery.getQueryOptions().getKey()).getText();
+                        statsQueryHistory = statsQuery;
+                        queryHistoryText = queryHistoryText.replace("{0}", "'" + ((GreenPlumConnectionProperties) getConnectionProperties()).getDatabaseName() + "'").replace("{1}", node.getAttribute("name"));
+                        Connection con = null;
+                        ResultSet rs;
+                        Map<String, Integer> queries = new HashMap<>();
+                        try {
+                            con = DriverManager.getConnection(((GreenPlumConnectionProperties) getConnectionProperties()).getUrlForStatistucs(),
+                                    getConnectionProperties().getProperties());
+                            rs = con.createStatement().executeQuery(queryHistoryText);
+                            while (rs.next()) queries.put(rs.getString(1), rs.getInt(2));
+                        } catch (SQLException e) {
+                            throw new DbLoaderHandledException(e.getMessage(), e, DatabaseVendor.GREENPLUM);
+                        } finally {
+                            if (con != null) try {
+                                con.close();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                        TreeAnalyzer treeAnalyzer = TreeAnalyzerFactory.getTreeAnalyzer(queries, node, DbLoader.getDbLoader(DatabaseVendor.GREENPLUM));
+                        AnalyzingResult analyzingResult = treeAnalyzer.collectStatistics();
+                        for (FullNameNodeInfoList key : analyzingResult.getStatistics().keySet()) {
+                            TreeNode treeNode = node.getRoot().getTree().searchNodeByFullName(key, true).getAssociateNode();
+                            OptimizationStatisticsManager optimizationStatisticsManager = analyzingResult.getStatistics().get(key);
+                            treeNode.setAttribute("InGroupByUsageCount", optimizationStatisticsManager.getInGroupByUsageCount().toString());
+                            treeNode.setAttribute("InJoinUsageCount", optimizationStatisticsManager.getInJoinUsageCount().toString());
+                            treeNode.setAttribute("InOrderByUsageCount", optimizationStatisticsManager.getInOrderByUsageCount().toString());
+                            treeNode.setAttribute("InWhereUsageCount", optimizationStatisticsManager.getInWhereUsageCount().toString());
+                        }
+                    }
+                }
+                if (statsQueryHistory != null) statsQueries.remove(statsQueryHistory);
+            }
+    }
