@@ -7,6 +7,12 @@ public class testStringEkran {
     static public void main (String [] arg){
 
 
+        //teat01();
+        teat02_quote();
+
+    }
+
+    private static void teat01() {
         int ch =   10;
 
         int chP = 92;
@@ -18,7 +24,6 @@ public class testStringEkran {
         System.out.println("ch ="+(int)ch);
 
         String start = "A \"double \\| quotes A  ---" + (char)ch+"--- ";
-
 
 
 //        char LF = (char) 0x0A;
@@ -47,6 +52,18 @@ public class testStringEkran {
         ).append(doubleQuotes);
 
         System.out.println(sb);
+    }
+
+    private static void teat02_quote() {
+
+        String s = "\"17\"";
+
+        String s2=s.substring(1,s.length()-1);
+
+
+        System.out.println(s);
+
+
 
     }
 }
