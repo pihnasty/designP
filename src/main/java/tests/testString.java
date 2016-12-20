@@ -5,6 +5,14 @@ package tests;
  */
 public class testString {
     public static void main(String [] agrs){
+
+     //   string01();
+
+        equalsIgnoreCaseTest();
+
+    }
+
+    private static void string01() {
         String s;
 
         s=null;
@@ -12,28 +20,24 @@ public class testString {
         if (  s == null  ||  s.isEmpty())  System.out.println("Yes");
 
 
-                String queryHistory =  " select query_text, query_count\n" +
-                        "                            from\n" +
-                        "                            (\n" +
-                        "                            select query_text, count(*) query_count\n" +
-                        "                            from public.queries_history\n" +
-                        "                            where db = {0}\n" +                          // {0}     'postgres'
-                        "                             and\n" +
-                        "                             query_text <>''\n" +
-                        "                             and lower(query_text) like '%{1}%'    " +                     // '%green_dwh%'      '%{1}%'
+        String queryHistory =  " select query_text, query_count\n" +
+                "                            from\n" +
+                "                            (\n" +
+                "                            select query_text, count(*) query_count\n" +
+                "                            from public.queries_history\n" +
+                "                            where db = {0}\n" +                          // {0}     'postgres'
+                "                             and\n" +
+                "                             query_text <>''\n" +
+                "                             and lower(query_text) like '%{1}%'    " +                     // '%green_dwh%'      '%{1}%'
 
-                        "                            group by query_text\n" +
-                        "                            ) q\n" +
-                        "                            order by query_count desc;";
-
-
-
-
+                "                            group by query_text\n" +
+                "                            ) q\n" +
+                "                            order by query_count desc;";
 
 
         System.out.println(queryHistory.replace("{0}", "'postgres'").replace("{1}", "green_dwh"));
 
-       String sLjader = "DbLoaderNоDataToProcessingException";
+        String sLjader = "DbLoaderNоDataToProcessingException";
 
 
         char[] chArray = sLjader.toCharArray();
@@ -47,6 +51,12 @@ public class testString {
         String sIsEmpty ="";
 
         if (sIsEmpty.isEmpty()) System.out.println("isEmpty()=true2");
+    }
+
+    private static void equalsIgnoreCaseTest() {
+        String s ="Hello";
+        System.out.println(s.equalsIgnoreCase(null));
 
     }
+
 }
