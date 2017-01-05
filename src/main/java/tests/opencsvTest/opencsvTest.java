@@ -12,7 +12,8 @@ public class opencsvTest {
     }
 
     private static void readOpencsv() throws IOException {
-        String fileName = "C:\\Users\\pihnastyi.o\\AWS Schema Conversion Tool\\Projects\\load-query-history-stat-by-schema\\teradata\\"+"query-stats-tera.csv";
+        String fileName ="C:\\Users\\pihnastyi.o\\AWS Schema Conversion Tool\\Projects\\load-query-history-stat-by-schema\\redshift\\query-stats-rs000_new1.txt";
+         //       "C:\\Users\\pihnastyi.o\\AWS Schema Conversion Tool\\Projects\\load-query-history-stat-by-schema\\redshift\\"+"test.txt"; //"query-stats-rs000_2";
 
         String structureLine = "";
         CSVReader reader = new CSVReader(new FileReader(fileName), ';');
