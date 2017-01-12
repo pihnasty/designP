@@ -1,4 +1,4 @@
-package tests;
+package tests.StringTest;
 
 /**
  * Created by Pihnastyi.O on 10/31/2016.

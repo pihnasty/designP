@@ -1,4 +1,4 @@
-package tests;
+package tests.StringTest;
 
 import java.util.WeakHashMap;
 
