@@ -1,38 +1,7 @@
 package pattern;
 
-class Switch {
-    private Command flipUpCommand;
-    private Command flipDownCommand;
-
-    public Switch(Command flipUpCommand,Command flipDownCommand){
-        this.flipUpCommand=flipUpCommand;
-        this.flipDownCommand=flipDownCommand;
-    }
-
-    public void flipUp(){
-        flipUpCommand.execute();
-    }
-
-    public void flipDown(){
-        flipDownCommand.execute();
-    }
-}
-
-/*Receiver class*/
-class Light{
-    public Light(){  }
-
-    public void turnOn(){
-        System.out.println("The light is on");
-    }
-
-    public void turnOff(){
-        System.out.println("The light is off");
-    }
-}
-
 /*the Command interface*/
- interface Command{
+interface Command{
     void execute();
 }
 
@@ -60,6 +29,38 @@ class TurnOffLightCommand implements Command{
         theLight.turnOff();
     }
 }
+
+/*Receiver class*/
+class Light{
+    public Light(){  }
+
+    public void turnOn(){
+        System.out.println("The light is on");
+    }
+
+    public void turnOff(){
+        System.out.println("The light is off");
+    }
+}
+
+class Switch {
+    private Command flipUpCommand;
+    private Command flipDownCommand;
+
+    public Switch(Command flipUpCommand,Command flipDownCommand){
+        this.flipUpCommand=flipUpCommand;
+        this.flipDownCommand=flipDownCommand;
+    }
+
+    public void flipUp(){
+        flipUpCommand.execute();
+    }
+
+    public void flipDown(){
+        flipDownCommand.execute();
+    }
+}
+
 
 /*The test class*/
 public class CommandExample {
