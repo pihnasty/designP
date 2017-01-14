@@ -21,7 +21,6 @@
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-juli:8.0.30" level="project" />
     <orderEntry type="library" name="Maven: org.anarres.lzo:lzo-hadoop:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.anarres.lzo:lzo-core:1.0.0" level="project" />
-    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-core:1.2.1" level="project" />
     <orderEntry type="library" name="Maven: commons-cli:commons-cli:1.2" level="project" />
     <orderEntry type="library" name="Maven: xmlenc:xmlenc:0.52" level="project" />
@@ -69,5 +68,8 @@
     <orderEntry type="library" name="Maven: org.assertj:assertj-core:1.7.1" level="project" />
     <orderEntry type="library" name="Maven: com.opencsv:opencsv:3.7" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.3.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.pdfbox:pdfbox:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.pdfbox:fontbox:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
   </component>
 </module>

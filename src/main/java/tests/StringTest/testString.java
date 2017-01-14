@@ -1,4 +1,4 @@
-package tests;
+package tests.StringTest;
 
 /**
  * Created by Pihnastyi.O on 10/20/2016.
@@ -8,8 +8,9 @@ public class testString {
 
      //   string01();
 
-        equalsIgnoreCaseTest();
+   //     equalsIgnoreCaseTest();
 
+        stringToBoolean();
     }
 
     private static void string01() {
@@ -58,5 +59,13 @@ public class testString {
         System.out.println(s.equalsIgnoreCase(null));
 
     }
+
+    private static void stringToBoolean() {
+        String s =null;
+        System.out.println(Boolean.parseBoolean(s));
+
+
+    }
+
 
 }
