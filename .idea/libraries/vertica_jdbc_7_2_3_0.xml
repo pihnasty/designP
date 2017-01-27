@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="vertica-jdbc-7.2.3-0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/java/tests/vertica/vertica-jdbc-7.2.3-0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
