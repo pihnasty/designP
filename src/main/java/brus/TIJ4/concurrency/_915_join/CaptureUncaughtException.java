@@ -5,9 +5,17 @@ class ExceptionThread2 implements Runnable {
   public void run() {
     Thread t = Thread.currentThread();
     System.out.println("run() by " + t);
-    System.out.println(
-      "eh = " + t.getUncaughtExceptionHandler());
-    throw new RuntimeException();
+    System.out.println(   "eh1 = " + t.getUncaughtExceptionHandler());
+
+//    while(true) throw new RuntimeException();
+
+    try {
+      throw new RuntimeException();
+    }
+    catch (RuntimeException e) {
+      System.out.println(   " catch (RuntimeException e)  =");
+    }
+
   }
 }
 
@@ -23,8 +31,7 @@ class HandlerThreadFactory implements ThreadFactory {
     System.out.println(this + " creating new Thread");
     Thread t = new Thread(r);
     System.out.println("created " + t);
-    t.setUncaughtExceptionHandler(
-      new MyUncaughtExceptionHandler());
+   t.setUncaughtExceptionHandler(  new MyUncaughtExceptionHandler());
     System.out.println(
       "eh = " + t.getUncaughtExceptionHandler());
     return t;
@@ -33,8 +40,8 @@ class HandlerThreadFactory implements ThreadFactory {
 
 public class CaptureUncaughtException {
   public static void main(String[] args) {
-    ExecutorService exec = Executors.newCachedThreadPool(
-      new HandlerThreadFactory());
+    ExecutorService exec = Executors.newCachedThreadPool( new HandlerThreadFactory());
+//   ExecutorService exec = Executors.newCachedThreadPool( );
     exec.execute(new ExceptionThread2());
   }
 } /* Output: (90% match)
