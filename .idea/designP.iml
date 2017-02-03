@@ -14,6 +14,9 @@
     <orderEntry type="library" name="RedshiftJDBC41-1.1.10.1010" level="project" />
     <orderEntry type="library" name="vertica-jdbc-7.2.3-0" level="project" />
     <orderEntry type="library" name="vertica-jdbc-7.2.3-0 (2)" level="project" />
+    <orderEntry type="library" name="Maven: com.amazon:DWMS:1.2.7" level="project" />
+    <orderEntry type="library" name="Maven: com.amazon:sct-test-GUIunit:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.postgresql:postgresql:9.4-1204-jdbc42" level="project" />
     <orderEntry type="library" name="Maven: org.testng:testng:6.8.21" level="project" />
     <orderEntry type="library" name="Maven: org.beanshell:bsh:2.0b4" level="project" />
     <orderEntry type="library" name="Maven: com.beust:jcommander:1.27" level="project" />
