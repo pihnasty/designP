@@ -1,8 +1,9 @@
-//: concurrency/InterruptingIdiom.java
+package brus.TIJ4.concurrency._949_Interrupt;//: concurrency/InterruptingIdiom.java
 // General idiom for interrupting a task.
 // {Args: 1100}
 import java.util.concurrent.*;
-import static net.mindview.util.Print.*;
+
+import static brus.brus_723_System_InputOutput.b782_ZipCompress.ZipCompress.print;
 
 class NeedsCleanup {
   private final int id;
@@ -45,20 +46,21 @@ class Blocked3 implements Runnable {
       }
       print("Exiting via while() test");
     } catch(InterruptedException e) {
-      print("Exiting via InterruptedException");
+     // print("Exiting via InterruptedException");
+      e.printStackTrace();
     }
   }
 }
 
 public class InterruptingIdiom {
   public static void main(String[] args) throws Exception {
-    if(args.length != 1) {
-      print("usage: java InterruptingIdiom delay-in-mS");
-      System.exit(1);
-    }
+//    if(args.length != 1) {
+//      print("usage: java InterruptingIdiom delay-in-mS");
+//      System.exit(1);
+//    }
     Thread t = new Thread(new Blocked3());
     t.start();
-    TimeUnit.MILLISECONDS.sleep(new Integer(args[0]));
+    TimeUnit.MILLISECONDS.sleep(new Integer(1000));
     t.interrupt();
   }
 } /* Output: (Sample)
