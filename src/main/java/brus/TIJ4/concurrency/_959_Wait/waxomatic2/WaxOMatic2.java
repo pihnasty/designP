@@ -1,9 +1,11 @@
-//: concurrency/waxomatic2/WaxOMatic2.java
+package brus.TIJ4.concurrency._959_Wait.waxomatic2;//: concurrency/waxomatic2/WaxOMatic2.java
 // Using Lock and Condition objects.
-package concurrency.waxomatic2;
+
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
-import static net.mindview.util.Print.*;
+
+import static brus.brus_723_System_InputOutput.b782_ZipCompress.ZipCompress.print;
+
 
 class Car {
   private Lock lock = new ReentrantLock();
@@ -53,7 +55,7 @@ class WaxOn implements Runnable {
   public void run() {
     try {
       while(!Thread.interrupted()) {
-        printnb("Wax On! ");
+        print("Wax On! ");
         TimeUnit.MILLISECONDS.sleep(200);
         car.waxed();
         car.waitForBuffing();
@@ -72,7 +74,7 @@ class WaxOff implements Runnable {
     try {
       while(!Thread.interrupted()) {
         car.waitForWaxing();
-        printnb("Wax Off! ");
+        print("Wax Off! ");
         TimeUnit.MILLISECONDS.sleep(200);
         car.buffed();
       }

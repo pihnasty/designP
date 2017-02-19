@@ -1,8 +1,10 @@
 //: concurrency/waxomatic/WaxOMatic.java
 // Basic task cooperation.
-package concurrency.waxomatic;
+package brus.TIJ4.concurrency._959_Wait.waxomatic;
 import java.util.concurrent.*;
-import static net.mindview.util.Print.*;
+
+import static brus.brus_723_System_InputOutput.b782_ZipCompress.ZipCompress.print;
+
 
 class Car {
   private boolean waxOn = false;
@@ -14,8 +16,7 @@ class Car {
     waxOn = false; // Ready for another coat of wax
     notifyAll();
   }
-  public synchronized void waitForWaxing()
-  throws InterruptedException {
+  public synchronized void waitForWaxing()  throws InterruptedException {
     while(waxOn == false)
       wait();
   }
@@ -32,13 +33,14 @@ class WaxOn implements Runnable {
   public void run() {
     try {
       while(!Thread.interrupted()) {
-        printnb("Wax On! ");
+        print("Wax On! ");
         TimeUnit.MILLISECONDS.sleep(200);
         car.waxed();
         car.waitForBuffing();
       }
     } catch(InterruptedException e) {
-      print("Exiting via interrupt");
+  //    print("Exiting via interrupt");
+      e.printStackTrace();
     }
     print("Ending Wax On task");
   }
@@ -51,12 +53,13 @@ class WaxOff implements Runnable {
     try {
       while(!Thread.interrupted()) {
         car.waitForWaxing();
-        printnb("Wax Off! ");
-        TimeUnit.MILLISECONDS.sleep(200);
+        print("Wax Off! ");
+       TimeUnit.MILLISECONDS.sleep(200);
         car.buffed();
       }
     } catch(InterruptedException e) {
-      print("Exiting via interrupt");
+   //   print("Exiting via interrupt");
+      e.printStackTrace();
     }
     print("Ending Wax Off task");
   }
@@ -69,7 +72,7 @@ public class WaxOMatic {
     exec.execute(new WaxOff(car));
     exec.execute(new WaxOn(car));
     TimeUnit.SECONDS.sleep(5); // Run for a while...
-    exec.shutdownNow(); // Interrupt all tasks
+   exec.shutdownNow(); // Interrupt all tasks
   }
 } /* Output: (95% match)
 Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Wax Off! Wax On! Exiting via interrupt
