@@ -90,5 +90,9 @@
     <orderEntry type="library" name="Maven: antlr:antlr:2.7.7" level="project" />
     <orderEntry type="library" name="Maven: xpp3:xpp3:1.1.4c" level="project" />
     <orderEntry type="library" name="Maven: org.json:json:1.5-20090211" level="project" />
+    <orderEntry type="library" name="vertica-jdbc-8.0.0-0" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.6" level="project" />
+    <orderEntry type="library" name="vertica-jdbc-8.0.0-0 (2)" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.6 (2)" level="project" />
   </component>
 </module>
