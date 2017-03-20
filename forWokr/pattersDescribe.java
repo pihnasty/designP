@@ -955,16 +955,16 @@ public class TemplateMethod {
         б) вызвав этот метод (в примере вызывается через new)
         new LoadMetaDataHandler().loadMetaData(....)
         мы тем самым запускаем и задачу и создаем объект CallBack.
-        в)в методе {loadMetaData} мы выполняем следующие действия
-        +) создаем объект {LoadMetaDataCallBack}, метод которого {call} будет вызван после завершения выполнения задачи или
-        ее отдельной части;
-        +) создаем объект {LoadMetaDataTask}. Это непосредственно задача, которую надо выполнить;
-        +) создаем случашель, который проверяет состояние задачи {loadMetaDataTask.stateProperty().addListener()}.
-        В примере слушатель проверяет два состояния { newState == Worker.State.SUCCEEDED || newState == Worker.State.FAILED}
-        Если одно из состояний произойдет, то из {Listener}, будет вызван метод {LoadMetaDataCallBack.call(...)},
-        который запишет сообщение в лог {Logger.GENERAL.writeError(exception)} .
+    в)в методе {loadMetaData} мы выполняем следующие действия
+    +) создаем объект {LoadMetaDataCallBack}, метод которого {call} будет вызван после завершения выполнения задачи или
+    ее отдельной части;
+    +) создаем объект {LoadMetaDataTask}. Это непосредственно задача, которую надо выполнить;
+    +) создаем случашель, который проверяет состояние задачи {loadMetaDataTask.stateProperty().addListener()}.
+    В примере слушатель проверяет два состояния { newState == Worker.State.SUCCEEDED || newState == Worker.State.FAILED}
+    Если одно из состояний произойдет, то из {Listener}, будет вызван метод {LoadMetaDataCallBack.call(...)},
+    который запишет сообщение в лог {Logger.GENERAL.writeError(exception)} .
         г) запускается сама задача в отдельном потоке  {new Thread(loadMetaDataTask).start();}
-        д) это все. Структура классов представлена ниже.
+    д) это все. Структура классов представлена ниже.
         1.   -----------------------------------------------------------------------------------------------------------
         public class LoadMetaDataHandler  {
 

@@ -74,7 +74,10 @@
     <orderEntry type="library" name="Maven: ant:ant-commons-net:1.6.5" level="project" />
     <orderEntry type="library" name="Maven: ant:ant-jsch:1.6.5" level="project" />
     <orderEntry type="library" name="Maven: com.jcraft:jsch:0.1.29" level="project" />
+    <orderEntry type="library" name="Maven: com.amazon:DWMS:1.2.7" level="project" />
+    <orderEntry type="library" name="Maven: com.amazon:sct-test-GUIunit:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.postgresql:postgresql:9.4-1204-jdbc42" level="project" />
+    <orderEntry type="library" name="Maven: com.amazon:sct-error-codes-reader:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.3.6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.3.3" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.6" level="project" />
@@ -86,5 +89,6 @@
     <orderEntry type="library" name="Maven: org.antlr:stringtemplate:3.2" level="project" />
     <orderEntry type="library" name="Maven: antlr:antlr:2.7.7" level="project" />
     <orderEntry type="library" name="Maven: xpp3:xpp3:1.1.4c" level="project" />
+    <orderEntry type="library" name="Maven: org.json:json:1.5-20090211" level="project" />
   </component>
 </module>
