@@ -1,3 +1,16 @@
+Git --------------------------------------------------------------------------------------------------------------------
+1.Изменение коментария
+а)перейте в папку git-проекта, например   E:\A\_00003\amazonmigrationstudio\.git
+б)в комендной строке дать команду
+    $git commit --amend -m "[*] Loader. Fixed. Bug 17284:Rule Optimization. Implement collecting query stats using queries submitted by a user or a subset of users for Vertica-Redshift"
+в)получим результат на экране консоли, например
+    E:\A\_00003\amazonmigrationstudio>git commit --amend -m "[*] Loader. Fixed. Bug 17284:Rule Optimization. Implement collecting query stats using queries submitted by a user or a subset of users for Vertica-Redshift"
+    [develop cde795c] [*] Loader. Fixed. Bug 17284:Rule Optimization. Implement collecting query stats using queries submitted by a user or a subset of users for Vertica-Redshift
+     Date: Fri Mar 31 15:58:48 2017 +0300
+г)не сработало, надо поинспериментировать на designP
+
+
+
 ANTLR ------------------------------------------------------------------------------------------------------------------
 1.Добавляем в проект [antlr4-runtime-4.5.jar]
 2.Формируем файл грамматики [tnsnames.g4]
