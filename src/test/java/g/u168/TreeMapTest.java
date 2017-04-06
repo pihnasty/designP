@@ -38,4 +38,15 @@ public class TreeMapTest {
         List<String> stringList = new ArrayList();
         Assertions.assertThat(stringList).hasSize(4);
     }
+
+    @Test ( expectedExceptions = IllegalArgumentException.class , timeOut = 10)
+    public void testOne3() {
+        TreeMap<String,String> map = new TreeMap<>();
+        map.put("A","A");
+        List<String> stringList = new ArrayList();
+
+        throw new IllegalArgumentException();
+
+
+    }
 }
