@@ -9,6 +9,25 @@ import java.util.stream.Stream;
  * Created by Pihnastyi.O on 3/23/2017.
  */
 public class SortedHashMap {
+    private static class AttributeNames {
+        private static final String DATABASE_NAME = "database_name";
+        private static final String USER_NAME = "user_name";
+
+        private static final String STAT_QUERY_HISTORY_TOP = "stat-query-history-top";
+        private static final String STAT_GROUPBY_COUNT = "stat-groupby-count";
+        private static final String STAT_JOIN_COUNT = "stat-join-count";
+        private static final String STAT_ORDERBY_COUNT = "stat-orderby-count";
+        private static final String STAT_WHERE_COUNT = "stat-where-count";
+        private static final String STAT_IS_EXPENSIVE_QUERY = "stat-is-expensive-query";
+
+        private static final String STAT_QUERY_TEXT = "stat-query-text";
+        private static final String STAT_QUERY_COUNT = "stat-query-count";
+        private static final String STAT_COLLECTED = "stat-collected";
+        private static final String STAT_COLLECT_MODE = "stat-collect-mode";
+    }
+
+
+
     public static void main(String[] args) {
 
 //        Stream<Map.Entry<String,Integer>> st = map.entrySet().stream();
@@ -18,9 +37,9 @@ public class SortedHashMap {
 
         Map<String, Map<String, Integer>> map = new HashMap<String, Map<String, Integer>>()
                                 {{            put("one",new HashMap<String, Integer>(){{put("count",5);}});
-                                              put("two",new HashMap<String, Integer>(){{put("count",2);}});
+                                              put("two",new HashMap<String, Integer>(){{put("count",5);}});
                                               put("three",new HashMap<String, Integer>(){{put("count",31);}});
-                                              put("four",new HashMap<String, Integer>(){{put("count",4);}});
+                                              put("four",new HashMap<String, Integer>(){{put("count",5);}});
                                               put("five",new HashMap<String, Integer>(){{put("count",31);}});        }};
 
 
@@ -37,7 +56,7 @@ public class SortedHashMap {
 
         if(unSortedHashMap.size()<count) return unSortedHashMap;
 
-        unSortedHashMap.entrySet().stream().sorted(Comparator.comparing(e -> -e.getValue().get("count")))
+        unSortedHashMap.entrySet().stream().sorted(Comparator.comparing(e -> -e.getValue().get(AttributeNames.STAT_QUERY_COUNT)))
                 .skip(0).limit(count)
                 .forEach(e -> sortedHashMap.put(e.getKey(), e.getValue()));
         return sortedHashMap;
