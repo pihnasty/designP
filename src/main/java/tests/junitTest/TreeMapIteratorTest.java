@@ -1,6 +1,7 @@
 package tests.junitTest;
 
 import org.junit.*;
+import org.testng.annotations.BeforeClass;
 
 import java.util.Iterator;
 import java.util.TreeMap;
