@@ -1,8 +1,11 @@
 package tests.core.map.hashmap;
 
+import java.io.Serializable;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
+import java.util.function.Function;
 
 /**
  * Created by Pihnastyi.O on 3/23/2017.
@@ -94,7 +97,19 @@ public class SortedHashMapMyComporated {
         return sortedHashMap;
     }
 
+    public static <T, U extends Comparable<? super U>> Comparator<T> comparing( Function<? super T, ? extends U> keyExtractor)  {
+        Objects.requireNonNull(keyExtractor);
+        return (Comparator<T> & Serializable)
+                (c1, c2) -> keyExtractor.apply(c1).compareTo(keyExtractor.apply(c2));
+    }
+
+
+
 }
+
+
+
+
 
 //    Comparator comparator =  new Comparator() {
 //    public int compare(Object o1, Object o2) {

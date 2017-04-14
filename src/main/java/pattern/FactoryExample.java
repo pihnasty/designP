@@ -43,6 +43,8 @@ interface AbstractProductB {
     void interact(AbstractProductA a);
 }
 
+
+
 class ConcreteFactory1 implements AbstractFactory {
 
     @Override
