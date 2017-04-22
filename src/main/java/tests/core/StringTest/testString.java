@@ -1,4 +1,4 @@
-package tests.StringTest;
+package tests.core.StringTest;
 
 /**
  * Created by Pihnastyi.O on 10/20/2016.
