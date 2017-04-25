@@ -528,7 +528,7 @@ public class SslConnectionsTest extends BaseTest{
             Logger.LOADER.writeError(e, "TNS_Alias: Errors");
         }
 
-        ConnectionProperties cTNS_CON_ID = new OracleConnectionProperties(" (DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP) (HOST = gboracle.cjj06khxetlc.us-west-2.rds.amazonaws.com)" +
+        ConnectionProperties cTNS_CON_ID = new OracleConnectionProperties(" (DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = _06_TCP) (HOST = gboracle.cjj06khxetlc.us-west-2.rds.amazonaws.com)" +
                 "  (PORT = 1521) ) ) (CONNECT_DATA = (SERVER = DEDICATED) (SID = ORCL) ) )", "gbuser", "Dataaccesspassword!!!");
 
         DbLoaderProperties lp_cTNS_CON_ID = new DbLoaderProperties(cTNS_CON_ID);

@@ -1,4 +1,4 @@
-package shild.chapter22.ServerClient_test.UDP;
+package shild.chapter22.ServerClient_test._06_UDP;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,7 +18,8 @@ import java.net.InetAddress;
 
         try
         {
-            sock = new DatagramSocket();
+            // sock = new DatagramSocket();
+            sock = new DatagramSocket(55555);
 
             while(true)
             {

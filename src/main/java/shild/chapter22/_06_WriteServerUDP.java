@@ -4,7 +4,7 @@ package shild.chapter22;
 // Demonstrate Datagrams.
         import java.net.*;
 
-public class _06_WriteServe {
+public class _06_WriteServerUDP {
     public static int serverPort = 998;
     public static int clientPort = 999;
     public static int buffer_size = 1024;

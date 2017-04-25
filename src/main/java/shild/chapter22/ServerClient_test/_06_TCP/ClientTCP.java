@@ -1,4 +1,4 @@
-package shild.chapter22.ServerClient_test.TCP;
+package shild.chapter22.ServerClient_test._06_TCP;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.DataInputStream;
@@ -14,7 +14,7 @@ import java.net.UnknownHostException;
 public class ClientTCP {
     public static void main(String[] args) throws UnknownHostException {
         String host = InetAddress.getByName("192.168.13.69").getHostAddress();
-        int port = 7000;
+        int port = 65000;
         String data;
 
         //Создаем сокет

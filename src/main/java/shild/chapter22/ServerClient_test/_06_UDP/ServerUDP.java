@@ -1,4 +1,4 @@
-package shild.chapter22.ServerClient_test.UDP;
+package shild.chapter22.ServerClient_test._06_UDP;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -31,7 +31,10 @@ class ServerUDP
                 System.out.println("Сервер получил: " + s);
 
                 //Отправляем данные клиенту
-                DatagramPacket dp = new DatagramPacket(s.getBytes() , s.getBytes().length , incoming.getAddress() , incoming.getPort());
+                DatagramPacket dp = new DatagramPacket(s.getBytes() , s.getBytes().length ,
+                        incoming.getAddress() ,
+                        55555  //incoming.getPort()
+                );
                 sock.send(dp);
             }
         }

@@ -1,4 +1,4 @@
-package shild.chapter22.ServerClient_test.TCP;
+package shild.chapter22.ServerClient_test._06_TCP;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -11,7 +11,7 @@ import java.net.Socket;
 
 public class ServerTCP {
     public static void main(String[] args) {
-        int port = 7000;
+        int port = 65000;
 
         //Проверим доступность порта
         ServerSocket serverSocket = null;
