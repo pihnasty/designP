@@ -8,8 +8,11 @@ public class SampleServer extends Thread
     Socket s;
     int num;
 /*
-Socket[addr=localhost/127.0.0.1,port=0,localport=3128]          сервер
+Socket[addr=localhost/127.0.0.1,port=0,   localport=3128]          сервер
 Socket[addr=localhost/127.0.0.1,port=3128,localport=65243]      клиент
+Socket[addr=localhost/127.0.0.1,port=3128,localport=65350]      клиент
+Socket[addr=localhost/127.0.0.1,port=3128,localport=65124]      клиент
+Socket[addr=localhost/127.0.0.1,port=3128,localport=65431]      клиент
  */
 
     public static void main(String args[])
