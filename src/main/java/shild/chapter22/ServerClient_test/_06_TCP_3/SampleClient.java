@@ -14,8 +14,7 @@ public class SampleClient extends Thread
 
             // берём поток вывода и выводим туда первый аргумент
             // заданный при вызове, адрес открытого сокета и его порт
-            args[0] = args[0]+"\n"+s.getInetAddress().getHostAddress()
-                    +":"+s.getLocalPort();
+            args[0] = args[0]+"\n"+s.getInetAddress().getHostAddress()+":"+s.getLocalPort();
             s.getOutputStream().write(args[0].getBytes());
 
             // читаем ответ
