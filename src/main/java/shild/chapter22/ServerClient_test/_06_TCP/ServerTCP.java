@@ -22,6 +22,8 @@ public class ServerTCP {
             System.exit(-1);
         }
 
+        serverSocket.getLocalPort();
+
         //Создание клиента
         Socket clientSocket = null;
         try {
