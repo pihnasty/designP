@@ -6,6 +6,7 @@
 
     <groupId>com.dbbest.kharkov</groupId>
     <artifactId>recordDDL</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -39,6 +40,9 @@
             </plugin>
         </plugins>
     </build>
+    <modules>
+        <module>applet</module>
+    </modules>
     <dependencies>
 
         <dependency>
