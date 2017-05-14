@@ -1,5 +1,8 @@
 package tests.lambda;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.DoubleFunction;
 
@@ -8,26 +11,75 @@ import java.util.function.DoubleFunction;
  */
 public class Lambda {
     public static void main(String[] args) {
-        DoubleFunction<Double> function = x -> x;
-        double x0=2;
-        System.out.println("function("+x0+")="+function.apply(x0));
+//        DoubleFunction<Double> function = x -> x;
+//        double x0=2;
+//        System.out.println("function("+x0+")="+function.apply(x0));
+//
+//        double result = MathP.integralF.apply  (0,1,function);
+//
+//        System.out.println("result="+result);
+//
+//
+//        result = MathP.integrationParameter.apply  (0,2.5, 0.5, function);
+//
+//        System.out.println("result="+result);
+//
+//        System.out.println("h="+MathP.h(-1.0));
 
-        double result = MathP.integralF.apply  (0,1,function);
 
-        System.out.println("result="+result);
+        ControlSpeedBand controlSpeedBand = new ControlSpeedBand();
 
+        System.out.println("controlSpeedBand.optimalControlSpeedBand="+controlSpeedBand.optimalControlSpeedBand(0.4));
 
-        result = MathP.integrationParameter.apply  (0,2.5, 0.5, function);
-
-        System.out.println("result="+result);
-
-        System.out.println("h="+MathP.h(-1.0));
-
+        // controlSpeedBand.example1();
 
     }
+
+
 }
 
 
+class ControlSpeedBand {
+
+    private  Double [] cascadeControlSpeedBand ={0.33, 0.5, 1.0};
+    public  double optimalControlSpeedBand(Double controlSpeedBand) {
+        class Result {
+           double optimalControlSpeedBandResult= 0.0;
+            double delta= Double.MAX_VALUE;
+        }
+        Result r = new Result();
+        Double [] mas = cascadeControlSpeedBand;
+        Arrays.asList( mas).stream().forEach( speed -> {
+                    if (Math.abs(speed - controlSpeedBand) < r.delta) {
+                        r.delta = Math.abs(speed - controlSpeedBand);
+                        r.optimalControlSpeedBandResult=speed;
+                    }
+                }
+        );
+        return r.optimalControlSpeedBandResult;
+    }
+
+    public void example1(){
+        List<String> items = new ArrayList<>();
+        items.add("A");
+        items.add("B");
+        items.add("C");
+        items.add("D");
+        items.add("E");
+
+//lambda
+//Output : A,B,C,D,E
+        items.forEach(item->System.out.println(item));
+
+//Output : C
+//        items.forEach(item->{
+//            if("C".equals(item)){
+//                System.out.println(item);
+//            }
+//        });
+    }
+
+}
 
 
 class MathP {
@@ -69,4 +121,9 @@ class MathP {
     interface FourDoubleFunction {
         Double apply(double t0, double tK, double С1, DoubleFunction<Double> function);
     }
+
+
+
+
 }
+
