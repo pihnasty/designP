@@ -29,7 +29,7 @@ public class Lambda {
 
         ControlSpeedBand controlSpeedBand = new ControlSpeedBand();
 
-        System.out.println("controlSpeedBand.optimalControlSpeedBand="+controlSpeedBand.optimalControlSpeedBand(0.4));
+        System.out.println("controlSpeedBand.optimalControlSpeedBand="+controlSpeedBand.optimalControlSpeedBand(0.76));
 
         // controlSpeedBand.example1();
 
@@ -41,15 +41,21 @@ public class Lambda {
 
 class ControlSpeedBand {
 
-    private  Double [] cascadeControlSpeedBand ={0.33, 0.5, 1.0};
+    private  double [] cascadeControlSpeedBand ={0.33, 0.5, 1.0};
     public  double optimalControlSpeedBand(Double controlSpeedBand) {
         class Result {
-           double optimalControlSpeedBandResult= 0.0;
-            double delta= Double.MAX_VALUE;
+            double optimalControlSpeedBandResult = 0.0;
+            double delta = Double.MAX_VALUE;
+            List<Double> mas = new ArrayList<>();
+            public Result(double [] doubleMas) {
+                for( Double m : cascadeControlSpeedBand ) {
+                    mas.add(m);
+                }
+            }
         }
-        Result r = new Result();
-        Double [] mas = cascadeControlSpeedBand;
-        Arrays.asList( mas).stream().forEach( speed -> {
+        Result r = new Result(cascadeControlSpeedBand);
+
+        r.mas.stream().forEach( speed -> {
                     if (Math.abs(speed - controlSpeedBand) < r.delta) {
                         r.delta = Math.abs(speed - controlSpeedBand);
                         r.optimalControlSpeedBandResult=speed;
