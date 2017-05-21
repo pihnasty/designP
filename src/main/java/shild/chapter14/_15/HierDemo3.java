@@ -65,7 +65,7 @@ class HierDemo3 {
 
         // The following can't be compiled because
         // generic type info does not exist at run-time.
-//    if(iOb2 instanceof Gen2<Integer>)
+//        if(iOb2 instanceof Gen2<Integer>)
 //      System.out.println("iOb2 is instance of Gen2<Integer>");
     }
 }
