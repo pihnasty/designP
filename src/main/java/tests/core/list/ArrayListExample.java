@@ -1,6 +1,5 @@
-package tests;
+package tests.core.list;
 
-import javax.print.attribute.standard.MediaSize;
 import java.util.ArrayList;
 import java.util.List;
 
