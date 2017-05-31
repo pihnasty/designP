@@ -1,9 +1,7 @@
 package pattern;
 
 public class FactoryExample {
-
     public static void main(String[] args) {
-
         AbstractFactory factory1 = new ConcreteFactory1();
         Client client1 = new Client(factory1);
         client1.execute();
@@ -14,7 +12,6 @@ public class FactoryExample {
 
         Client client21 = new Client(factory2);
         client21.execute();
-
     }
 }
 
@@ -38,12 +35,9 @@ interface AbstractFactory {
 }
 
 interface AbstractProductA {}
-
 interface AbstractProductB {
     void interact(AbstractProductA a);
 }
-
-
 
 class ConcreteFactory1 implements AbstractFactory {
 
@@ -56,9 +50,7 @@ class ConcreteFactory1 implements AbstractFactory {
         return new ProductB1();
     }
 }
-
 class ConcreteFactory2 implements AbstractFactory {
-
     @Override
     public AbstractProductA createProductA() {
         return new ProductA2();
@@ -69,12 +61,8 @@ class ConcreteFactory2 implements AbstractFactory {
     }
 }
 
-class ProductA1 implements AbstractProductA {
-
-}
-
+class ProductA1 implements AbstractProductA {}
 class ProductB1 implements AbstractProductB {
-
     @Override
     public void interact(AbstractProductA a) {
         System.out.println(this.getClass().getName() + " interacts with " + a.getClass().getName());
@@ -82,10 +70,7 @@ class ProductB1 implements AbstractProductB {
 
 }
 
-class ProductA2 implements AbstractProductA {
-
-}
-
+class ProductA2 implements AbstractProductA {}
 class ProductB2 implements AbstractProductB {
 
     @Override

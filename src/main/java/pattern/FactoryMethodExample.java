@@ -61,7 +61,6 @@ class CollectionsExampleFactoryMethodJDK {
 
         //  try to modify the list
         //        immutablelist.add("D");
-        Calendar.getInstance();
     }
 }
 class CalendarExampleFactoryMethodJDK {
