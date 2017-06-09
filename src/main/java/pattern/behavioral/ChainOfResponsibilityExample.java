@@ -1,4 +1,4 @@
-package pattern;
+package pattern.behavioral;
 
 abstract class Logger {
     public static int ERR = 3;
@@ -74,6 +74,9 @@ public class ChainOfResponsibilityExample {
         logger.message("An error has occurred.", Logger.ERR);
         logger.message("rrrr",4);
     }
+
+    java.util.logging.Logger lod;
+
 }
 /*
 The output is:
@@ -83,4 +86,10 @@ The output is:
    Writing to stdout:   An error has occurred.
    Sending via e-mail:  An error has occurred.
    Writing to stderr:   An error has occurred.
+*/
+
+/*
+        java.util.logging.Logger#log()
+        javax.servlet.Filter#doFilter()
+
 */

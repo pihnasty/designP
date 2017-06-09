@@ -1,4 +1,4 @@
-package pattern;
+package pattern.creational;
 
 import java.util.ArrayList;
 import java.util.Calendar;

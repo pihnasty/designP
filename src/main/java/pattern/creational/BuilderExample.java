@@ -1,4 +1,4 @@
-package pattern;
+package pattern.creational;
 
 /** "Product" */
 class Pizza {
@@ -63,6 +63,39 @@ class BuilderExample {
         waiter.setPizzaBuilder(hawaiianPizzaBuilder);
         waiter.constructPizza();
 
-        Pizza pizza = waiter.getPizza();
-    }
+        Pizza pizza = waiter.getPizza();}
+
 }
+
+
+/*
+1.--------------------------------------------------------------------------
+Interface Builder<T>    https://docs.oracle.com/middleware/1221/jdev/api-reference-esdk/oracle/javatools/patterns/Builder.html
+T build()  throws java.lang.Exception
+
+All Known Implementing Classes:
+AbstractPaletteObjectBuilder, DefaultPaletteGroup.Builder, DefaultPaletteItem.Builder, DefaultPalettePage.Builder, DefaultPaletteSection.Builder
+
+2.--------------------------------------------------------------------------
+Class Locale.Builder    https://docs.oracle.com/javase/7/docs/api/java/util/Locale.Builder.html
+Locale aLocale = new Builder().setLanguage("sr").setScript("Latn").setRegion("RS").build();
+
+3.--------------------------------------------------------------------------
+SAXParser - Director
+ContentHandler - BuilderSAXParser - Director
+ContentHandler - Builder
+
+// Create Director
+SAXParser parser = new org.apache.xerces.parsers.SAXParser();
+// Create Concrete Builder (our own class)
+IdentingContentHandler handler = new IndentingContentHandler();
+// Set Buidler to Director
+parser.setContentHandler(handler);
+// Build
+parser.parse(new InputSource(new FileReader(fileName));
+// Get indented XML as String from handler
+String identedXML = handler.getResult();
+
+
+
+*/
