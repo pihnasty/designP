@@ -1,4 +1,4 @@
-package pattern;
+package pattern.behavioral;
 
 /*the Command interface*/
 interface Command{
@@ -75,3 +75,13 @@ public class CommandExample {
         s.flipDown();
     }
 }
+
+
+
+
+/*
+
+All implementations of java.lang.Runnable
+All implementations of javax.swing.Action
+
+* */
