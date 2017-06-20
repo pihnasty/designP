@@ -1,4 +1,4 @@
-package pattern;
+package pattern.structural;
 
 /**
  * Created by Max on 16.11.2016.
@@ -50,17 +50,12 @@ class Circle extends Shape{
     private int y;
     private int radius;
     public Circle(int x, int y, int radius, Drawer drawer) {
-        super(drawer);
-        setX(x);        setY(y);        setRadius(radius);
+       super(drawer);
+       this.x=x;        this.y=y;        this.radius=radius;
     }
     @Override
     public void draw() {   drawer.drawCircle(x, y, radius);   }
     @Override
     public void enlargeRadius(int multiplier) { radius *= multiplier;  }
-    public int getX() {        return x;    }
-    public int getY() {        return y;    }
-    public int getRadius() {        return radius;    }
-    public void setX(int x) {        this.x = x;    }
-    public void setY(int y) {        this.y = y;    }
-    public void setRadius(int radius) {        this.radius = radius;    }
+
 }

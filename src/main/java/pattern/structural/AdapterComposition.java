@@ -1,6 +1,6 @@
-package pattern;
+package pattern.structural;
 
-interface Chief {
+interface  Chief {
     public Object makeBreakfast();
     public Object makeDinner();
     public Object makeSupper();
@@ -55,7 +55,7 @@ class ChiefAdapter implements Chief{
 
 // Файл Client.java
 
-public class AdapterExample {
+public class AdapterComposition {
 
     public static void main (String [] args){
         Chief chief = new ChiefAdapter();
