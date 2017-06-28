@@ -1,4 +1,4 @@
-package pattern;
+package pattern.creational;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -61,7 +61,6 @@ class CollectionsExampleFactoryMethodJDK {
 
         //  try to modify the list
         //        immutablelist.add("D");
-        Calendar.getInstance();
     }
 }
 class CalendarExampleFactoryMethodJDK {
