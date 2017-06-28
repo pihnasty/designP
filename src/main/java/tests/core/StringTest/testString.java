@@ -10,7 +10,9 @@ public class testString {
 
    //     equalsIgnoreCaseTest();
 
-        stringToBoolean();
+    //    stringToBoolean();
+
+        stringEquals();
     }
 
     private static void string01() {
@@ -67,5 +69,12 @@ public class testString {
 
     }
 
+    private static void stringEquals() {
+     String s1 = "s1";
+     String s2 = "s1";
 
+        System.out.println("s1.equals(s2)="+s1.equals(s2));
+
+
+    }
 }
