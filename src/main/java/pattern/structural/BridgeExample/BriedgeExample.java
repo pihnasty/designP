@@ -1,4 +1,4 @@
-package pattern.structural;
+package pattern.structural.BridgeExample;
 
 /**
  * Created by Max on 16.11.2016.
