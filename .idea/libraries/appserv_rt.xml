@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="appserv-rt">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/java/goncalves/chapter02/all/appserv-rt.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

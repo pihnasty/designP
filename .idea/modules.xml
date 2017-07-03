@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/applet/applet.iml" filepath="$PROJECT_DIR$/applet/applet.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/designP.iml" filepath="$PROJECT_DIR$/.idea/designP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gonEE7/gonEE7.iml" filepath="$PROJECT_DIR$/gonEE7/gonEE7.iml" />
     </modules>
   </component>
 </project>
