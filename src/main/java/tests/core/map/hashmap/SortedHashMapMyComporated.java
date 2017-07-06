@@ -1,10 +1,7 @@
 package tests.core.map.hashmap;
 
 import java.io.Serializable;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 import java.util.function.Function;
 
 /**
@@ -38,7 +35,7 @@ public class SortedHashMapMyComporated {
 
 
         Map<String, Map<String, Integer>> map = new HashMap<String, Map<String, Integer>>()
-                                {{            put("one",new HashMap<String, Integer>(){{put(AttributeNames.STAT_QUERY_COUNT,5);}});
+                                {{            put("one",new HashMap<String, Integer>(){{put(AttributeNames.STAT_QUERY_COUNT,35);}});
                                               put("atwo",new HashMap<String, Integer>(){{put(AttributeNames.STAT_QUERY_COUNT,5);}});
                                               put("three",new HashMap<String, Integer>(){{put(AttributeNames.STAT_QUERY_COUNT,31);}});
                                               put("four",new HashMap<String, Integer>(){{put(AttributeNames.STAT_QUERY_COUNT,5);}});
@@ -46,6 +43,7 @@ public class SortedHashMapMyComporated {
 
 
         System.out.println(sortedTopN(map));
+        System.out.println(map);
 
 
     }
@@ -54,7 +52,7 @@ public class SortedHashMapMyComporated {
         String statQueryHistoryTop = "3";
         Integer count = Integer.parseInt(statQueryHistoryTop);
 
-        Map<String, Map<String, Integer>> sortedHashMap = new HashMap<>();
+        Map<String, Map<String, Integer>> sortedHashMap = new TreeMap<>();
 
         if(unSortedHashMap.size()<count) return unSortedHashMap;
 
