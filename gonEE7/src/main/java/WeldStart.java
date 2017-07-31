@@ -12,8 +12,8 @@ public class WeldStart {
 
 
         // Execute the run method
-        //theContainer.instance().select(WeldStart.class).get().run();
-        theContainer.instance().select(WeldStart.class).get();
+        theContainer.instance().select(WeldStart.class).get().run();
+    //    theContainer.instance().select(WeldStart.class).get();
 
         // Shutting down Weld again
         theWeld.shutdown();

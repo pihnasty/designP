@@ -130,3 +130,29 @@ public class ListSorted {
 
     }
 }
+
+
+
+
+
+//    private void processQueryRelatedOfflineStatistics2(TreeNode node, CSVReader reader) throws IOException {
+//        Map<String, Map<String, Integer>> queries = new HashMap<>();
+//        String [] row;
+//        if ("schema".equals(node.getType())) {
+//            String statCollect = "";
+//            while ((row = reader.readNext()) != null) {
+//                if (row.length ==1 && row[0].isEmpty()) continue;
+//                Map<String, Integer> values = new HashMap<>();
+//                values.put(AttributeNames.STAT_QUERY_COUNT, Integer.parseInt(row[1]));
+//
+//                if (getVendorType() == DatabaseVendor.REDSHIFT) {
+//                    values.put(AttributeNames.STAT_IS_EXPENSIVE_QUERY, Integer.parseInt(row[2]));
+//                    statCollect = row[3];
+//                } else statCollect = row[2];
+//
+//                queries.put(row[0], values);
+//            }
+//            queries=sortedTopN(queries);
+//            addAttributeHistoryStat(node, queries, statCollect);
+//        }
+//    }
