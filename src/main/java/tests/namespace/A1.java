@@ -21,6 +21,16 @@ public class A1 {
         a11.n = 3;
     }
 
+ public static void showN() {
+     System.out.println("n=");
+ }
+
+    public static void main(String[] args) {
+        A1 b1 = new A1(5);
+
+        b1.showN();
+
+    }
 
 
 
