@@ -101,5 +101,7 @@
     <orderEntry type="library" name="Maven: xpp3:xpp3:1.1.4c" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" name="Maven: javax:javaee-web-api:6.0" level="project" />
+    <orderEntry type="library" name="ojdbc7 (3)" level="project" />
+    <orderEntry type="library" name="ojdbc7 (4)" level="project" />
   </component>
 </module>
