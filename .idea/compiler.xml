@@ -12,10 +12,13 @@
         <module name="gonEE7" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.9">
-      <module name="applet" target="1.9" />
-      <module name="designP" target="1.9" />
-      <module name="gonEE7" target="1.9" />
+    <bytecodeTargetLevel>
+      <module name="applet" target="1.8" />
+      <module name="chapter02" target="1.5" />
+      <module name="chapter02-putting-together" target="1.5" />
+      <module name="chapter02-samples" target="1.5" />
+      <module name="designP" target="1.8" />
+      <module name="gonEE7" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

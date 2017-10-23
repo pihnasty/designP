@@ -1,6 +1,6 @@
 package tests.httpTest.sunhttpserver;
 
-
+import com.sun.jndi.toolkit.url.Uri;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 
