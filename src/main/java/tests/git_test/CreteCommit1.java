@@ -6,5 +6,5 @@ package tests.git_test;
 public class CreteCommit1 {
 
 
-    // Первый коммит
+    // Первый-Первый Первый  коммит
 }
