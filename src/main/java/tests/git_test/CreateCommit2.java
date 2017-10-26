@@ -12,7 +12,7 @@ public class CreateCommit2 {
 soft:  files won't change, differences will be staged for commit
 
 
-Проверяю  SOFT
+Проверяю  MIXED
 
 
 *
