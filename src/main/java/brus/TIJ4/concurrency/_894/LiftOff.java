@@ -18,7 +18,7 @@ public class LiftOff implements Runnable {
     while(countDown-- > 0) {
       //System.out.println(countDown);
       System.out.print(status());
-      Thread.yield();
+      Thread.yield();   //  https://habrahabr.ru/post/164487/
     }
   }
 } ///:~

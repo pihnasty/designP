@@ -21,9 +21,10 @@
     <orderEntry type="library" name="db2jcc4" level="project" />
     <orderEntry type="library" name="appserv-rt" level="project" />
     <orderEntry type="library" name="javaee" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-api:7.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.sun.mail:javax.mail:1.5.0" level="project" />
-    <orderEntry type="library" name="Maven: javax:javaee-web-api:6.0" level="project" />
+    <orderEntry type="library" name="ojdbc7 (3)" level="project" />
+    <orderEntry type="library" name="ojdbc7 (4)" level="project" />
+    <orderEntry type="library" name="tdgssconfig" level="project" />
+    <orderEntry type="library" name="terajdbc4" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.weld.se:weld-se:2.3.2.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-api:7.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.sun.mail:javax.mail:1.5.0" level="project" />
@@ -101,9 +102,5 @@
     <orderEntry type="library" name="Maven: xpp3:xpp3:1.1.4c" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" name="Maven: javax:javaee-web-api:6.0" level="project" />
-    <orderEntry type="library" name="ojdbc7 (3)" level="project" />
-    <orderEntry type="library" name="ojdbc7 (4)" level="project" />
-    <orderEntry type="library" name="tdgssconfig" level="project" />
-    <orderEntry type="library" name="terajdbc4" level="project" />
   </component>
 </module>
