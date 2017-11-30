@@ -19,6 +19,7 @@
       <module name="chapter02-samples" target="1.5" />
       <module name="designP" target="1.8" />
       <module name="gonEE7" target="1.8" />
+      <module name="recordDDL" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
