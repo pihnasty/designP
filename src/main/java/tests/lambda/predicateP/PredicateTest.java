@@ -9,7 +9,7 @@ public class PredicateTest {
 
 
 
-        predicate.test("foo");              // true
+        predicate.test("foo");              // true  ++
         predicate.negate().test("foo");     // false
 
         Predicate<Boolean> nonNull = Objects::nonNull;
