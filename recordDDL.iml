@@ -11,51 +11,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="lib" level="application" />
-    <orderEntry type="library" name="Maven: org.controlsfx:controlsfx:8.40.12" level="project" />
-    <orderEntry type="library" name="Maven: org.controlsfx:openjfx-dialogs:1.0.3" level="project" />
-    <orderEntry type="library" name="Maven: org.fxmisc.richtext:richtextfx:0.6.10" level="project" />
-    <orderEntry type="library" name="Maven: org.reactfx:reactfx:2.0-M4u1" level="project" />
-    <orderEntry type="library" name="Maven: org.fxmisc.undo:undofx:1.2" level="project" />
-    <orderEntry type="library" name="Maven: org.fxmisc.flowless:flowless:0.4.5" level="project" />
-    <orderEntry type="library" name="Maven: org.fxmisc.wellbehaved:wellbehavedfx:0.1.1" level="project" />
-    <orderEntry type="library" name="Maven: com.amazon:sct-core:1.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: org.antlr:antlr4-runtime:4.7" level="project" />
-    <orderEntry type="library" name="Maven: com.amazon:dms-model:2.0" level="project" />
-    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-s3:1.11.221" level="project" />
-    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-kms:1.11.221" level="project" />
-    <orderEntry type="library" name="Maven: com.amazonaws:jmespath-java:1.11.221" level="project" />
-    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-iam:1.11.221" level="project" />
-    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-lambda:1.11.221" level="project" />
-    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-core:1.11.221" level="project" />
-    <orderEntry type="library" name="Maven: software.amazon.ion:ion-java:1.0.2" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.7.1" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.0" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.7" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.6.7" level="project" />
-    <orderEntry type="library" name="Maven: joda-time:joda-time:2.8.1" level="project" />
-    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-logs:1.11.221" level="project" />
-    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-sts:1.11.221" level="project" />
-    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-snowball:1.11.221" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-collections4:4.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.0" level="project" />
-    <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.8.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.8.2" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-iostreams:2.8.2" level="project" />
-    <orderEntry type="library" name="Maven: com.amazon:sct-lib:1.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.amazon:sct-controller:1.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.amazon:sct-security:1.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.amazon.sct.ddlreplication:sct-main:1.0.0.237" level="project" />
-    <orderEntry type="library" name="Maven: com.google.guava:guava:18.0" level="project" />
-    <orderEntry type="library" name="Maven: org.junit.jupiter:junit-jupiter-api:5.1.0-M1" level="project" />
-    <orderEntry type="library" name="Maven: org.opentest4j:opentest4j:1.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.junit.platform:junit-platform-commons:1.1.0-M1" level="project" />
-    <orderEntry type="library" name="Maven: com.amazon.sct.ddlreplication:commons:1.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.amazon.sct.ddlreplication:common-tree:1.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.amazon:sct-main-common:1.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.amazon:sct-commons:1.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.amazon:sct-common-tree:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.weld.se:weld-se:2.3.2.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-api:7.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.sun.mail:javax.mail:1.5.0" level="project" />
@@ -135,5 +90,6 @@
     <orderEntry type="library" name="Maven: javax:javaee-web-api:6.0" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-main-ui:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.mockito:mockito-all:1.9.5" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.6 (2)" level="project" />
   </component>
 </module>
