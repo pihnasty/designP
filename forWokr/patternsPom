@@ -1,0 +1,16 @@
+/****Использование шины событий      **********************************************************************************/
+Общий подход:
+1.Создаем Task и добавляем в его конструкторе Listener через ProjectEventBus.getInstance().addListener(....)
+            public LoadTreeTask(DbLoader dbLoader, DatabaseVendor vendor, MetadataModel.Origin origin, DbLoader.TreeLoadingMode processMode, ProjectManager projectManager) {
+                this.dbLoader = dbLoader;
+                this.vendor = vendor;
+                this.origin = origin;
+                this.processMode = processMode;
+                this.projectManager = projectManager;
+                ProjectEventBus.getInstance().addListener(getClass().getName(),AwsEventType.STOP_EVENT, event -> { this.isStopped = true; });
+            }
+Таким образом, мы создаем слушателя
+а)с уникальным  именем   this.getClass().getName()= LoadTreeTask
+б)который ловит событие  AwsEventType.STOP_EVENT
+в)и если оно поймано, то вызывается event -> { this.isStopped = true; }
+г)вызванный isStopped  проверяется в LoadTreeTask.call()
