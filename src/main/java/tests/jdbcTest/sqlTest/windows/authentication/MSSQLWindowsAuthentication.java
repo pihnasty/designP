@@ -18,6 +18,8 @@ public class MSSQLWindowsAuthentication {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             this.conn = DriverManager.getConnection(dbURL);//here put the new simple url.
+            System.out.println("Connection Ok");
+            System.out.println("Stop");
         } catch (ClassNotFoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
