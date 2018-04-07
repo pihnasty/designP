@@ -56,6 +56,8 @@
     <orderEntry type="library" name="Maven: com.amazon:sct-main-common:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-commons:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-common-tree:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.2.2" level="project" />
+    <orderEntry type="library" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.weld.se:weld-se:2.3.2.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-api:7.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.sun.mail:javax.mail:1.5.0" level="project" />

@@ -25,7 +25,7 @@ public class MySQLTest {
         try {
             connection = DriverManager
                     //      .getConnection("jdbc:mysql://localhost:3306/library", "root", "root");
-                   //     .getConnection("jdbc:mysql://sql11.freemysqlhosting.net:3306/sql11219539", "sql11219539", "h1eSJdY9Y6");
+                //        .getConnection("jdbc:mysql://sql11.freemysqlhosting.net:3306/sql11219539", "sql11219539", "Prod2018Prod");
                     .getConnection("jdbc:mysql://www.db4free.net:3306/productionmodel", "production", "production");
 
 
@@ -39,7 +39,7 @@ public class MySQLTest {
 
  //           st.executeUpdate("INSERT INTO productionmodel.machine VALUES ( 3,'KD 2323_03',   'Press_03')");
             ResultSet rs = st.executeQuery("select * from productionmodel.machine ");
-    //        ResultSet rs = st.executeQuery("select * from sql11219539.mashine ");
+   //         ResultSet rs = st.executeQuery("select * from sql11219539.mashine ");
      //       st.executeUpdate("CREATE TABLE machine (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,name VARCHAR(32),description VARCHAR(256))");
 //CREATE TABLE employees (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, lastname VARCHAR(20), firstname VARCHAR(20), phone VARCHAR(20),  dateofbirth DATE)
             while (rs.next()) {

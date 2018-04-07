@@ -118,6 +118,12 @@ class Bf117_Unit09 {
                 "saved $5 on this  order. ";
         regExp(128.1,shablon,textFile);
 
+
+
+        shablon ="^([a-z0-9_-]+\\.)*[a-z0-9_-]+@[a-z0-9_-]+(\\.[a-z0-9_-]+)*\\.[a-z]{2,6}$";
+        textFile="pom7@bk.ru";
+        regExp(10000000.0,shablon,textFile);
+
     }
 
     private static void regExp(double number, String shablon,  String text) {

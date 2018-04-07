@@ -55,6 +55,8 @@
     <orderEntry type="library" name="Maven: com.amazon:sct-main-common:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-commons:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-common-tree:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.2.2" level="project" />
+    <orderEntry type="library" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.weld.se:weld-se:2.3.2.Final" level="project" />
     <orderEntry type="library" name="Maven: fish.payara.extras:payara-embedded-all:4.1.1.162" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.11" level="project" />
