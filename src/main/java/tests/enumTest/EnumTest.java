@@ -12,7 +12,6 @@ public class EnumTest {
 
         ServerMessages enumS2 = ServerMessages.SUCCESS;
         System.out.println(enumS2.getMessage());
-
     }
 
     enum ServerMessages {
