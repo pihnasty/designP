@@ -8,13 +8,32 @@ import java.util.List;
 import java.util.Random;
 
 public class Optimization {
-    private String fileName = "E:\\VerPOM\\designP\\src\\main\\java\\tests\\extract\\data.txt";
+    private String fileName = "src\\main\\java\\tests\\extract\\data.txt";
+
 
     public static void main(String[] args) throws IOException {
+
+        int numberPartitions = 10;
+
+        double result;
+
+        for (int i=1; i<numberPartitions; i++) {
+            result = getResult(numberPartitions,i);
+            System.out.println("end for partition "+i+"  Approximate valueprimary key ="+result);
+        }
+
+
+
+
+
+    }
+
+    private static double getResult(int numberAllPartitions, int numberPartition) throws IOException {
         Optimization optimization = new Optimization();
-        optimization.writeInFile();
+        //      optimization.writeInFile();
         Select select = new Select(optimization.fileName);
         select.readFromFile();
+
 
         long [] b = {
                 select.selectSumX2Y(),
@@ -36,8 +55,7 @@ public class Optimization {
         };
 
 
-        optimization.showB(b);
-        optimization.showA(a);
+
 
 
         double [][] aDouble = new double[a.length][a.length];
@@ -52,13 +70,12 @@ public class Optimization {
 
 
         double alfa [] = optimization.methodGauss(aDouble,bDouble);
-        optimization.showAlfa(alfa);
 
-        double result = optimization.myFunction(alfa,5);
-
-        System.out.println("result"+result);
-
-
+        //      optimization.showB(b);
+        //      optimization.showA(a);
+        //      optimization.showAlfa(alfa);
+        System.out.print("     line="+counter/numberAllPartitions*numberPartition+"   ");
+        return optimization.myFunction(alfa,counter/numberAllPartitions*numberPartition);
     }
 
     private void showB(long [] b) {
@@ -154,7 +171,7 @@ public class Optimization {
 
     private void writeInFile(){
 
-        long primaryKeyStart = -100;
+        long primaryKeyStart = -10_000;
         long primaryKey = primaryKeyStart;
         long counter = 1;
 
@@ -162,11 +179,12 @@ public class Optimization {
 
         try ( FileWriter writer =new FileWriter(new File(fileName)) ){
 
-            while (counter<10) {
+            while (counter<1000) {
                 String sf = String.format("%20d  :%20d \n", primaryKey, counter);
                 writer.write(sf);
                 counter++;
-                primaryKey+= 1; //random.nextInt(100)+1;
+                primaryKey+=random.nextInt(100)+1;
+                        //counter*counter;       //+= 1; //random.nextInt(100)+1;
             }
         }
         catch (IOException e) {
@@ -176,7 +194,7 @@ public class Optimization {
 
     private Long x4 (long counter) {
         long sum=0;
-        for (int i=1; i<counter; i++) {
+        for (int i=1; i<=counter; i++) {
             sum += i*i*i*i;
         }
         return sum;
@@ -184,7 +202,7 @@ public class Optimization {
 
     private Long x3 (long counter) {
         long sum=0;
-        for (int i=1; i<counter; i++) {
+        for (int i=1; i<=counter; i++) {
             sum += i*i*i;
         }
         return sum;
@@ -192,7 +210,7 @@ public class Optimization {
 
     private Long x2 (long counter) {
         long sum=0;
-        for (int i=1; i<counter; i++) {
+        for (int i=1; i<=counter; i++) {
             sum += i*i;
         }
         return sum;
@@ -200,7 +218,7 @@ public class Optimization {
 
     private Long x (long counter) {
         long sum=0;
-        for (int i=1; i<counter; i++) {
+        for (int i=1; i<=counter; i++) {
             sum +=i;
         }
         return sum;
@@ -261,7 +279,7 @@ class Select {
             pair.add(primaryKey);
             pair.add(counter);
             lines.add(pair);
-            System.out.println(primaryKey+"   "+ counter);
+     //       System.out.println(primaryKey+"   "+ counter);
         }
 
 
@@ -291,7 +309,7 @@ class Select {
     public long selectSumY () {
         long sum=0;
         for (List<Long> line : lines) {
-            sum+=line.get(1);
+            sum+=line.get(0);
         }
         return sum;
     }
