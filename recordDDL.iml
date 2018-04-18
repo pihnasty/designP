@@ -130,6 +130,8 @@
     <orderEntry type="library" name="Maven: com.amazon:sct-parser-vertica:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-parser-python:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-parser-redshift:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.amazon:sct-parser-psql:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.amazon:sct-parser-plsql:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-parser-auroramysql:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-parser-aurorapostgresql:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-parser-cpp:1.0-SNAPSHOT" level="project" />
@@ -163,12 +165,12 @@
     <orderEntry type="library" name="Maven: com.amazon:sct-parser-greenplum:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-security:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-aws-bridge:1.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: com.amazon.sct.ddlreplication:sct-main:1.0.6.311" level="project" />
+    <orderEntry type="library" name="Maven: com.amazon.sct.ddlreplication:sct-main:1.0.6.312" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:18.0" level="project" />
-    <orderEntry type="library" name="Maven: org.junit.jupiter:junit-jupiter-api:5.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.junit.jupiter:junit-jupiter-api:5.2.0-M1" level="project" />
     <orderEntry type="library" name="Maven: org.apiguardian:apiguardian-api:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.opentest4j:opentest4j:1.0.0" level="project" />
-    <orderEntry type="library" name="Maven: org.junit.platform:junit-platform-commons:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.junit.platform:junit-platform-commons:1.2.0-M1" level="project" />
     <orderEntry type="library" name="Maven: com.amazon.sct.ddlreplication:commons:1.0.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.amazon.sct.ddlreplication:common-tree:1.0.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-main-common:1.0-SNAPSHOT" level="project" />

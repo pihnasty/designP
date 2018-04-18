@@ -24,6 +24,12 @@ public class StateTest {
         fimpl.setI(7);
         System.out.println("fimpl="+fimpl.getI());
 
+        Fimpl2 fimpl2 = new Fimpl2();
+        System.out.println("fimpl="+fimpl.getI());
+
+
+        // a.getClass().getFields()
+
     }
 }
 
@@ -32,7 +38,9 @@ class Fimpl implements F {
 
 }
 
+class Fimpl2 implements F {
 
+}
 
 
 

@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/applet/applet.iml" filepath="$PROJECT_DIR$/applet/applet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gonEE7/gonEE7.iml" filepath="$PROJECT_DIR$/gonEE7/gonEE7.iml" />
       <module fileurl="file://$PROJECT_DIR$/recordDDL.iml" filepath="$PROJECT_DIR$/recordDDL.iml" />
     </modules>
   </component>
