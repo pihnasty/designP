@@ -30,6 +30,17 @@ public class StateTest {
 
         // a.getClass().getFields()
 
+        A a1 = new A(1){
+            public int i=2;
+
+        };
+
+
+        System.out.println("a1 class="+a1.i);
+
+        System.out.println("a1 class="+a1.getClass());
+
+        B1 b_1 = new B1();
     }
 }
 
@@ -45,13 +56,16 @@ class Fimpl2 implements F {
 
 
 abstract class A {
+    //abstract int r2();
     public int i;
-    public A (int i) {
+   public A(int i) {
         this.i=i;
     }
 
     protected A() {
     }
+
+
 
     public int getI () {
         return i;
@@ -60,6 +74,8 @@ abstract class A {
         this.i=i;
     }
 }
+
+class B1 extends A {}
 
 class B extends A {
     private int i2=1;

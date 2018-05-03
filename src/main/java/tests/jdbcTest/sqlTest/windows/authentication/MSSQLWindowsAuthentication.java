@@ -10,9 +10,6 @@ public class MSSQLWindowsAuthentication {
     public Connection conn = null;
 
 
-    public MSSQLWindowsAuthentication(){
-    }
-
     public MSSQLWindowsAuthentication(String dbURL){
 
         try {
