@@ -7,7 +7,7 @@ public class MSCallableTest {
 
     //   !!!!!!!!!!!!!!!!     Option sql_v02 and sql_v03 are working
 
-    String  sql = SqlCollection.sql_v03;
+    String  sql = SqlCollection.sql_v03;   //     String  sql = SqlCollection.SELECT_DATABASES;
     MSCalleble msCalleble = new MSCalleble(url);
     msCalleble.exec(sql);
     msCalleble.execCallableStatement(sql);
