@@ -339,7 +339,7 @@ class SelectDataBase extends Select {
       cl.loadClass(JDBC_DRIVER).newInstance();
       Driver driver = DriverManager.getDriver(DB_URL);
       conn = DriverManager.getConnection(DB_URL, USER, PASS);
-      int i = 4;
+      int i = 3;
       String sql = getSql(i);
       stmt = conn.prepareStatement(sql);
       readColumn(stmt);

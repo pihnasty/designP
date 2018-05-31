@@ -41,6 +41,7 @@ public class CollectorP {
     treeSet.add(5);
     treeSet.add(1);
 
+
     Function<TreeSet<Integer>, Integer> f =  s -> {
       long size = s.size();
       if (size%2==0) {
@@ -63,6 +64,15 @@ public class CollectorP {
     int iTreeSet = f.apply(treeSet);
 
     System.out.println(iTreeSet);
+
+    Integer list = treeSet
+        .stream()
+        .collect(medianCollector);
+
+    System.out.println("list="+ list);
+
+
+    List<Integer> list2 = treeSet.stream().collect(Collectors.toList());
 
 
   }
@@ -88,9 +98,7 @@ public class CollectorP {
 
 }
 
-class MedianCollector implements Collector <Integer, TreeSet<Integer>, Integer> {{
-
-}
+class MedianCollector implements Collector <Integer, TreeSet<Integer>, Integer> {
 
   /**
    * Supplier возвращает лямбда-выражение, создающее контейнер для хранения промежуточных выражений:
@@ -147,7 +155,7 @@ class MedianCollector implements Collector <Integer, TreeSet<Integer>, Integer> 
       }
       return s
           .stream()
-          .skip(size % 2+2)
+          .skip(size % 2+1)
           .findFirst()
           .get();
     };
@@ -155,7 +163,7 @@ class MedianCollector implements Collector <Integer, TreeSet<Integer>, Integer> 
 
   @Override
   public Set<Characteristics> characteristics() {
-    return null;
+    return EnumSet.of(Characteristics.CONCURRENT);
   }
 }
 

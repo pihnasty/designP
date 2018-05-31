@@ -1,0 +1,6 @@
+Какие надо делать проверки
+
+Exception in thread "main" java.lang.IllegalArgumentException: -1
+	at java.util.stream.ReferencePipeline.skip(ReferencePipeline.java:407)
+	at tests.lambda.SkipTest.main(SkipTest.java:29)
+1
