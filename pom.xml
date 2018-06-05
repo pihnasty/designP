@@ -42,6 +42,7 @@
     </build>
     <modules>
         <module>applet</module>
+        <module>dbdoc-logger</module>
     </modules>
     <dependencies>
 

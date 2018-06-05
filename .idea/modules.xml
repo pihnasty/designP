@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/applet/applet.iml" filepath="$PROJECT_DIR$/applet/applet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbdoc-logger/dbdoc-logger.iml" filepath="$PROJECT_DIR$/dbdoc-logger/dbdoc-logger.iml" />
       <module fileurl="file://$PROJECT_DIR$/designP.iml" filepath="$PROJECT_DIR$/designP.iml" />
     </modules>
   </component>
