@@ -1,10 +1,6 @@
 package com.aws.settings;
 
-public enum SeverityType {
-    CRITICAL(0),
-    HIGH(1),
-    MEDIUM(2),
-    LOW(3);
+public enum SeverityType { CRITICAL(0), HIGH(1), MEDIUM(2),  LOW(3);
 
     private final int value;
 

@@ -22,12 +22,10 @@ public class DefaultProjectSettings extends AbstractSettings {
         return settingsFile;
     }
 
-
     @Override
     protected void initDefaultValues() {
         defaultValues = new HashMap<>();
         defaultValues.put(Keys.DEFAULT_PROJECT_PATH, AppPropertiesHolder.getDefaultApplicationPath().resolve("Projects"));
     }
-
 
 }

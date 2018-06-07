@@ -24,9 +24,6 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-/**
- * Base class for settings
- */
 abstract class AbstractSettings implements Settings {
     private final List<ChangeListener> listeners = new LinkedList<>();
     private final Map<String, String> settingsMap = new TreeMap<>();
