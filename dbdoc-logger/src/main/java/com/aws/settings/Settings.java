@@ -123,5 +123,10 @@ public interface Settings {
 
         public static final String EVENT_FILE_NAME = "event.file.name";
         public static final String TREE_SETTINGS_VIEW = "tree_settings_for_show";
+
+        public static final String LOG_FOLDER_UI = "log_folder";
+
+        public static final String LOG_MAX_FILE_SIZE_MB = "log.max_file_size_mb";
+        public static final String LOG_MAX_FILES_COUNT = "log.max_files_count";
     }
 }
