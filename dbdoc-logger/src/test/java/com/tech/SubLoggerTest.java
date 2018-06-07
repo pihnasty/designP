@@ -11,6 +11,6 @@ public class SubLoggerTest {
         subLogger.info("Hello");
         subLogger.info("Hello");
         subLogger.info("Hello");
-
     }
+
 }

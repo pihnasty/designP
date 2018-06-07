@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<global_settings>
+    <setting key="DEFAULT_PROFILE_GENERAL" value="MyProfile"/>
+    <setting key="app_folder" value="AWS Schema Conversion Tool"/>
+    <setting key="console_log_folder" value="C:\Users\pihnastyi.o\AWS Schema Conversion Tool\Log"/>
+    <setting key="convert_without_statistic_reminder" value="false"/>
+    <setting key="data_migration_settings" value=""/>
+    <setting key="db2luw_driver_file" value=""/>
+    <setting key="debug_mode" value="true"/>
+    <setting key="ext_pack_version_alert" value="true"/>
+    <setting key="greenplum_driver_file" value=""/>
+    <setting key="install_dir" value="C:\Users\pihnastyi.o"/>
+    <setting key="license_accepted_for_build" value="1.0.1404"/>
+    <setting key="log.max_file_size_mb" value="100"/>
+    <setting key="log.max_files_count" value="20"/>
+    <setting key="log_folder" value="C:\Users\pihnastyi.o\AWS Schema Conversion Tool\Log"/>
+    <setting key="log_folder_extractors" value="C:\Users\pihnastyi.o\AWS Schema Conversion Tool\Extractor Log"/>
+    <setting key="log_folder_extractors_ask_before_load" value="false"/>
+    <setting key="message_level.COMPARE_SCHEMA" value="INFO"/>
+    <setting key="message_level.CONTROLLER" value="INFO"/>
+    <setting key="message_level.GENERAL" value="INFO"/>
+    <setting key="message_level.LOADER" value="TRACE"/>
+    <setting key="message_level.PARSER" value="INFO"/>
+    <setting key="message_level.PRINTER" value="TRACE"/>
+    <setting key="message_level.RESOLVER" value="INFO"/>
+    <setting key="message_level.TELEMETRY" value="INFO"/>
+    <setting key="message_level.TRANSFORMER" value="INFO"/>
+    <setting key="message_level.TYPEMAPPING" value="INFO"/>
+    <setting key="message_level.UI" value="INFO"/>
+    <setting key="mssql_driver_file" value="C:\JDBCDrivers\SQL Server\sqljdbc4.jar"/>
+    <setting key="mssqldw_driver_file" value=""/>
+    <setting key="mysql_driver_file" value="C:\JDBCDrivers\mysql-connector-java-5.1.6.jar"/>
+    <setting key="netezza_driver_file" value=""/>
+    <setting key="oracle_driver_file" value="C:\JDBCDrivers\ojdbc8.jar"/>
+    <setting key="parser.cleanup_mode" value="AFTER_PARSING"/>
+    <setting key="postgresql_driver_file" value=""/>
+    <setting key="project.default_project_path" value="C:\Users\pihnastyi.o\AWS Schema Conversion Tool\Projects"/>
+    <setting key="project_folder" value="Projects"/>
+    <setting key="redshift_driver_file" value=""/>
+    <setting key="reporting.mode" value="FIVE"/>
+    <setting key="security.certificate" value=""/>
+    <setting key="show-all-files" value="false"/>
+    <setting key="show_hide_schema_alert" value="true"/>
+    <setting key="showed-files-count" value="5"/>
+    <setting key="sql_cache.large_value_threshold" value="1024"/>
+    <setting key="sql_cache.mru_size" value="10"/>
+    <setting key="store_password" value="false"/>
+    <setting key="teradata_first_driver_file" value=""/>
+    <setting key="teradata_second_driver_file" value=""/>
+    <setting key="tree_settings_for_show" value="{&quot;treeSettingsModels&quot;:{&quot;ORACLEDWH&quot;:{&quot;hideEmpty&quot;:true,&quot;hideEmptyDb&quot;:true,&quot;systemSchemas&quot;:[],&quot;userDefinedSchemas&quot;:[]},&quot;MSSQLDW&quot;:{&quot;hideEmpty&quot;:true,&quot;hideEmptyDb&quot;:true,&quot;systemSchemas&quot;:[],&quot;userDefinedSchemas&quot;:[]},&quot;DB2LUW&quot;:{&quot;hideEmpty&quot;:true,&quot;hideEmptyDb&quot;:true,&quot;systemSchemas&quot;:[],&quot;userDefinedSchemas&quot;:[]},&quot;MSSQL&quot;:{&quot;hideEmpty&quot;:true,&quot;hideEmptyDb&quot;:true,&quot;systemSchemas&quot;:[],&quot;userDefinedSchemas&quot;:[]},&quot;ORACLE&quot;:{&quot;hideEmpty&quot;:true,&quot;hideEmptyDb&quot;:true,&quot;systemSchemas&quot;:[],&quot;userDefinedSchemas&quot;:[]}}}"/>
+    <setting key="vertica_driver_file" value=""/>
+    <setting key="whatsnew_content_server_url" value="https://{0}.cloudfront.net/{1}/{2}/whatsNew.html"/>
+    <setting key="whatsnew_list_server_url" value="https://{0}.cloudfront.net/?versionNumber={1}&amp;buildNumber={2}"/>
+</global_settings>
