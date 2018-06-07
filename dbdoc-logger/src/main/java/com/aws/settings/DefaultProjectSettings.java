@@ -3,9 +3,6 @@ package com.aws.settings;
 import java.io.File;
 import java.util.HashMap;
 
-/**
- * Default project setting class
- */
 public class DefaultProjectSettings extends AbstractSettings {
     private static final DefaultProjectSettings instance = new DefaultProjectSettings();
     private final File settingsFile;
