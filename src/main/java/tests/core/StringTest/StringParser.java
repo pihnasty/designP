@@ -1,6 +1,8 @@
 package tests.core.StringTest;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
@@ -11,7 +13,17 @@ public class StringParser {
 
      options=null;
 
-        System.out.println(stringParser.parseOptions(options, ",","        "));
+   //     System.out.println(stringParser.parseOptions(options, ",","        "));
+
+
+        List<String> stringList = new ArrayList<String>() {{add("aaa"); }};
+//        HashMap<String, String> h = new HashMap<String, String>() {{
+//            put("a","b");
+//        }};
+
+        String str = addBrackets(stringList);
+
+        System.out.println(str);
 
 
     }
@@ -31,4 +43,7 @@ public class StringParser {
     }
 
 
+    public static String addBrackets (List<String> stringList) {
+        return stringList.stream().collect(Collectors.joining(",", "(", ")"));
+    }
 }
