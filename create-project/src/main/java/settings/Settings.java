@@ -1,10 +1,18 @@
+package settings;
+
+import java.util.EnumMap;
+
 /**
  * Interface for access to application settings.
  */
 public interface Settings {
-    public static Settings getInstance() {
-        return InitialSetting.INITIAL_SETTING;
-    }
+
+    Settings getInstance();
+    String getName();
+   EnumMap<EnumSettings, Settings> enumMap   = new EnumMap<>(EnumSettings.class);
+
+    //Map<EnumSettings, Settings> map   = new ConcurrentHashMap<>();
+
     /**
      * reset to default values
      */

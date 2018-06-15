@@ -1,8 +1,10 @@
+package settings;
+
 abstract class AbstractSettings implements Settings {
     protected static final Settings instance = null;
-    static Settings getInstance() {
-        return instance;
-    }
+//    Settings getInstance() {
+//        return instance;
+//    }
 
 
 //    private final List<ChangeListener> listeners = new LinkedList<>();

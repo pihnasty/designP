@@ -1,3 +1,5 @@
+package settings;
+
 public class SettingsProvider {
 
  //   private final static Settings initialSettings = GlobalSettings.getInstance();
