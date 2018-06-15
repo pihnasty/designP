@@ -12,7 +12,6 @@ import org.testng.annotations.Test;
 
 import static com.aws.settings.Settings.Keys.LOG_FOLDER_UI;
 
-
 public class SubLoggerTest {
 
     private static MessageLevelFilter primaryLogFilter;

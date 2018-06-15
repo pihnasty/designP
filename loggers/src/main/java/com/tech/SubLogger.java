@@ -18,7 +18,7 @@ public class SubLogger {
 
             Date date = new Date();
             boolean append = true;
-            FileHandler fh = new FileHandler("E:\\B\\lg\\"+format.format(date)+".log", append);
+            FileHandler fh = new FileHandler("logfiles\\"+format.format(date)+".log", append);
             //fh.setFormatter(new XMLFormatter());
             fh.setFormatter(new SimpleFormatter());
             logger = Logger.getLogger("recordDDL");

@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>designP</artifactId>
-        <groupId>com.dbbest.kharkov</groupId>
+        <groupId>com.techno</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.dbbest.kharkov</groupId>
-    <artifactId>dbdoc-logger</artifactId>
+    <groupId>com.techno</groupId>
+    <artifactId>create-project</artifactId>
 
 
 </project>
