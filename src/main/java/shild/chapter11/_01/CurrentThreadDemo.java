@@ -2,6 +2,20 @@ package shild.chapter11._01;
 
 class CurrentThreadDemo {
   public static void main(String args[]) {
+
+    Runnable r = new Runnable() {
+      @Override
+      public void run() {
+
+      }
+    };
+
+   Thread tr = new Thread(r);
+
+    Thread tr2 = new Thread(()-> {});
+
+
+
     Thread t = Thread.currentThread();
 
     System.out.println("Current thread: " + t);

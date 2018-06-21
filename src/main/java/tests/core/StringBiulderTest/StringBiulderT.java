@@ -10,7 +10,10 @@ public class StringBiulderT {
     public static void main(String[] args) {
 
     //    checkedUsers();
-          statQueryText();
+     //     statQueryText();
+        System.out.println( add("Okleh",'+') );
+
+        System.out.println(   add("Okleh",'+',1));
     }
 
     private static void checkedUsers() {
@@ -42,4 +45,16 @@ public class StringBiulderT {
 
     }
 
+    @Deprecated
+    public static String add(String str, char symbol) {
+        return new StringBuilder().append(symbol).append(str).append(symbol).toString();
+    }
+
+    public static String add(String str, char symbol, int i) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(symbol);
+        sb.append(str);
+        sb.append(symbol);
+        return sb.toString();
+    }
 }
