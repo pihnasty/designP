@@ -1,4 +1,4 @@
-Какие надо делать проверки
+Какие делать проверки
 
 Exception in thread "main" java.lang.IllegalArgumentException: -1
 	at java.util.stream.ReferencePipeline.skip(ReferencePipeline.java:407)
