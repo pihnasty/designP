@@ -7,6 +7,9 @@ import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * http://zetcode.com/articles/opencsv/
+ */
 public class CsvWriterP extends AbstractWriterP {
     static public void main (String [] args ) throws IOException {
 
