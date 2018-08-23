@@ -7,7 +7,9 @@ public class ConstructorTest {
 }
 
 
+
 class A {
+
     private final int a;
 
     public A(int a) {

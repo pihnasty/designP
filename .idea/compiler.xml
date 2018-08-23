@@ -9,6 +9,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="applet" />
+        <module name="core" />
         <module name="create-project" />
         <module name="dbdoc-logger" />
         <module name="loggers" />
@@ -19,6 +20,7 @@
       <module name="chapter02" target="1.5" />
       <module name="chapter02-putting-together" target="1.5" />
       <module name="chapter02-samples" target="1.5" />
+      <module name="core" target="1.8" />
       <module name="create-project" target="1.8" />
       <module name="dbdoc-logger" target="1.8" />
       <module name="dbdoclogger" target="1.8" />
