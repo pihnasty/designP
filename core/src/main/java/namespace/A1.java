@@ -1,4 +1,4 @@
-package tests.namespace;
+package namespace;
 
 /**
  * Created by Pihnastyi.O on 7/31/2017.
