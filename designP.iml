@@ -114,6 +114,7 @@
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-sts:1.11.332" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-snowball:1.11.332" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-dynamodb:1.11.332" level="project" />
+    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-applicationautoscaling:1.11.332" level="project" />
     <orderEntry type="library" name="Maven: com.datastax.cassandra:cassandra-driver-core:3.5.0" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-handler:4.0.56.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-buffer:4.0.56.Final" level="project" />
@@ -133,6 +134,7 @@
     <orderEntry type="library" name="Maven: com.github.jnr:jnr-x86asm:1.0.2" level="project" />
     <orderEntry type="library" name="Maven: com.github.jnr:jnr-posix:3.0.44" level="project" />
     <orderEntry type="library" name="Maven: com.github.jnr:jnr-constants:0.9.9" level="project" />
+    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-glue:1.11.332" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-collections4:4.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.0" level="project" />
     <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.3.0" level="project" />
@@ -182,6 +184,7 @@
     <orderEntry type="library" name="Maven: com.amazon:sct-parser-greenplum:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-parser-mariadb:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-parser-cassandra:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.amazon:sct-parser-sybasease:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-security:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon:sct-aws-bridge:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.amazon.sct.ddlreplication:sct-main:1.0.6.312" level="project" />
