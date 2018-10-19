@@ -12,6 +12,7 @@
         <module name="core" />
         <module name="create-project" />
         <module name="dbdoc-logger" />
+        <module name="dbm" />
         <module name="loggers" />
       </profile>
     </annotationProcessing>
@@ -24,6 +25,7 @@
       <module name="create-project" target="1.8" />
       <module name="dbdoc-logger" target="1.8" />
       <module name="dbdoclogger" target="1.8" />
+      <module name="dbm" target="1.8" />
       <module name="designP" target="1.8" />
       <module name="gonEE7" target="1.8" />
       <module name="loggers" target="1.8" />
