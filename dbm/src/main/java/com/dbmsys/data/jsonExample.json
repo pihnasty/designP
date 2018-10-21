@@ -1,0 +1,14 @@
+[
+  {
+    "name":"Samsung",
+    "price":51200.6
+  },
+  {
+    "name":"Lg",
+    "price":5400.6
+  },
+  {
+    "name":"Alcatel",
+    "price":4500.6
+  }
+]

@@ -6,7 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/create-project/create-project.iml" filepath="$PROJECT_DIR$/create-project/create-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/dbm/dbm.iml" filepath="$PROJECT_DIR$/dbm/dbm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbm/dbm.iml" filepath="$PROJECT_DIR$/dbm/dbm.iml" />
       <module fileurl="file://$PROJECT_DIR$/designP.iml" filepath="$PROJECT_DIR$/designP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gson.dwarves-master/gsondwarvesmaster.iml" filepath="$PROJECT_DIR$/gson.dwarves-master/gsondwarvesmaster.iml" />
       <module fileurl="file://$PROJECT_DIR$/loggers/loggers.iml" filepath="$PROJECT_DIR$/loggers/loggers.iml" />
     </modules>
   </component>
