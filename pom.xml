@@ -45,6 +45,7 @@
         <module>loggers</module>
         <module>create-project</module>
         <module>core</module>
+        <module>dbm</module>
     </modules>
     <dependencies>
 
