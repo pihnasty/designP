@@ -24,6 +24,7 @@ public class Deserialize
 				.registerTypeAdapter(Dwarf.class, new DwarfSerializerWithoutName())
 				.registerTypeAdapter(FacialHair.class, new FacialHairSerializer())
 				.registerTypeAdapter(DwarvesBand.class, new DwarvesBandSerializer())
+				.setPrettyPrinting()
 				.create();
 		String json = gson.toJson(company);
 

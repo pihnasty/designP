@@ -1,5 +1,7 @@
 package model;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
@@ -9,7 +11,11 @@ public class Dwarf
 	private String name;
 	private FacialHair facialHair;
 	private List<Weapon> weapons = new LinkedList<>();
-	private String lunch;
+
+
+	private transient String lunch;
+
+	@SerializedName("age")
 	private int dwarfAge;
 
 	public Dwarf()
