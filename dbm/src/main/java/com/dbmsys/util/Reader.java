@@ -18,24 +18,24 @@ public class Reader {
 
     public void readGzFiles(String path, String fileName) {
 
-        String fullName = path + fileName;
-        try {
-            FileInputStream fileInputStream = new FileInputStream(fullName);
-            GZIPInputStream gzipInputStream = null;
-            try {
-                gzipInputStream = new GZIPInputStream(fileInputStream);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            InputStreamReader inputStreamReader = new InputStreamReader(gzipInputStream);
-            BufferedReader reader = new BufferedReader(inputStreamReader);
-            Gson gson = new GsonBuilder().create();
-            Type type = new TypeToken<DmsSysTemplate[]>(){}.getType();
-            DmsSysTemplate[] read = gson.fromJson(reader, type);
-            System.out.println(read);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+//        String fullName = path + fileName;
+//        try {
+//            FileInputStream fileInputStream = new FileInputStream(fullName);
+//            GZIPInputStream gzipInputStream = null;
+//            try {
+//                gzipInputStream = new GZIPInputStream(fileInputStream);
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//            InputStreamReader inputStreamReader = new InputStreamReader(gzipInputStream);
+//            BufferedReader reader = new BufferedReader(inputStreamReader);
+//            Gson gson = new GsonBuilder().create();
+//            Type type = new TypeToken<DmsSysTemplate[]>(){}.getType();
+//            DmsSysTemplate[] read = gson.fromJson(reader, type);
+//            System.out.println(read);
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
 
     }
 
