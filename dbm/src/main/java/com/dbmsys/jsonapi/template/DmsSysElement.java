@@ -1,14 +1,14 @@
 package com.dbmsys.jsonapi.template;
 
 public class DmsSysElement {
-    private String head;
+    private Head head;
     private Body[] bodies;
 
-    public String getHead() {
+    public Head getHead() {
         return head;
     }
 
-    public void setHead(String head) {
+    public void setHead(Head head) {
         this.head = head;
     }
 

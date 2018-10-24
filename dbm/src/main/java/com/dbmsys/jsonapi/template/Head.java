@@ -3,7 +3,7 @@ package com.dbmsys.jsonapi.template;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Body {
+public class Head {
 
     private Map<String,String> parametrs = new TreeMap();
 
