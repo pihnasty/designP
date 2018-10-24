@@ -16,23 +16,10 @@ import java.util.List;
 public class DmsSysArrayElementDeserializer implements JsonDeserializer<List<DmsSysElement>> {
     @Override
 
-    public List<DmsSysElement> deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws
-        JsonParseException {
+    public List<DmsSysElement> deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException {
 
         JsonArray jsonArray = json.getAsJsonArray();
-        int size = jsonArray.size();
         List<DmsSysElement> dmsSysElements = new ArrayList<>();
-
-//        for (int i = 0; i < size; i++) {
-//            dmsSysElements.add( context.deserialize(jsonArray.get(i), DmsSysElement.class));
-//            dmsSysElements.get(i).setBodies(
-//                context.deserialize(jsonArray.get(i).getAsJsonObject().get(DbmsysJsonConstant.NodeNames.BODY), Body[].class)
-//            );
-//            dmsSysElements.get(i).setHead(
-//                context.deserialize(jsonArray.get(i).getAsJsonObject().get(DbmsysJsonConstant.NodeNames.HEAD), Head.class)
-//            );
-//        }
-
 
         jsonArray.forEach(element -> {
             DmsSysElement dmsSysElement = context.deserialize(element, DmsSysElement.class);
@@ -43,10 +30,7 @@ public class DmsSysArrayElementDeserializer implements JsonDeserializer<List<Dms
             dmsSysElement.setHead(
                 context.deserialize(element.getAsJsonObject().get(DbmsysJsonConstant.NodeNames.HEAD), Head.class)
             );
-
         });
-
-
         return dmsSysElements;
     }
 }

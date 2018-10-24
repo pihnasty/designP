@@ -22,9 +22,10 @@ import java.util.zip.GZIPInputStream;
 
 public class Reader {
 
-    public void readFromGzFile(String path, String fileName) {
+    public  List<DmsSysElement> readFromGzFile(String path, String fileName) {
 
         Type type = new TypeToken<List<DmsSysElement>>(){}.getType();
+        List<DmsSysElement> dmsSysElements = null;
 
         String fullName = path + fileName;
         try (FileInputStream fileInputStream = new FileInputStream(fullName);
@@ -38,47 +39,14 @@ public class Reader {
                     .registerTypeAdapter(Head.class, new HeadDeserializer())
                     .create();
 
-
-
-
-            List<DmsSysElement> dmsSysElements = gson.fromJson(reader, type);
-
-            System.out.println(dmsSysElements);
-
-
-//            Type type = new TypeToken<DmsSysTemplate[]>(){}.getType();
-//            DmsSysTemplate[] read = gson.fromJson(reader, type);
-//            System.out.println(read);
+            dmsSysElements = gson.fromJson(reader, type);
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return dmsSysElements;
 
     }
-
-    public void readFromGzFile2(String path, String fileName) {
-
-//        String fullName = path + fileName;
-//        try {
-//            FileInputStream fileInputStream = new FileInputStream(fullName);
-//            GZIPInputStream gzipInputStream = null;
-//            try {
-//                gzipInputStream = new GZIPInputStream(fileInputStream);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//            InputStreamReader inputStreamReader = new InputStreamReader(gzipInputStream);
-//            BufferedReader reader = new BufferedReader(inputStreamReader);
-//            Gson gson = new GsonBuilder().create();
-//            Type type = new TypeToken<DmsSysTemplate[]>(){}.getType();
-//            DmsSysTemplate[] read = gson.fromJson(reader, type);
-//            System.out.println(read);
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-
-    }
-
 }
