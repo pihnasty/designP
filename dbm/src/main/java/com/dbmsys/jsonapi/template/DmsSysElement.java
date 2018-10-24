@@ -2,7 +2,7 @@ package com.dbmsys.jsonapi.template;
 
 public class DmsSysElement {
     private String head;
-    private Body body;
+    private Body[] bodies;
 
     public String getHead() {
         return head;
@@ -12,12 +12,12 @@ public class DmsSysElement {
         this.head = head;
     }
 
-    public Body getBody() {
-        return body;
+    public Body[] getBodies() {
+        return bodies;
     }
 
-    public void setBody(Body body) {
-        this.body = body;
+    public void setBodies(Body[] bodies) {
+        this.bodies = bodies;
     }
 }
 

@@ -23,9 +23,9 @@ public class DmsSysArrayElementDeserializer implements JsonDeserializer<DmsSysEl
 
             Body[] bodies ;
 
-            bodies = context.deserialize(jsonArray.get(0).getAsJsonObject().get("Body"), Body[].class);
+            bodies = context.deserialize(jsonArray.get(i).getAsJsonObject().get("Body"), Body[].class);
 
-            dmsSysElements[i].setBody(bodies[0]);
+            dmsSysElements[i].setBodies(bodies);
 
             dmsSysElements[i].setHead("#"+i);
 
