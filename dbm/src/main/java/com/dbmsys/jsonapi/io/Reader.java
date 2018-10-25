@@ -27,7 +27,7 @@ public class Reader {
         Type type = new TypeToken<List<DmsSysElement>>(){}.getType();
         List<DmsSysElement> dmsSysElements = null;
 
-        String fullName = path + fileName;
+        String fullName = path + "\\"+ fileName;
         try (FileInputStream fileInputStream = new FileInputStream(fullName);
              GZIPInputStream gzipInputStream = new GZIPInputStream(fileInputStream);
              InputStreamReader inputStreamReader = new InputStreamReader(gzipInputStream);
