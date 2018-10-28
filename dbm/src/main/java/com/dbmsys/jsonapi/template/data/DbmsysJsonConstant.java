@@ -1,4 +1,4 @@
-package com.dbmsys.jsonapi.template;
+package com.dbmsys.jsonapi.template.data;
 
 public class DbmsysJsonConstant {
 

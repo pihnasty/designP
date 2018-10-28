@@ -1,9 +1,9 @@
 package com.dbmsys.jsonapi.gson.deserialize;
 
-import com.dbmsys.jsonapi.template.Body;
-import com.dbmsys.jsonapi.template.DbmsysJsonConstant;
-import com.dbmsys.jsonapi.template.DmsSysElement;
-import com.dbmsys.jsonapi.template.Head;
+import com.dbmsys.jsonapi.template.data.Body;
+import com.dbmsys.jsonapi.template.data.DbmsysJsonConstant;
+import com.dbmsys.jsonapi.template.data.DmsSysElement;
+import com.dbmsys.jsonapi.template.data.Head;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;

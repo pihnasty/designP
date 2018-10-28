@@ -3,9 +3,9 @@ package com.dbmsys.jsonapi.io;
 import com.dbmsys.jsonapi.gson.deserialize.BodyDeserializer;
 import com.dbmsys.jsonapi.gson.deserialize.DmsSysArrayElementDeserializer;
 import com.dbmsys.jsonapi.gson.deserialize.HeadDeserializer;
-import com.dbmsys.jsonapi.template.Body;
-import com.dbmsys.jsonapi.template.DmsSysElement;
-import com.dbmsys.jsonapi.template.Head;
+import com.dbmsys.jsonapi.template.data.Body;
+import com.dbmsys.jsonapi.template.data.DmsSysElement;
+import com.dbmsys.jsonapi.template.data.Head;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -40,6 +40,7 @@ public class Reader {
                     .create();
 
             dmsSysElements = gson.fromJson(reader, type);
+
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();

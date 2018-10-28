@@ -1,9 +1,9 @@
-package com.dbmsys.jsonapi.template;
+package com.dbmsys.jsonapi.template.data;
 
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Head {
+public class Body {
 
     private Map<String,String> parametrs = new TreeMap();
 
@@ -11,6 +11,9 @@ public class Head {
             parametrs.put(key,value);
     }
 
+    public Map<String, String> getParametrs() {
+        return parametrs;
+    }
 }
 
 
