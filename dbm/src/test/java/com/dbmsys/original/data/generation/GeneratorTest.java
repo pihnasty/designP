@@ -41,6 +41,7 @@ public class GeneratorTest {
                     {
                         put("Started", "");
                         put(CommonConstants.HeaderAttibute.PRINTED, "Started");
+                        put(CommonConstants.HeaderAttibute.HEADER, "ValueStarted");
                     }
                 });
                 add(new HashMap<String, String>() {
@@ -51,6 +52,7 @@ public class GeneratorTest {
                         put("Instance", "");
                         put("Value", "");
                         put(CommonConstants.HeaderAttibute.PRINTED, "Value");
+                        put(CommonConstants.HeaderAttibute.HEADER, "Instance");
                     }
                 });
             }
@@ -64,6 +66,8 @@ public class GeneratorTest {
         List<DmsSysElement> filtredData =  generator.getFiltredData(dmsSysElements, ruleFiltredByHeadByBody);
 
         List<String>  headerColumns =  generator.getHeaderColumns(filtredData, ruleFiltredByHeadByBody);
+
+        List<String>  row =  generator.getRow(filtredData, ruleFiltredByHeadByBody);
 
 
     }
