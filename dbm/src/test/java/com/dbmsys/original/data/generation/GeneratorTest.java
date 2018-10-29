@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import java.util.*;
 
+
 public class GeneratorTest {
 
     String path = "src\\main\\java\\com\\dbmsys\\data";
@@ -15,29 +16,54 @@ public class GeneratorTest {
 
     @Test
     public void addRowsTest() {
-        Rule ruleOnlyHeader = new Rule(new ArrayList<Map<String,String>>() {
+
+        Rule ruleFiltredByHeadByBody = new Rule(
+                new HashMap<String, String>() {
+                    {
+                        put("Address", "vm-dbmsys-stage");
+                        put("Started", "");
+                    }
+                },
+                new HashMap<String, String>() {
+                    {
+                        put("Category", "LogicalDisk");
+                        put("Counter", "% Free Space");
+                        put("Instance", "");
+                        put("Value", "");
+                    }
+                }
+        );
+
+
+        ruleFiltredByHeadByBody.setHeaderColumns(new ArrayList<Map<String, String>>() {
             {
                 add(new HashMap<String, String>() {
                     {
                         put("Started", "");
+                        put(CommonConstants.HeaderAttibute.PRINTED, "Started");
                     }
                 });
                 add(new HashMap<String, String>() {
                     {
                         put("Address", "vm-dbmsys-stage");
-                        put("Category", "% Free Space");
+                        put("Category", "LogicalDisk");
+                        put("Counter", "% Free Space");
                         put("Instance", "");
                         put("Value", "");
+                        put(CommonConstants.HeaderAttibute.PRINTED, "Value");
                     }
                 });
             }
         });
 
+
         Reader reader = new Reader();
-        List<DmsSysElement>  dmsSysElements = reader.readFromGzFile(path, fileName);
+        List<DmsSysElement> dmsSysElements = reader.readFromGzFile(path, fileName);
 
         Generator generator = new Generator();
-        generator.addHeader(dmsSysElements, ruleOnlyHeader);
+        List<DmsSysElement> filtredData =  generator.getFiltredData(dmsSysElements, ruleFiltredByHeadByBody);
+
+        List<String>  headerColumns =  generator.getHeaderColumns(filtredData, ruleFiltredByHeadByBody);
 
 
     }

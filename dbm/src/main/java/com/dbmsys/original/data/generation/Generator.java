@@ -1,5 +1,6 @@
 package com.dbmsys.original.data.generation;
 
+import com.dbmsys.jsonapi.template.data.Body;
 import com.dbmsys.jsonapi.template.data.DmsSysElement;
 import com.dbmsys.jsonapi.template.rules.Rule;
 
@@ -7,74 +8,145 @@ import com.dbmsys.jsonapi.template.rules.Rule;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static org.apache.commons.lang3.ArrayUtils.toArray;
+
 public class Generator {
 
     private final String NOTNAME ="\nnot name";
 
-    List<List<String>> addHeader (List<DmsSysElement> dmsSysElements, Rule rule) {
-
-        List<String> headerNames = new ArrayList<>();
+    public List<DmsSysElement> getFiltredData (List<DmsSysElement> dmsSysElements, Rule rule) {
 
 
-        Set<String> names = new HashSet<>();
-        dmsSysElements.forEach(element -> {
-                    names.addAll(element.getHead().getParametrs().keySet());
-                    Arrays.asList(element.getBodies()).forEach(
-                            elementBody -> names.addAll(elementBody.getParametrs().keySet())
-                    );
-                }
-        );
-
-        rule.getHeaderColumns().forEach(
-                columnList -> {
-                    if (columnList.size()==1) {
-                        if (names.contains(columnList.get(0))) {
-                            headerNames.add(columnList.get(0));
-                        } else {
-                            headerNames.add(columnList.get(0)+NOTNAME);
-                        }
-                    } else {
-                        StringBuilder fullNameColumn = new StringBuilder();
-                        columnList.forEach(
-                                columnParameter -> {
-                                    if (names.contains(columnParameter)) {
-                                        fullNameColumn.append(columnParameter).append("\n");
-                                    } else {
-                                        fullNameColumn.append(columnParameter).append(NOTNAME);
-                                    }
+        List<DmsSysElement> filtredByHeadDmsSysElements = dmsSysElements.stream().filter(dmsSysElement -> {
+            long filtredCount =
+                    rule.getFilterHead().entrySet().stream().filter(
+                            entry -> {
+                                if (entry.getValue().isEmpty()) {
+                                    return dmsSysElement.getHead().getParametrs().keySet().contains(entry.getKey());
+                                } else {
+                                    return dmsSysElement.getHead().getParametrs().entrySet().contains(entry);
                                 }
-                        );
-                        headerNames.add(fullNameColumn.toString());
+                            }
+                    ).count();
+
+            return filtredCount == rule.getFilterHead().size();
+        }).collect(Collectors.toList());
+
+
+        List<DmsSysElement> filtredByBodyDmsSysElements = filtredByHeadDmsSysElements.stream().map(
+                dmsSysElement -> {
+                    dmsSysElement.setBodies(
+
+                            Arrays.asList(
+                                    dmsSysElement.getBodies()
+                            ).stream().filter(
+                                    body -> {
+
+                                        long filtredCount =
+                                                rule.getFilterBody().entrySet().stream().filter(
+                                                        entry -> {
+                                                            if (entry.getValue().isEmpty()) {
+                                                                return body.getParametrs().keySet().contains(entry.getKey());
+                                                            } else {
+                                                                return body.getParametrs().entrySet().contains(entry);
+                                                            }
+                                                        }
+                                                ).count();
+                                        return filtredCount == rule.getFilterBody().size();
+
+                                    }
+                            ).toArray(Body[]::new)
+
+                    );
+                    return dmsSysElement;
+                }
+        ).collect(Collectors.toList());
+
+
+        List<DmsSysElement> filtredNonEmptyBodiesDmsSysElements =
+                filtredByBodyDmsSysElements.stream().filter(dmsSysElement -> dmsSysElement.getBodies().length!=0).collect(Collectors.toList());
+
+        return filtredNonEmptyBodiesDmsSysElements;
+    }
+
+
+
+    public List<List<String>> addRows (List<DmsSysElement> dmsSysElements, Rule rule) {
+
+
+//        List<DmsSysElement> filtredByHeadDmsSysElements = dmsSysElements.stream().filter(dmsSysElement -> {
+//            long filtredCount =
+//                    rule.getFilterHead().entrySet().stream().filter(
+//                            entry -> {
+//                                if (entry.getValue().isEmpty()) {
+//                                    return dmsSysElement.getHead().getParametrs().keySet().contains(entry.getKey());
+//                                } else {
+//                                    return dmsSysElement.getHead().getParametrs().entrySet().contains(entry);
+//                                }
+//                            }
+//                    ).count();
+//
+//            return filtredCount == rule.getFilterHead().size();
+//        }).collect(Collectors.toList());
+//
+//
+//        List<DmsSysElement> filtredByBodyDmsSysElements = filtredByHeadDmsSysElements.stream().map(
+//                dmsSysElement -> {
+//                    dmsSysElement.setBodies(
+//
+//                            Arrays.asList(
+//                                    dmsSysElement.getBodies()
+//                            ).stream().filter(
+//                                    body -> {
+//
+//                                        long filtredCount =
+//                                                rule.getFilterBody().entrySet().stream().filter(
+//                                                        entry -> {
+//                                                            if (entry.getValue().isEmpty()) {
+//                                                                return body.getParametrs().keySet().contains(entry.getKey());
+//                                                            } else {
+//                                                                return body.getParametrs().entrySet().contains(entry);
+//                                                            }
+//                                                        }
+//                                                ).count();
+//                                        return filtredCount == rule.getFilterBody().size();
+//
+//                                    }
+//                            ).toArray(Body[]::new)
+//
+//                    );
+//                    return dmsSysElement;
+//                }
+//        ).collect(Collectors.toList());
+//
+//
+//        List<DmsSysElement> filtredNonEmptyBodiesDmsSysElements =
+//                filtredByBodyDmsSysElements.stream().filter(dmsSysElement -> dmsSysElement.getBodies().length!=0).collect(Collectors.toList());
+//
+//
+
+
+        return null;
+    }
+
+    public List<String> getHeaderColumns (List<DmsSysElement> dmsSysElements, Rule rule) {
+
+        rule.getHeaderColumns().stream().map(
+                colunm -> {
+                    if(colunm.entrySet().size()==2) {
+
+                        colunm.keySet().stream().filter(key -> CommonConstants.HeaderAttibute.PRINTED.equalsIgnoreCase( key)).map(key -> )
 
                     }
 
 
 
                 }
-
-
-
-        );
-
-
-
-
+        ).collect(Collectors.toList());
 
 
 
         return null;
     }
-
-
-
-    List<List<String>> addRows (List<DmsSysElement> dmsSysElements, Rule rule) {
-
-
-
-        return null;
-    }
-
-
-
 
 }

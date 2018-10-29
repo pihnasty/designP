@@ -9,7 +9,10 @@ public class ArrayListP {
         ArrayListP arrayListP = new ArrayListP();
 
 
-        System.out.println( arrayListP.isDataAnchoredToRow ( ) );
+    //    System.out.println( arrayListP.isDataAnchoredToRow ( ) );
+
+        arrayListP.case02();
+
     }
 
     private Boolean isDataAnchoredToRow ( ) {
@@ -24,4 +27,14 @@ public class ArrayListP {
         };
         return values.contains(null);
     }
+
+    private void case02() {
+        List<String> myList = new ArrayList<String>();
+        myList.add("Apple");
+        myList.add("Banana");
+        myList.add("Orange");
+        String[] myArray = myList.stream().toArray(String[]::new);
+        System.out.println();
+    }
+
 }

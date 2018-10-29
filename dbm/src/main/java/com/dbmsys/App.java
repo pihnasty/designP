@@ -8,11 +8,11 @@ import java.util.List;
 
 public class App {
     public static void main(String[] args) {
-        Rule ruleOnlyHeader = new Rule(new ArrayList<List<String>>() {
-            {
-                add(Arrays.asList("Started"));
-                add(Arrays.asList("Address", "Category", "Instance", "Value"));
-            }
-        });
+//        Rule ruleOnlyHeader = new Rule(new ArrayList<List<String>>() {
+//            {
+//                add(Arrays.asList("Started"));
+//                add(Arrays.asList("Address", "Category", "Instance", "Value"));
+//            }
+//        });
     }
 }

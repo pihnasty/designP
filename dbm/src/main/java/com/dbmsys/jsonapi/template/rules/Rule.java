@@ -1,18 +1,46 @@
 package com.dbmsys.jsonapi.template.rules;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class Rule {
+
+    Map<String,String> filterHead = new HashMap<>();
+    Map<String,String> filterBody = new HashMap<>();
+
+
+
     List<Map<String,String>> headerColumns = new ArrayList<>();
     List<String> whereByHeaderValues = new ArrayList<>();
     List<String> whereByBodyValues = new ArrayList<>();
     List<String> groupingByHeaderValues = new ArrayList<>();
     List<String> groupingByBodyValues = new ArrayList<>();
 
+    public Rule(Map<String, String> filterHead, Map<String, String> filterBody) {
+        this.filterHead = filterHead;
+        this.filterBody = filterBody;
+    }
+
     public Rule(List<Map<String, String>> headerColumns) {
         this.headerColumns = headerColumns;
+    }
+
+    public Map<String, String> getFilterHead() {
+        return filterHead;
+    }
+
+    public void setFilterHead(Map<String, String> filterHead) {
+        this.filterHead = filterHead;
+    }
+
+    public Map<String, String> getFilterBody() {
+        return filterBody;
+    }
+
+    public void setFilterBody(Map<String, String> filterBody) {
+        this.filterBody = filterBody;
     }
 
     public List<Map<String, String>> getHeaderColumns() {
