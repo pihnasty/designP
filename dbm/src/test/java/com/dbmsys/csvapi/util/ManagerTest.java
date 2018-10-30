@@ -12,6 +12,7 @@ public class ManagerTest {
     @Test
     public void readFromGzFileTest() {
         Manager.getFilesFrom(path, types);
+        System.out.println();
     }
 
 }

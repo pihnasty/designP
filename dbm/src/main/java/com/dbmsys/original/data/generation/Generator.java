@@ -306,4 +306,20 @@ public class Generator {
                         }
                 );
     }
+
+    public List<String> getDmsSysElementsHeader(Rule ruleFiltredByHeadByBody, List<DmsSysElement> dmsSysElements, String additionalСolumnName) {
+        List<DmsSysElement> filtredData =  getFiltredData(dmsSysElements, ruleFiltredByHeadByBody);
+        List<String>  headerColumns =  getHeaderColumns(filtredData, ruleFiltredByHeadByBody);
+        headerColumns.add(additionalСolumnName);
+        return headerColumns;
+    }
+
+    public List<String> getDmsSysElementsRow(Rule ruleFiltredByHeadByBody, List<DmsSysElement> dmsSysElements, String additionalСolumnValue) {
+        List<DmsSysElement> filtredData =  getFiltredData(dmsSysElements, ruleFiltredByHeadByBody);
+        List<String>  row =  getRow(filtredData, ruleFiltredByHeadByBody);
+        row.add(additionalСolumnValue);
+        return row;
+    }
+
+
 }

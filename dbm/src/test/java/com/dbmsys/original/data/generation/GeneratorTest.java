@@ -58,19 +58,24 @@ public class GeneratorTest {
             }
         });
 
+        String path = "src\\main\\java\\com\\dbmsys\\data";
+        //String path = "C:\\Program Files\\DBBest\\DBMsys\\PowerShell\\out\\";
+        String fileName = "Dbmsys.2018.10.19.092718501.json.gz";
+
 
         Reader reader = new Reader();
-        List<DmsSysElement> dmsSysElements = reader.readFromGzFile(path, fileName);
-
         Generator generator = new Generator();
-        List<DmsSysElement> filtredData =  generator.getFiltredData(dmsSysElements, ruleFiltredByHeadByBody);
 
-        List<String>  headerColumns =  generator.getHeaderColumns(filtredData, ruleFiltredByHeadByBody);
 
-        List<String>  row =  generator.getRow(filtredData, ruleFiltredByHeadByBody);
+        List<DmsSysElement> dmsSysElements = reader.readFromGzFile(path, fileName);
+        List<String> header = generator.getDmsSysElementsHeader(ruleFiltredByHeadByBody, dmsSysElements, "additional");
+        List<String> row = generator.getDmsSysElementsRow(ruleFiltredByHeadByBody, dmsSysElements,fileName);
+
+        System.out.println();
 
 
     }
+
 }
 
 
