@@ -1,11 +1,10 @@
 package com.dbmsys.original.data.generation;
 
-import com.dbmsys.jsonapi.io.Reader;
-import com.dbmsys.jsonapi.template.data.DmsSysElement;
 import com.dbmsys.jsonapi.template.rules.Rule;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import org.junit.Test;
-
-import java.util.*;
 
 
 public class GeneratorTest {
@@ -58,22 +57,10 @@ public class GeneratorTest {
             }
         });
 
-        String path = "src\\main\\java\\com\\dbmsys\\data";
-        //String path = "C:\\Program Files\\DBBest\\DBMsys\\PowerShell\\out\\";
-        String fileName = "Dbmsys.2018.10.19.092718501.json.gz";
 
-
-        Reader reader = new Reader();
-        Generator generator = new Generator();
-
-
-        List<DmsSysElement> dmsSysElements = reader.readFromGzFile(path, fileName);
-        List<String> header = generator.getDmsSysElementsHeader(ruleFiltredByHeadByBody, dmsSysElements, "additional");
-        List<String> row = generator.getDmsSysElementsRow(ruleFiltredByHeadByBody, dmsSysElements,fileName);
-
-        System.out.println();
-
-
+        String path = "src\\main\\java\\com\\dbmsys\\data2";
+        String [] types = {"gz"};
+        Generator.gerTable(ruleFiltredByHeadByBody, path, types);
     }
 
 }

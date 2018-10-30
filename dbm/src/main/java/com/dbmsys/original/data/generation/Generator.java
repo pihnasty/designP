@@ -1,11 +1,12 @@
 package com.dbmsys.original.data.generation;
 
+import com.dbmsys.csvapi.util.Manager;
+import com.dbmsys.jsonapi.io.Reader;
 import com.dbmsys.jsonapi.template.data.Body;
 import com.dbmsys.jsonapi.template.data.DmsSysElement;
 import com.dbmsys.jsonapi.template.rules.Rule;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -75,25 +76,9 @@ public class Generator {
     }
 
     public List<String> getRow(List<DmsSysElement> dmsSysElements, Rule rule) {
-        Set<String> headParameterNames = new HashSet<>();
-        dmsSysElements.forEach(element -> {
-                    headParameterNames.addAll(element.getHead().getParametrs().keySet());
-                }
-        );
-
-        Set<String> bodyParameterNames = new HashSet<>();
-        dmsSysElements.forEach(element -> {
-                    Arrays.asList(element.getBodies()).forEach(
-                            elementBody -> bodyParameterNames.addAll(elementBody.getParametrs().keySet())
-                    );
-                }
-        );
-
-        Set<String> parameterNames = new HashSet<>();
-        parameterNames.addAll(headParameterNames);
-        parameterNames.addAll(bodyParameterNames);
-
-
+        Set<String> headParameterNames = getHeadParameterNames(dmsSysElements);
+        Set<String> bodyParameterNames = getBodyParametersNames(dmsSysElements);
+        Set<String> parameterNames = getParameterNames(headParameterNames, bodyParameterNames);
         List<String> headerColumnString = new ArrayList<>();
 
         rule.getHeaderColumns().stream().forEach(
@@ -163,25 +148,9 @@ public class Generator {
     }
 
     public List<String> getHeaderColumns(List<DmsSysElement> dmsSysElements, Rule rule) {
-        Set<String> headParameterNames = new HashSet<>();
-        dmsSysElements.forEach(element -> {
-                    headParameterNames.addAll(element.getHead().getParametrs().keySet());
-                }
-        );
-
-        Set<String> bodyParameterNames = new HashSet<>();
-        dmsSysElements.forEach(element -> {
-                    Arrays.asList(element.getBodies()).forEach(
-                            elementBody -> bodyParameterNames.addAll(elementBody.getParametrs().keySet())
-                    );
-                }
-        );
-
-        Set<String> parameterNames = new HashSet<>();
-        parameterNames.addAll(headParameterNames);
-        parameterNames.addAll(bodyParameterNames);
-
-
+        Set<String> headParameterNames = getHeadParameterNames(dmsSysElements);
+        Set<String> bodyParameterNames = getBodyParametersNames(dmsSysElements);
+        Set<String> parameterNames = getParameterNames(headParameterNames, bodyParameterNames);
         List<String> headerColumnString = new ArrayList<>();
 
         rule.getHeaderColumns().stream().forEach(
@@ -271,24 +240,9 @@ public class Generator {
     }
 
     private void OneColumnRowValue(List<String> headerColumnString, Map<String, String> colunmMap, List<DmsSysElement> dmsSysElements) {
-        Set<String> headParameterNames = new HashSet<>();
-        dmsSysElements.forEach(element -> {
-                    headParameterNames.addAll(element.getHead().getParametrs().keySet());
-                }
-        );
-
-        Set<String> bodyParameterNames = new HashSet<>();
-        dmsSysElements.forEach(element -> {
-                    Arrays.asList(element.getBodies()).forEach(
-                            elementBody -> bodyParameterNames.addAll(elementBody.getParametrs().keySet())
-                    );
-                }
-        );
-
-        Set<String> parameterNames = new HashSet<>();
-        parameterNames.addAll(headParameterNames);
-        parameterNames.addAll(bodyParameterNames);
-
+        Set<String> headParameterNames = getHeadParameterNames(dmsSysElements);
+        Set<String> bodyParameterNames = getBodyParametersNames(dmsSysElements);
+        Set<String> parameterNames = getParameterNames(headParameterNames, bodyParameterNames);
 
         colunmMap.keySet().stream()
                 .filter(key -> !CommonConstants.HeaderAttibute.PRINTED.equalsIgnoreCase(key))
@@ -321,5 +275,68 @@ public class Generator {
         return row;
     }
 
+    private Set<String> getBodyParametersNames(List<DmsSysElement> dmsSysElements) {
+        Set<String> bodyParameterNames = new HashSet<>();
+        dmsSysElements.forEach(element -> {
+                Arrays.asList(element.getBodies()).forEach(
+                    elementBody -> bodyParameterNames.addAll(elementBody.getParametrs().keySet())
+                );
+            }
+        );
+        return bodyParameterNames;
+    }
+
+    private Set<String> getHeadParameterNames(List<DmsSysElement> dmsSysElements) {
+        Set<String> headParameterNames = new HashSet<>();
+        dmsSysElements.forEach(element -> {
+                headParameterNames.addAll(element.getHead().getParametrs().keySet());
+            }
+        );
+        return headParameterNames;
+    }
+
+    private Set<String> getParameterNames(Set<String> headParameterNames, Set<String> bodyParameterNames) {
+        Set<String> parameterNames = new HashSet<>();
+        parameterNames.addAll(headParameterNames);
+        parameterNames.addAll(bodyParameterNames);
+        return parameterNames;
+    }
+
+    public static boolean compareHeaders(List<String> headerTemplate, List<String> header, String filename) {
+        for (int i = 0; i < headerTemplate.size(); i++) {
+            if (headerTemplate.get(i).equals(header.get(i))) {
+            } else {
+                System.out.println("Different data set: " + filename);
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static List<List<String>> gerTable(Rule ruleFiltredByHeadByBody, String path, String[] types) {
+        Reader reader = new Reader();
+        Generator generator = new Generator();
+        List<String> fileNames = Manager.getFilesFrom(path, types);
+        List<List<String>> table = new ArrayList<>();
+
+        List<String> headerTemplate = new ArrayList<>();
+
+        fileNames.forEach( fileName -> {
+                List<DmsSysElement> dmsSysElements = reader.readFromGzFile(path, fileName);
+                List<String> header = generator.getDmsSysElementsHeader(ruleFiltredByHeadByBody, dmsSysElements, "additional");
+                List<String> row = generator.getDmsSysElementsRow(ruleFiltredByHeadByBody, dmsSysElements, fileName);
+                if (headerTemplate.isEmpty()) {
+                    headerTemplate.addAll(header) ;
+                    table.add(header);
+                    table.add(row);
+                } else {
+                    if(Generator.compareHeaders(headerTemplate, header,fileName)) {
+                        table.add(row);
+                    }
+                }
+            }
+        );
+        return table;
+    }
 
 }

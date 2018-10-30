@@ -10,7 +10,8 @@ import java.util.stream.Collectors;
 import org.apache.commons.io.FileUtils;
 
 public class Manager {
-    public static List<String> getFilesFrom(String path,  String[] types) {
+
+    public static List<String> getFilesFrom(String path, String[] types) {
         Path p1 = Paths.get(path);
         if (Files.notExists(p1)) {
             try {
@@ -20,7 +21,7 @@ public class Manager {
             }
         }
 
-        List<File> files = (List<File>) FileUtils.listFiles(new File(path), types , true);
+        List<File> files = (List<File>) FileUtils.listFiles(new File(path), types, true);
         return files.stream().map(file -> file.getName()).sorted().collect(Collectors.toList());
     }
 }
