@@ -322,6 +322,7 @@ public class Generator {
         List<String> headerTemplate = new ArrayList<>();
 
         fileNames.forEach( fileName -> {
+            System.out.println(fileName);
                 List<DmsSysElement> dmsSysElements = reader.readFromGzFile(path, fileName);
                 List<String> header = generator.getDmsSysElementsHeader(ruleFiltredByHeadByBody, dmsSysElements, "additional");
                 List<String> row = generator.getDmsSysElementsRow(ruleFiltredByHeadByBody, dmsSysElements, fileName);
