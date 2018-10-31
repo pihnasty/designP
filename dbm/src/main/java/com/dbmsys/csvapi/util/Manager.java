@@ -15,7 +15,7 @@ public class Manager {
         Path p1 = Paths.get(path);
         if (Files.notExists(p1)) {
             try {
-                throw new IOException("The specified directory does not exist");
+B                throw new IOException("The specified directory does not exist");
             } catch (IOException e) {
                 e.printStackTrace();
             }
