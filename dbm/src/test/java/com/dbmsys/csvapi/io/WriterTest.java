@@ -6,11 +6,18 @@ import org.junit.Test;
 
 public class WriterTest {
 
+    Writer w = new Writer();
 
     @Test
     public void readFromGzFileTest() throws IOException {
-        Writer w = new Writer();
         w.writeToFile((List<List<String>>) new Object());
+    }
+
+    @Test
+    public void convertStringToDataTest() throws IOException {
+
+        w.convertStringToData();
+
     }
 }
 
