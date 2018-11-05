@@ -32,7 +32,7 @@ public class GeneratorTest {
                 new HashMap<String, String>() {
                     {
                         put("Category", "LogicalDisk");
-                        put("Counter", "Avg. Disk Bytes/Read");   //"% Free Space"
+                        put("Counter", "");   //"% Free Space"  "Avg. Disk Bytes/Read"
                         put("Instance", "");
                         put("Value", "");
                     }
@@ -47,14 +47,14 @@ public class GeneratorTest {
                     {
                         put("Started", "");
                         put(CommonConstants.HeaderAttibute.PRINTED, "Started");
-                        put(CommonConstants.HeaderAttibute.HEADER, "ValueStarted");
+                        put(CommonConstants.HeaderAttibute.HEADER, "Value");
                     }
                 });
                 add(new HashMap<String, String>() {
                     {
                         put("Address", "vm-dbmsys-stage");
                         put("Category", "LogicalDisk");
-                        put("Counter", "Avg. Disk Bytes/Read");   //"% Free Space"
+                        put("Counter", "");   //"% Free Space"
                         put("Instance", "");
                         put("Value", "");
                         put(CommonConstants.HeaderAttibute.PRINTED, "Value");
@@ -68,8 +68,8 @@ public class GeneratorTest {
 
 
 
-        String path = //"src\\main\\java\\com\\dbmsys\\data3";
-        "E:\\DBMSYS\\out2018_11_05";
+        String path = "src\\main\\java\\com\\dbmsys\\data2";
+       // "E:\\DBMSYS\\out2018_11_05";
 
 
         String [] types = {"gz"};

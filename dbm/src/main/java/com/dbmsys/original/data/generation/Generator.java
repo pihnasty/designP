@@ -162,11 +162,8 @@ public class Generator {
                     if (colunmMap.entrySet().size() == 3) {
                         OneColumnRowHeader(parameterNames, headerColumnString, colunmMap);
                     } else {
-
-
                         List<StringBuilder> fullNameColumn = new ArrayList<>();
                         fullNameColumn.add(new StringBuilder());
-
                         colunmMap.entrySet().stream()
                                 .filter(entry -> !colunmMap.get(CommonConstants.HeaderAttibute.PRINTED).equalsIgnoreCase(entry.getKey()))
                                 .filter(entry -> !CommonConstants.HeaderAttibute.PRINTED.equalsIgnoreCase(entry.getKey()))
@@ -175,19 +172,11 @@ public class Generator {
                                         entryFiltered -> {
                                             if (parameterNames.contains(entryFiltered.getKey())) {
                                                 if (entryFiltered.getValue().isEmpty()) {
-
-
                                                     boolean isHeadParameter = headParameterNames.contains(entryFiltered) ? true : false;
-
                                                     if (isHeadParameter) {
-
-
                                                         dmsSysElements.stream().filter(element -> element.getHead().getParametrs().containsKey(entryFiltered.getKey()))
                                                                 .map(filtredElement -> filtredElement.getHead().getParametrs().values()).collect(toList());
-
                                                     } else {
-
-
                                                         dmsSysElements.stream().forEach(
                                                                 element -> {
                                                                     boolean[] isCreited = new boolean[1];
@@ -221,7 +210,6 @@ public class Generator {
                                             }
                                         }
                                 );
-
                         fullNameColumn.forEach(fullName -> headerColumnString.add(fullName.toString()));
                     }
                 }
