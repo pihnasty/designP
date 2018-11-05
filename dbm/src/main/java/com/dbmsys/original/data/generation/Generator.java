@@ -5,6 +5,9 @@ import com.dbmsys.jsonapi.io.Reader;
 import com.dbmsys.jsonapi.template.data.Body;
 import com.dbmsys.jsonapi.template.data.DmsSysElement;
 import com.dbmsys.jsonapi.template.rules.Rule;
+import java.time.Duration;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -454,7 +457,7 @@ public class Generator {
             for(String column : row) {
                 if (  row.get(0) == column) {
                     formatRow.add( String.format(  formatColumns.get(0),
-                            partTable == CommonConstants.PartTable.HEADER ? column : column));
+                        partTable == CommonConstants.PartTable.HEADER ? column : Double.parseDouble(column)));
                 }
                 else {
                     if (  row.get(row.size()-1) == column) {
@@ -469,6 +472,33 @@ public class Generator {
             }
             formatedTable.add(formatRow);
         }
+    }
+
+    public static void convertDateToString(List<List<String>> table, int numberColumn) {
+
+        String startDate = table.get(1).get(numberColumn);
+
+        for (int i=1; i<table.size(); i++) {
+            Double interval = convertStringToIntervalTime(startDate, table.get(i).get(numberColumn), CommonConstants.IntervalKind.HOUR);
+            table.get(i).set(0,interval.toString());
+        }
+    }
+
+
+    public static double convertStringToIntervalTime(String startDate, String currentDate, CommonConstants.IntervalKind intervalKind) {
+        ZonedDateTime zonedDateTimeStart = ZonedDateTime.parse(startDate, DateTimeFormatter.ISO_DATE_TIME);
+        ZonedDateTime zonedDateTimeCurrent = ZonedDateTime.parse(currentDate, DateTimeFormatter.ISO_DATE_TIME);
+        Duration duration = Duration.between(zonedDateTimeStart, zonedDateTimeCurrent);
+        double interval = 0;
+
+        switch (intervalKind) {
+            case HOUR:
+                interval = (double) duration.toMinutes() / 60.0;
+                break;
+            default:
+                interval = (double) duration.toHours();
+        }
+        return interval;
     }
 
 

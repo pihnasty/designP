@@ -10,4 +10,6 @@ public class CommonConstants {
 
     public enum PartTable {HEADER, BODY};
 
+    public enum IntervalKind {DAY, HOUR};
+
 }

@@ -1,11 +1,12 @@
 package com.dbmsys.original.data.generation;
 
-import com.dbmsys.csvapi.io.write.Writer;
 import com.dbmsys.csvapi.io.write.CsvWriterP;
 import com.dbmsys.jsonapi.template.rules.Rule;
-
-import java.util.*;
-
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import org.junit.Test;
 
 
@@ -18,6 +19,9 @@ public class GeneratorTest {
     @Test
     public void addRowsTest() {
 
+
+
+        // Правила, по каким столбцам ищем в head и body
         Rule ruleFiltredByHeadByBody = new Rule(
                 new HashMap<String, String>() {
                     {
@@ -28,7 +32,7 @@ public class GeneratorTest {
                 new HashMap<String, String>() {
                     {
                         put("Category", "LogicalDisk");
-                        put("Counter", "% Free Space");
+                        put("Counter", "Avg. Disk Bytes/Read");   //"% Free Space"
                         put("Instance", "");
                         put("Value", "");
                     }
@@ -36,6 +40,7 @@ public class GeneratorTest {
         );
 
 
+        // Правила, как мы разносим столбцы ищем в head и body
         ruleFiltredByHeadByBody.setHeaderColumns(new ArrayList<Map<String, String>>() {
             {
                 add(new HashMap<String, String>() {
@@ -49,7 +54,7 @@ public class GeneratorTest {
                     {
                         put("Address", "vm-dbmsys-stage");
                         put("Category", "LogicalDisk");
-                        put("Counter", "% Free Space");
+                        put("Counter", "Avg. Disk Bytes/Read");   //"% Free Space"
                         put("Instance", "");
                         put("Value", "");
                         put(CommonConstants.HeaderAttibute.PRINTED, "Value");
@@ -60,20 +65,31 @@ public class GeneratorTest {
         });
 
 
-        String path = "src\\main\\java\\com\\dbmsys\\data2";
+
+
+
+        String path = //"src\\main\\java\\com\\dbmsys\\data3";
+        "E:\\DBMSYS\\out2018_11_05";
+
+
         String [] types = {"gz"};
         List<List<String>> table = Generator.getTable(ruleFiltredByHeadByBody, path, types);
 
 
-        List<String> stringFormatHeader = Arrays.asList(" %18s "," %18s "," %18s ");
-        List<String> stringFormatBody = Arrays.asList  (" %18s "," %18.3f "," %18s ");
+        Generator.convertDateToString(table,0);
+
+        String stringFormatforColumn = " %20s ";
+        String doubleFormatforColumn = " %20.3f ";
+
+        List<String> stringFormatHeader = Arrays.asList(stringFormatforColumn,stringFormatforColumn,stringFormatforColumn);
+        List<String> stringFormatBody = Arrays.asList  (doubleFormatforColumn,doubleFormatforColumn,stringFormatforColumn);
 
         List<List<String>> modifiedHeaderTable
                 = Generator.getTableWithModifiedHeader(
                         table, CommonConstants.HeaderFormatAttibute.FULL,
                 stringFormatHeader, stringFormatBody);
 
-        CsvWriterP csvWriterP =  new CsvWriterP( "%8.3f  ", ';', path, "sample3");
+        CsvWriterP csvWriterP =  new CsvWriterP( "%8.3f  ", ';', path, "sampleAvg.csv");
         csvWriterP.writeToFile(modifiedHeaderTable);
 
     }
