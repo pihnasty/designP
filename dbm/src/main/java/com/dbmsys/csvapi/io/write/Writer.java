@@ -1,4 +1,4 @@
-package com.dbmsys.csvapi.io;
+package com.dbmsys.csvapi.io.write;
 
 import com.opencsv.CSVWriter;
 import java.io.BufferedWriter;

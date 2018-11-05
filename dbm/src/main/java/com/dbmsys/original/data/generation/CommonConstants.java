@@ -5,4 +5,9 @@ public class CommonConstants {
         public static final String PRINTED = "Printed";
         public static final String HEADER = "Header";
     }
+
+    public enum HeaderFormatAttibute {FULL, SHORT};
+
+    public enum PartTable {HEADER, BODY};
+
 }

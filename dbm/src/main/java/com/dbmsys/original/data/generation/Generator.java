@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
 
@@ -313,7 +314,7 @@ public class Generator {
         return true;
     }
 
-    public static List<List<String>> gerTable(Rule ruleFiltredByHeadByBody, String path, String[] types) {
+    public static List<List<String>> getTable(Rule ruleFiltredByHeadByBody, String path, String[] types) {
         Reader reader = new Reader();
         Generator generator = new Generator();
         List<String> fileNames = Manager.getFilesFrom(path, types);
@@ -339,5 +340,136 @@ public class Generator {
         );
         return table;
     }
+
+    /**
+     * The method gets the header with \n  and returns more rows , which are more level header
+     * @param header header with \n
+     * @return more level header
+     */
+    public static List<List<String>> generateFullHeader (List<String> header ) {
+
+        List<List<String>> tempHeader =  header.stream().map(columnHeader ->
+                    Arrays.asList(    columnHeader.split("\n"))
+        ).collect(toList());
+
+        List<List<String>> headerMoreRows = new ArrayList<>();
+        int sizeRows = tempHeader.stream().map(columnHeader -> columnHeader.size() ).max(Integer::compareTo).get();
+
+
+        for (int i=0; i< sizeRows; i++) {
+            List<String> row = new ArrayList<>();
+
+            for( List<String> column: tempHeader) {
+                row.add( i<column.size() ? column.get(i) : "");
+            }
+            headerMoreRows.add(row);
+        }
+        return headerMoreRows;
+    }
+
+    /**
+     * The method gets the header with \n  and returns more rows , which are one level header
+     * @param header header with \n
+     * @return more one header
+     */
+    public static List<List<String>> generateShortHeader (List<String> header ) {
+        List<String> list = header.stream().map(column -> {
+            String[] headerColumnSplit = column.split("\n");
+            return headerColumnSplit[headerColumnSplit.length -1];
+        }).collect(Collectors.toList());
+        List<List<String>>  shortHeader = new ArrayList<>();
+        shortHeader.add(list);
+        return shortHeader;
+    }
+
+    private static List<String[]> toStringArray(List<List<String>> table) {
+        List<String[]> records = new ArrayList<>();
+
+        List<String> list = table.get(0).stream().map(column -> {
+            String[] header = column.split("\n");
+            return header[header.length -1];
+        }).collect(Collectors.toList());
+
+
+        table.remove(0);
+        table.add(0,list);
+
+        table.forEach( row -> records.add(row.stream().toArray(String[]::new)));
+
+        System.out.println();
+        return records;
+    }
+
+    public static List<List<String>> getTableWithModifiedHeader(List<List<String>> table, CommonConstants.HeaderFormatAttibute headerFormatAttibute) {
+
+        List<List<String>> modifiedHeader = Generator.generateFullHeader(table.get(0));
+
+        switch (headerFormatAttibute) {
+            case FULL: modifiedHeader = Generator.generateFullHeader(table.get(0));
+                break;
+            case SHORT: modifiedHeader = Generator.generateShortHeader(table.get(0));
+                break;
+            default:
+        }
+
+        List<List<String>> modifiedHeaderTable = new ArrayList<>();
+        table.remove(0);
+        modifiedHeaderTable.addAll(modifiedHeader);
+        modifiedHeaderTable.addAll(table);
+        return modifiedHeaderTable;
+    }
+
+    public static List<List<String>> getTableWithModifiedHeader(List<List<String>> table, CommonConstants.HeaderFormatAttibute headerFormatAttibute,
+    List<String> formatHeader, List<String> formatBody ) {
+
+        List<List<String>> modifiedHeader = Generator.generateFullHeader(table.get(0));
+
+        switch (headerFormatAttibute) {
+            case FULL: modifiedHeader = Generator.generateFullHeader(table.get(0));
+                break;
+            case SHORT: modifiedHeader = Generator.generateShortHeader(table.get(0));
+                break;
+            default:
+        }
+
+        List<List<String>> formatedTable = new ArrayList<>();
+        table.remove(0);
+
+        List<List<String>> formatModifiedHeader = new ArrayList<>();
+        formatedTable(formatHeader, modifiedHeader, formatModifiedHeader,CommonConstants.PartTable.HEADER);
+
+        List<List<String>> formatModifiedBody = new ArrayList<>();
+        formatedTable(formatBody, table, formatModifiedBody, CommonConstants.PartTable.BODY);
+
+        formatedTable.addAll(formatModifiedHeader);
+        formatedTable.addAll(formatModifiedBody);
+        return formatedTable;
+    }
+
+    private static void formatedTable(List<String> formatColumns, List<List<String>> sourseTable,
+                                      List<List<String>> formatedTable,
+                                      CommonConstants.PartTable partTable)  {
+        for (List<String> row : sourseTable) {
+            List<String> formatRow = new ArrayList<>();
+            for(String column : row) {
+                if (  row.get(0) == column) {
+                    formatRow.add( String.format(  formatColumns.get(0),
+                            partTable == CommonConstants.PartTable.HEADER ? column : column));
+                }
+                else {
+                    if (  row.get(row.size()-1) == column) {
+                        formatRow.add( String.format(  formatColumns.get(formatColumns.size()-1),
+                                partTable == CommonConstants.PartTable.HEADER ? column : column));
+                    } else {
+                        formatRow.add( String.format(  formatColumns.get(1),
+                                partTable == CommonConstants.PartTable.HEADER ? column : Double.parseDouble(column))
+                                 );
+                    }
+                }
+            }
+            formatedTable.add(formatRow);
+        }
+    }
+
 
 }
