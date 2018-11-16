@@ -72,8 +72,9 @@ public class GeneratorTest {
             }
         });
 
-        String path = "src\\main\\java\\com\\dbmsys\\data2";
-       // "E:\\DBMSYS\\out2018_11_05";
+        String path = //"src\\main\\java\\com\\dbmsys\\data2";
+        //"E:\\DBMSYS\\out2018_11_05";
+        "E:\\DBMSYS\\out2018_11_16";
 
 
         String [] types = {"gz"};
@@ -92,7 +93,7 @@ public class GeneratorTest {
                         table, CommonConstants.HeaderFormatAttibute.FULL,
                 stringFormatHeader, stringFormatBody);
 
-        CsvWriterP csvWriterP =  new CsvWriterP( "%8.3f  ", ';', path, "sampleAvg1.csv");
+        CsvWriterP csvWriterP =  new CsvWriterP( "%8.3f  ", ';', path, "sampleAvg_2018_11_16.csv");
         csvWriterP.writeToFile(modifiedHeaderTable);
 
     }
