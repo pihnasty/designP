@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="nzjdbc3 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/core/src/main/java/jdbcTest/netezza/nzjdbc3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
