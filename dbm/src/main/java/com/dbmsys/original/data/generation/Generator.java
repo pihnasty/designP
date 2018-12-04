@@ -24,57 +24,53 @@ public class Generator {
     private final String NOTNAME ="\nnot name";
     private final String NOTVALUE ="\nnot value";
 
-    public List<DmsSysElement> getFiltredData (List<DmsSysElement> dmsSysElements, Rule rule) {
+    public List<DmsSysElement> getFiltredData(List<DmsSysElement> dmsSysElements, Rule rule) {
 
-
-        List<DmsSysElement> filtredByHeadDmsSysElements = dmsSysElements.stream().filter(dmsSysElement -> {
-            long filtredCount =
+        // фильтруем элементы dmsSysElements, head который удовлетворяет правилам
+        List<DmsSysElement> filtredByHeadDmsSysElements = dmsSysElements.stream().filter(
+            dmsSysElement -> {
+                long filtredCount =
                     rule.getFilterHead().entrySet().stream().filter(
-                            entry -> {
-                                if (entry.getValue().isEmpty()) {
-                                    return dmsSysElement.getHead().getParametrs().keySet().contains(entry.getKey());
-                                } else {
-                                    return dmsSysElement.getHead().getParametrs().entrySet().contains(entry);
-                                }
+                        entry -> {
+                            if (entry.getValue().isEmpty()) {
+                                return dmsSysElement.getHead().getParametrs().keySet().contains(entry.getKey());
+                            } else {
+                                return dmsSysElement.getHead().getParametrs().entrySet().contains(entry);
                             }
+                        }
                     ).count();
+                return filtredCount == rule.getFilterHead().size();
+            }).collect(toList());
 
-            return filtredCount == rule.getFilterHead().size();
-        }).collect(toList());
-
-
+        // фильтруем элементы dmsSysElements и у каждого элемента проверяет Body []. Берем имеющийся Body [] и фильтруем его по указанному правилу.
+        // Новый  Body [], отфильтрованный по правилу через set() задается в элементу dmsSysElement. Если ни один из элементов Body [] не удовлетволяет
+        // правилу, то будет сформированный Body [] будет пустым и ссылка на него передастся в dmsSysElement
         List<DmsSysElement> filtredByBodyDmsSysElements = filtredByHeadDmsSysElements.stream().map(
-                dmsSysElement -> {
-                    dmsSysElement.setBodies(
-
-                            Arrays.asList(
-                                    dmsSysElement.getBodies()
-                            ).stream().filter(
-                                    body -> {
-
-                                        long filtredCount =
-                                                rule.getFilterBody().entrySet().stream().filter(
-                                                        entry -> {
-                                                            if (entry.getValue().isEmpty()) {
-                                                                return body.getParametrs().keySet().contains(entry.getKey());
-                                                            } else {
-                                                                return body.getParametrs().entrySet().contains(entry);
-                                                            }
-                                                        }
-                                                ).count();
-                                        return filtredCount == rule.getFilterBody().size();
-
+            dmsSysElement -> {
+                dmsSysElement.setBodies(Arrays.asList(
+                    dmsSysElement.getBodies()).stream().filter(
+                    body -> {
+                        long filtredCount =
+                            rule.getFilterBody().entrySet().stream().filter(
+                                entry -> {
+                                    if (entry.getValue().isEmpty()) {
+                                        return body.getParametrs().keySet().contains(entry.getKey());
+                                    } else {
+                                        return body.getParametrs().entrySet().contains(entry);
                                     }
-                            ).toArray(Body[]::new)
-
-                    );
-                    return dmsSysElement;
-                }
+                                }
+                            ).count();
+                        return filtredCount == rule.getFilterBody().size();
+                    }
+                    ).toArray(Body[]::new)
+                );
+                return dmsSysElement;
+            }
         ).collect(toList());
 
-
-        List<DmsSysElement> filtredNonEmptyBodiesDmsSysElements =
-                filtredByBodyDmsSysElements.stream().filter(dmsSysElement -> dmsSysElement.getBodies().length!=0).collect(toList());
+        // Фильтруем dmsSysElements, удаляя из него все элементы с пустым Body []
+        List<DmsSysElement> filtredNonEmptyBodiesDmsSysElements
+            = filtredByBodyDmsSysElements.stream().filter(dmsSysElement -> dmsSysElement.getBodies().length != 0).collect(toList());
 
         return filtredNonEmptyBodiesDmsSysElements;
     }
@@ -174,8 +170,9 @@ public class Generator {
                                                 if (entryFiltered.getValue().isEmpty()) {
                                                     boolean isHeadParameter = headParameterNames.contains(entryFiltered) ? true : false;
                                                     if (isHeadParameter) {
-                                                        dmsSysElements.stream().filter(element -> element.getHead().getParametrs().containsKey(entryFiltered.getKey()))
-                                                                .map(filtredElement -> filtredElement.getHead().getParametrs().values()).collect(toList());
+                                                        dmsSysElements.stream().filter(element
+                                                            -> element.getHead().getParametrs().containsKey(entryFiltered.getKey())
+                                                        ).map(filtredElement -> filtredElement.getHead().getParametrs().values()).collect(toList());
                                                     } else {
                                                         dmsSysElements.stream().forEach(
                                                                 element -> {
@@ -217,10 +214,11 @@ public class Generator {
         return headerColumnString;
     }
 
+    // формируем название столбца для времени (три элемента в нем)
     private void OneColumnRowHeader(Set<String> parameterNames, List<String> headerColumnString, Map<String, String> colunmMap) {
         colunmMap.keySet().stream()
-                .filter(key -> !CommonConstants.HeaderAttibute.PRINTED.equalsIgnoreCase(key))
-                .filter(key -> !CommonConstants.HeaderAttibute.HEADER.equalsIgnoreCase(key))
+            .filter(key -> !CommonConstants.HeaderAttibute.PRINTED.equalsIgnoreCase(key))
+            .filter(key -> !CommonConstants.HeaderAttibute.HEADER.equalsIgnoreCase(key))
             .forEach(filteredfdKey -> {
                     if (parameterNames.contains(filteredfdKey)) {
                         headerColumnString.add(filteredfdKey);

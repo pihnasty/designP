@@ -22,32 +22,29 @@ import java.util.zip.GZIPInputStream;
 
 public class Reader {
 
-    public  List<DmsSysElement> readFromGzFile(String path, String fileName) {
+    public List<DmsSysElement> readFromGzFile(String path, String fileName) {
 
-        Type type = new TypeToken<List<DmsSysElement>>(){}.getType();
+        Type type = new TypeToken<List<DmsSysElement>>() {
+        }.getType();
         List<DmsSysElement> dmsSysElements = null;
 
-        String fullName = path + "\\"+ fileName;
+        String fullName = path + "\\" + fileName;
         try (FileInputStream fileInputStream = new FileInputStream(fullName);
              GZIPInputStream gzipInputStream = new GZIPInputStream(fileInputStream);
              InputStreamReader inputStreamReader = new InputStreamReader(gzipInputStream);
              BufferedReader reader = new BufferedReader(inputStreamReader)) {
-
             Gson gson = new GsonBuilder()
-                    .registerTypeAdapter(type, new DmsSysArrayElementDeserializer())
-                    .registerTypeAdapter(Body.class, new BodyDeserializer())
-                    .registerTypeAdapter(Head.class, new HeadDeserializer())
-                    .create();
+                .registerTypeAdapter(type, new DmsSysArrayElementDeserializer())
+                .registerTypeAdapter(Body.class, new BodyDeserializer())
+                .registerTypeAdapter(Head.class, new HeadDeserializer())
+                .create();
 
             dmsSysElements = gson.fromJson(reader, type);
-
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
         return dmsSysElements;
-
     }
 }

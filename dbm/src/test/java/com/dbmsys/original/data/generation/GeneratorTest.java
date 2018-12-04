@@ -19,9 +19,7 @@ public class GeneratorTest {
     @Test
     public void addRowsTest() {
 
-
-
-        // Правила, по каким столбцам ищем в head и body
+        // Правила, по каким столбцам ищем в head и body. Выбираем те элементы, у которых заголокок сожжержит указаные значения. Если Значение в правиле "", то это означает, что значение может быть любое
         Rule ruleFiltredByHeadByBody = new Rule(
                 new HashMap<String, String>() {
                     {
@@ -32,15 +30,14 @@ public class GeneratorTest {
                 new HashMap<String, String>() {
                     {
                         put("Category", "LogicalDisk");
-                        put("Counter", "");   //"% Free Space"  "Avg. Disk Bytes/Read"
+                        put("Counter", "% Free Space");   //"% Free Space"  "Avg. Disk Bytes/Read"
                         put("Instance", "");
                         put("Value", "");
                     }
                 }
         );
 
-
-        // Правила, как мы разносим столбцы ищем в head и body
+        // Правила, как мы разносим столбцы ищем в head и body. Это шаблон заголовка
         ruleFiltredByHeadByBody.setHeaderColumns(new ArrayList<Map<String, String>>() {
             {
                 add(new HashMap<String, String>() {
@@ -54,27 +51,36 @@ public class GeneratorTest {
                     {
                         put("Address", "vm-dbmsys-stage");
                         put("Category", "LogicalDisk");
-                        put("Counter", "");   //"% Free Space"
+                        put("Counter", "% Free Space");   //"% Free Space"
                         put("Instance", "");
                         put("Value", "");
                         put(CommonConstants.HeaderAttibute.PRINTED, "Value");
                         put(CommonConstants.HeaderAttibute.HEADER, "Instance");
                     }
                 });
+//                add(new HashMap<String, String>() {
+//                    {
+//                        put("Address", "vm-dbmsys-stage");
+//                        put("Category", "LogicalDisk");
+//                        put("Counter", "Avg. Disk Bytes/Read");   //"% Free Space"
+//                        put("Instance", "");
+//                        put("Value", "");
+//                        put(CommonConstants.HeaderAttibute.PRINTED, "Value");
+//                        put(CommonConstants.HeaderAttibute.HEADER, "Instance");
+//                    }
+//                });
             }
         });
 
+        String path = //"src\\main\\java\\com\\dbmsys\\data2";
+        //"E:\\DBMSYS\\out2018_11_05";
+        //"E:\\DBMSYS\\out2018_11_16";
+        "E:\\DBMSYS\\out2018_12_03";
 
-
-
-
-        String path = "src\\main\\java\\com\\dbmsys\\data2";
-       // "E:\\DBMSYS\\out2018_11_05";
 
 
         String [] types = {"gz"};
         List<List<String>> table = Generator.getTable(ruleFiltredByHeadByBody, path, types);
-
 
         Generator.convertDateToString(table,0);
 
@@ -89,7 +95,7 @@ public class GeneratorTest {
                         table, CommonConstants.HeaderFormatAttibute.FULL,
                 stringFormatHeader, stringFormatBody);
 
-        CsvWriterP csvWriterP =  new CsvWriterP( "%8.3f  ", ';', path, "sampleAvg.csv");
+        CsvWriterP csvWriterP =  new CsvWriterP( "%8.3f  ", ';', path, "sample_out2018_12_03.csv");
         csvWriterP.writeToFile(modifiedHeaderTable);
 
     }
