@@ -72,10 +72,11 @@ public class TaskIB_2 {
 //        System.out.println(provSum + "sm="+Sum+ "    "  + value[7*taked/2]+ "   "+  value[7*taked/2]/Sum);
 
 
+        double timeSecund = 500_000.0*500_000.0*625_000.0*625_000.0*833_333.0*833_333.0/1_000_000_000.0;
+        System.out.println("Сложность алгоритма="+ timeSecund);
 
-
-
-
+        double timeHour = timeSecund/3600;
+        System.out.println("Сложность алгоритма timeHour="+ timeHour);
 
 /*
 
