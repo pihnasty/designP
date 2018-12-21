@@ -11,7 +11,7 @@ import java.util.Objects;
 public class ReadingCLOB {
 
     static final String JDBC_DRIVER = "com.ibm.db2.jcc.DB2Driver";
-    static final String DB_URL = "jdbc:db2://52.37.95.115:50000/TEST_DB2";
+    static final String DB_URL = "jdbc:db2://192.168.13.224:50000/TEST_DB2";
 
     static final String path = "jar:file:C:///JDBCDrivers/db2/db2jcc4.jar!/";
 

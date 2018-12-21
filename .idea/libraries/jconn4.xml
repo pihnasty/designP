@@ -1,8 +1,6 @@
 <component name="libraryTable">
   <library name="jconn4">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/core/src/main/java/jdbcTest/sybase/jconn4.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>
