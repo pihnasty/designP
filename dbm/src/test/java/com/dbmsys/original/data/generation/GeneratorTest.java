@@ -98,6 +98,9 @@ public class GeneratorTest {
         CsvWriterP csvWriterP =  new CsvWriterP( "%8.3f  ", ';', path, "sample_out2018_12_18.csv");
         csvWriterP.writeToFile(modifiedHeaderTable);
 
+
+
+
     }
 
 

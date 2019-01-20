@@ -1,6 +1,9 @@
 package com.dbmsys.math.linear;
 
 import java.util.List;
+import java.util.Random;
+
+import org.apache.commons.math3.linear.*;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
@@ -54,6 +57,63 @@ public class SolvingLinearSystemsTest {
         List<List<Double>> list =  SolvingLinearSystems.convertArrayToList2(arrayOriginal);
         double[][] array = SolvingLinearSystems.convertListToArray2(list);
         assertArrayEquals(array , arrayOriginal);
+    }
+
+    @Test
+    public void solution200x200() {
+        int N =  4000;
+
+        Long startTime = System.currentTimeMillis();
+
+
+        double[][] g = new double [N][N];
+        double[] x = new double [N];
+        double[] b = new double [N];
+
+          Random random = new Random(System.currentTimeMillis());
+
+        for (int i = 0 ; i<N; i++)  {
+            for (int j = 0 ; j<N; j++) {
+                g[i][j]=random.nextDouble();
+            }
+        }
+
+
+        for (int i = 0 ; i<N; i++)  {
+            x[i]=i+1;
+        }
+
+
+
+
+
+        for (int i = 0 ; i<N; i++)  {
+            b[i] = 0.0;
+            for (int j = 0 ; j<N; j++) {
+                b[i] = b[i]+ g[i][j]*x[j];
+            }
+        }
+
+
+        Long putElementTime = System.currentTimeMillis();
+        System.out.println("Time="  +(putElementTime-startTime));
+
+
+        RealMatrix coefficients =
+                new Array2DRowRealMatrix(g,
+                        false);
+        DecompositionSolver solver = new LUDecomposition(coefficients).getSolver();
+
+
+        RealVector constants = new ArrayRealVector( b, false);
+        RealVector solution = solver.solve(constants);
+
+        Long solutionTime = System.currentTimeMillis();
+        System.out.println("Time="+(solutionTime-putElementTime));
+
+        System.out.println(" --------------- ");
+
+
     }
 
 }
