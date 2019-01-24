@@ -15,6 +15,7 @@
         <module name="dbm" />
         <module name="gsondwarvesmaster" />
         <module name="loggers" />
+        <module name="med-analysis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +26,7 @@
       <module name="designP" target="1.8" />
       <module name="gsondwarvesmaster" target="1.7" />
       <module name="loggers" target="1.8" />
+      <module name="med-analysis" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/designP.iml" filepath="$PROJECT_DIR$/designP.iml" />
       <module fileurl="file://$PROJECT_DIR$/gson.dwarves-master/gsondwarvesmaster.iml" filepath="$PROJECT_DIR$/gson.dwarves-master/gsondwarvesmaster.iml" />
       <module fileurl="file://$PROJECT_DIR$/loggers/loggers.iml" filepath="$PROJECT_DIR$/loggers/loggers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/med-analysis/med-analysis.iml" filepath="$PROJECT_DIR$/med-analysis/med-analysis.iml" />
     </modules>
   </component>
 </project>

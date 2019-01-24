@@ -87,7 +87,7 @@ public class CsvReaderPTest {
 
         tableWithHeader.add(headerWithFormat);
 
-        Integer stringNumber = 230;
+        Integer stringNumber = 231;
         CsvReaderP csvReaderP = new CsvReaderP("%8.3f ", ';',"C:\\E\\A\\D02\\tweb\\med-analysis\\src\\main\\java\\data", "t2_20"+stringNumber+".csv");
 
 

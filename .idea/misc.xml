@@ -23,6 +23,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/dbm/pom.xml" />
+        <option value="$PROJECT_DIR$/med-analysis/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
