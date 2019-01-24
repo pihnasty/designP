@@ -41,7 +41,6 @@
         </plugins>
     </build>
     <modules>
-        <module>applet</module>
         <module>loggers</module>
         <module>create-project</module>
         <module>core</module>
