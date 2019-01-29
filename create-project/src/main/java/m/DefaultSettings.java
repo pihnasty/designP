@@ -3,8 +3,6 @@ package m;
 import settings.EnumSettings;
 import settings.Settings;
 
-import java.util.Map;
-
 public class DefaultSettings extends AbstractSettings {
 
 
@@ -14,7 +12,7 @@ public class DefaultSettings extends AbstractSettings {
     public String getName() {
         return EnumSettings.DEFAULT.getName();
     }
-    public Map<String, String> getMap() {
-        return EnumSettings.DEFAULT.getMap();
-    }
+//    public Map<String, String> getMap() {
+//        return EnumSettings.DEFAULT.getMap();
+//    }
 }

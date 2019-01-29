@@ -18,7 +18,7 @@ public class _01_HelloWorld {
         document.addPage( page );
 
 // Create a new font object selecting one of the PDF base fonts
-        PDFont font = PDType1Font.HELVETICA_BOLD;
+        PDFont font = PDType1Font.TIMES_BOLD;
 
 // Start a new content stream which will "hold" the to be created content
         PDPageContentStream contentStream = new PDPageContentStream(document, page);
