@@ -47,6 +47,7 @@
         <module>core</module>
         <module>dbm</module>
         <module>gson.dwarves-master</module>
+        <module>gson</module>
     </modules>
     <dependencies>
 

@@ -13,9 +13,8 @@
         <module name="create-project" />
         <module name="dbdoc-logger" />
         <module name="dbm" />
-        <module name="gsondwarvesmaster" />
+        <module name="gson.dwarves.master" />
         <module name="loggers" />
-        <module name="med-analysis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,7 +23,8 @@
       <module name="create-project" target="1.8" />
       <module name="dbm" target="1.8" />
       <module name="designP" target="1.8" />
-      <module name="gsondwarvesmaster" target="1.7" />
+      <module name="gson" target="1.8" />
+      <module name="gson.dwarves.master" target="1.7" />
       <module name="loggers" target="1.8" />
       <module name="med-analysis" target="1.8" />
     </bytecodeTargetLevel>

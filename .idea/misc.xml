@@ -23,12 +23,12 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/dbm/pom.xml" />
-        <option value="$PROJECT_DIR$/med-analysis/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/gonEE7/pom.xml" />
+        <option value="$PROJECT_DIR$/gson/pom.xml" />
       </set>
     </option>
   </component>
