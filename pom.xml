@@ -41,13 +41,12 @@
         </plugins>
     </build>
     <modules>
-        <module>applet</module>
         <module>loggers</module>
         <module>create-project</module>
         <module>core</module>
         <module>dbm</module>
         <module>gson.dwarves-master</module>
-        <module>gson</module>
+        <module>fx</module>
     </modules>
     <dependencies>
 

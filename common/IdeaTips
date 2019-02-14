@@ -1,0 +1,10 @@
+C+F12     (Navigate | File Structure).It shows the list of members of the current class.
+E or F4   Select an element you want to navigate to and press the Enter key or the F4 key.
+          To easily locate an item in the list, just start typing its name.
+
+S+F6      You can easily rename your classes, methods and variables with automatic correction of all places where they are used.
+          To try it, place the caret at the symbol you want to rename, and press Shift+F6 (Refactor | Rename).
+          Type the new name in the popup window that appears, or select one of the suggested names, and press Enter.
+
+C+O       You may easily override methods of the base class by pressing Ctrl+O (Code | Override Methods).
+C+I       To implement methods of the interfaces that the current class implements (or of the abstract base class), use Ctrl+I (Code | Implement methods).

@@ -1,10 +1,5 @@
 package StylCode_01;
 
-import com.amazon.sct.base.printer.interfaces.MetadataNodePrinter;
-import com.amazon.sct.util.PrinterUtils;
-import java.util.Map;
-import java.util.Objects;
-import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
@@ -30,34 +25,34 @@ public class StylCode_01 {
 
     }
 
-    private String printProfileParameters(Map<String, String> profileParameters) {
-        Function<Long, Long> maxLengthKey = new Function<Long, Long>() {
-            private Long keyNameLength = 0L;
-
-            @Override
-            public Long apply(Long keyLength) {
-                if (keyNameLength < keyLength) {
-                    keyNameLength = keyLength;
-                }
-                return keyNameLength;
-            }
-        };
-        profileParameters.keySet().forEach(key -> {
-                if (Objects.nonNull(key)) {
-                    maxLengthKey.apply((long) key.length());
-                }
-            }
-        );
-
-        StringBuilder statement = new StringBuilder();
-        profileParameters.entrySet().forEach(profileParameter -> {
-            PrinterUtils.lsInd(statement);
-            String resourceNameFormat = "%-" + maxLengthKey.apply(-1L).toString()
-                + "s" + "  " + "%s";
-            statement.append(String.format(resourceNameFormat, profileParameter.getKey(), profileParameter.getValue()));
-        });
-        return statement.toString();
-    }
+//    private String printProfileParameters(Map<String, String> profileParameters) {
+//        Function<Long, Long> maxLengthKey = new Function<Long, Long>() {
+//            private Long keyNameLength = 0L;
+//
+//            @Override
+//            public Long apply(Long keyLength) {
+//                if (keyNameLength < keyLength) {
+//                    keyNameLength = keyLength;
+//                }
+//                return keyNameLength;
+//            }
+//        };
+//        profileParameters.keySet().forEach(key -> {
+//                if (Objects.nonNull(key)) {
+//                    maxLengthKey.apply((long) key.length());
+//                }
+//            }
+//        );
+//
+//        StringBuilder statement = new StringBuilder();
+//        profileParameters.entrySet().forEach(profileParameter -> {
+//            PrinterUtils.lsInd(statement);
+//            String resourceNameFormat = "%-" + maxLengthKey.apply(-1L).toString()
+//                + "s" + "  " + "%s";
+//            statement.append(String.format(resourceNameFormat, profileParameter.getKey(), profileParameter.getValue()));
+//        });
+//        return statement.toString();
+//    }
 
     void predicateTest() {
         Predicate<Boolean> isFirstElement = new Predicate<Boolean>() {
@@ -100,7 +95,7 @@ public class StylCode_01 {
     }
 
     public static void addExists(StringBuilder sb, boolean useExistsOption) {
-        sb.append(useExistsOption ? MetadataNodePrinter.IF_EXISTS : "");
+//        sb.append(useExistsOption ? MetadataNodePrinter.IF_EXISTS : "");
     }
 
 

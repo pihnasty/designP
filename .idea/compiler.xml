@@ -8,13 +8,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="applet" />
         <module name="core" />
         <module name="create-project" />
         <module name="dbdoc-logger" />
         <module name="dbm" />
-        <module name="gson.dwarves.master" />
+        <module name="fx" />
+        <module name="gsondwarvesmaster" />
         <module name="loggers" />
+        <module name="med-analysis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,10 +24,10 @@
       <module name="create-project" target="1.8" />
       <module name="dbm" target="1.8" />
       <module name="designP" target="1.8" />
-      <module name="gson" target="1.8" />
-      <module name="gson.dwarves.master" target="1.7" />
+      <module name="fx" target="1.8" />
+      <module name="gsondwarvesmaster" target="1.7" />
       <module name="loggers" target="1.8" />
-      <module name="med-analysis" target="1.8" />
+      <module name="med-analysis" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

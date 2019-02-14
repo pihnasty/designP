@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/applet/applet.iml" filepath="$PROJECT_DIR$/applet/applet.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/create-project/create-project.iml" filepath="$PROJECT_DIR$/create-project/create-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/dbm/dbm.iml" filepath="$PROJECT_DIR$/dbm/dbm.iml" />
       <module fileurl="file://$PROJECT_DIR$/designP.iml" filepath="$PROJECT_DIR$/designP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gson.dwarves-master/gson.dwarves.master.iml" filepath="$PROJECT_DIR$/gson.dwarves-master/gson.dwarves.master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fx/fx.iml" filepath="$PROJECT_DIR$/fx/fx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gson.dwarves-master/gsondwarvesmaster.iml" filepath="$PROJECT_DIR$/gson.dwarves-master/gsondwarvesmaster.iml" />
       <module fileurl="file://$PROJECT_DIR$/loggers/loggers.iml" filepath="$PROJECT_DIR$/loggers/loggers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/med-analysis/med-analysis.iml" filepath="$PROJECT_DIR$/med-analysis/med-analysis.iml" />
     </modules>
   </component>
 </project>
