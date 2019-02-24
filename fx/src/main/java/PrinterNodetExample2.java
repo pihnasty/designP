@@ -1,4 +1,6 @@
+import com.sun.javafx.print.PrinterJobImpl;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.print.PrinterJob;
@@ -13,7 +15,10 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class PrinterNodetExample extends Application {
+import javax.print.attribute.PrintRequestAttributeSet;
+import javax.print.attribute.standard.Destination;
+
+public class PrinterNodetExample2 extends Application {
 
 
     @Override
@@ -27,6 +32,8 @@ public class PrinterNodetExample extends Application {
         btn.setText("Say 'Hello World'");
 
 
+
+
         btn.setOnAction(new EventHandler<ActionEvent>() {
 
             @Override
@@ -34,9 +41,35 @@ public class PrinterNodetExample extends Application {
                 System.out.println("To Printer!");
                 PrinterJob job = PrinterJob.createPrinterJob();
                 if(job != null){
-                    job.getJobSettings();
-                    job.showPageSetupDialog(primaryStage);
-                    job.showPrintDialog(primaryStage);
+
+                    try {
+                        java.lang.reflect.Field field = job.getClass().getDeclaredField("jobImpl");
+                        field.setAccessible(true);
+                        PrinterJobImpl jobImpl = (PrinterJobImpl) field.get(job);
+                        field.setAccessible(false);
+
+                        field = jobImpl.getClass().getDeclaredField("printReqAttrSet");
+                        field.setAccessible(true);
+                        PrintRequestAttributeSet printReqAttrSet = (PrintRequestAttributeSet) field.get(jobImpl);
+                        field.setAccessible(false);
+
+                        String.format("%020d", 93);
+                        //        "D:\\A\\M\\MyProjects\\p8\\one_parameter_model\\pdf"
+                        //                                                   D:\A\M\MyProjects\p8\one_parameter_model\pdf\pdf001.pdf
+
+                        printReqAttrSet.add(new Destination(new java.net.URI("file:/D://A//M//MyProjects//p8//one_parameter_model//pdf//opm_page103.pdf")));
+                    } catch (Exception e) {
+                        System.err.println(e);
+                    }
+
+
+
+
+               //     job.getJobSettings();
+                //    job.showPageSetupDialog(primaryStage);
+
+                 //   job.showPrintDialog(primaryStage);
+              //      job.getJobSettings().setPageRanges(new PageRange(1, 5));
                     job.printPage(vBox);
                     job.endJob();
                 }
@@ -135,3 +168,4 @@ public class PrinterNodetExample extends Application {
     public static void main(String[] args) {
         launch(args);
     }}
+

@@ -7,7 +7,10 @@ import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class PrinterNodetExample extends Application {
@@ -17,9 +20,10 @@ public class PrinterNodetExample extends Application {
     public void start(Stage primaryStage) {
         Button btn = new Button();
         StackPane root = new StackPane();
+        ScrollPane scrollPane =new ScrollPane();
+        VBox vBox = new VBox();
 
-
-        Scene scene = new Scene(root, 800, 1600);
+        Scene scene = new Scene(root, 400, 300);
         btn.setText("Say 'Hello World'");
 
 
@@ -33,7 +37,7 @@ public class PrinterNodetExample extends Application {
                     job.getJobSettings();
                     job.showPageSetupDialog(primaryStage);
                     job.showPrintDialog(primaryStage);
-                    job.printPage(root);
+                    job.printPage(vBox);
                     job.endJob();
                 }
             }
@@ -71,7 +75,43 @@ public class PrinterNodetExample extends Application {
 
         lineChart.getData().add(series);
 
-        root.getChildren().addAll(lineChart, btn);
+
+        final LineChart<Number,Number> lineChart2 =
+                new LineChart<Number,Number>(xAxis,yAxis);
+        XYChart.Series series2 = new XYChart.Series(series.getData());
+        lineChart2.getData().add(series2);
+
+        final LineChart<Number,Number> lineChart3 =
+                new LineChart<Number,Number>(xAxis,yAxis);
+        XYChart.Series series3 = new XYChart.Series(series.getData());
+        lineChart3.getData().add(series3);
+
+        final LineChart<Number,Number> lineChart4 =
+                new LineChart<Number,Number>(xAxis,yAxis);
+        XYChart.Series series4 = new XYChart.Series(series.getData());
+        lineChart4.getData().add(series4);
+
+
+        BorderPane borderPane = new BorderPane();
+
+
+
+        vBox.getChildren().add(lineChart);
+        vBox.getChildren().add(lineChart2);
+        vBox.getChildren().add(lineChart3);
+        vBox.getChildren().add(lineChart4);
+
+
+        // Always show vertical scroll bar
+        scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.ALWAYS);
+        // Horizontal scroll bar is only displayed when needed
+        scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
+
+        scrollPane.setContent(vBox);
+        borderPane.setCenter(scrollPane);
+
+        root.getChildren().addAll(borderPane,btn);
+
 
 
 

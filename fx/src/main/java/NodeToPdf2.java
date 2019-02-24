@@ -1,7 +1,3 @@
-import java.io.File;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
@@ -12,20 +8,31 @@ import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.image.WritableImage;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javax.imageio.ImageIO;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
+import javax.imageio.ImageIO;
+import java.io.File;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-public class NodeToPdf extends Application {
+
+public class NodeToPdf2 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+
+
+        StackPane root = new StackPane();
 
 //        CategoryAxis xAxis = new CategoryAxis();
 //        xAxis.setLabel("x");
@@ -70,7 +77,42 @@ public class NodeToPdf extends Application {
         lineChart.getData().add(series);
 
 
+        final LineChart<Number,Number> lineChart2 =
+                new LineChart<Number,Number>(xAxis,yAxis);
+        XYChart.Series series2 = new XYChart.Series(series.getData());
+        lineChart2.getData().add(series2);
 
+        final LineChart<Number,Number> lineChart3 =
+                new LineChart<Number,Number>(xAxis,yAxis);
+        XYChart.Series series3 = new XYChart.Series(series.getData());
+        lineChart3.getData().add(series3);
+
+        final LineChart<Number,Number> lineChart4 =
+                new LineChart<Number,Number>(xAxis,yAxis);
+        XYChart.Series series4 = new XYChart.Series(series.getData());
+        lineChart4.getData().add(series4);
+
+
+        BorderPane borderPane = new BorderPane();
+
+        ScrollPane scrollPane =new ScrollPane();
+        VBox vBox = new VBox();
+
+        vBox.getChildren().add(lineChart);
+        vBox.getChildren().add(lineChart2);
+        vBox.getChildren().add(lineChart3);
+        vBox.getChildren().add(lineChart4);
+
+
+        // Always show vertical scroll bar
+        scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.ALWAYS);
+        // Horizontal scroll bar is only displayed when needed
+        scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
+
+        scrollPane.setContent(vBox);
+        borderPane.setCenter(scrollPane);
+
+        root.getChildren().addAll(borderPane,btn);
 
 
 
@@ -117,18 +159,16 @@ public class NodeToPdf extends Application {
                     doc.close();
                     file.delete();
                 } catch (IOException ex) {
-                    Logger.getLogger(NodeToPdf.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(NodeToPdf2.class.getName()).log(Level.SEVERE, null, ex);
                 }
 
             }
         });
 
 
-        StackPane root = new StackPane();
 
 
-        root.getChildren().add(lineChart);
-        root.getChildren().add(btn);
+
 
 
 
