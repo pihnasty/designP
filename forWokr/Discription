@@ -97,3 +97,14 @@ ANTLR --------------------------------------------------------------------------
                                        Configure ANTLR -> Package/namespace = antlr.tnsnames.output
                                        Configure ANTLR -> generate tree visitor =галочка
                                                                                 (для использования шаблона Visitor)
+
+
+--------------------- Created Patches (moving changes) ---------------------
+Create:
+
+1.Create new file (MyFile.java)
+2. In Version Control-> Create Patch (VCS->Create Patch...)
+3. Add file name for patch. Idea opens the windows, where to find the file.
+
+Import:
+1.VCS->Apply Patch->choose the file.
