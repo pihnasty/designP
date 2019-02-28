@@ -1,56 +1,57 @@
 import javafx.application.Application;
+import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.print.PrinterJob;
 import javafx.scene.Scene;
+import javafx.scene.SnapshotParameters;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.image.WritableImage;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.PDPage;
+import org.apache.pdfbox.pdmodel.PDPageContentStream;
+import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
-public class PrinterNodetExample extends Application {
+import javax.imageio.ImageIO;
+import java.io.File;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
+
+public class NodeToPdf2 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Button btn = new Button();
+
+
         StackPane root = new StackPane();
-        ScrollPane scrollPane =new ScrollPane();
-        VBox vBox = new VBox();
 
-        Scene scene = new Scene(root, 400, 300);
-        btn.setText("Say 'Hello World'");
+//        CategoryAxis xAxis = new CategoryAxis();
+//        xAxis.setLabel("x");
+//        NumberAxis yAxis = new NumberAxis();
+//        yAxis.setLabel("y");
+//        BarChart bar = new BarChart(xAxis, yAxis);
+//        bar.setMaxSize(300, 300);
+//        bar.setTitle("Bar node" );
+//        bar.setTranslateY(-100);
 
-
-        btn.setOnAction(new EventHandler<ActionEvent>() {
-
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("To Printer!");
-                PrinterJob job = PrinterJob.createPrinterJob();
-                if(job != null){
-                    job.getJobSettings();
-                    job.showPageSetupDialog(primaryStage);
-                    job.showPrintDialog(primaryStage);
-                    job.printPage(vBox);
-                    job.endJob();
-                }
-            }
-        });
+        Button btn = new Button();
+        btn.setTranslateY(100);
+        btn.setText("To Pdf'");
 
 
-//-----------------------------------------------------
 
-        //defining the axes
         final NumberAxis xAxis = new NumberAxis();
         final NumberAxis yAxis = new NumberAxis();
         xAxis.setLabel("Number of Month");
-        //creating the chart
         final LineChart<Number,Number> lineChart =
             new LineChart<Number,Number>(xAxis,yAxis);
 
@@ -94,7 +95,8 @@ public class PrinterNodetExample extends Application {
 
         BorderPane borderPane = new BorderPane();
 
-
+        ScrollPane scrollPane =new ScrollPane();
+        VBox vBox = new VBox();
 
         vBox.getChildren().add(lineChart);
         vBox.getChildren().add(lineChart2);
@@ -114,24 +116,73 @@ public class PrinterNodetExample extends Application {
 
 
 
+        btn.setOnAction(new EventHandler<ActionEvent>() {
 
-//-----------------------------------------------------
+            @Override
+            public void handle(ActionEvent event) {
 
 
 
 
 
-//----------------------------------------------------
 
-        primaryStage.setTitle("Printer");
+
+
+
+                WritableImage nodeshot = lineChart.snapshot(new SnapshotParameters(), null);
+                File file = new File("chart.png");
+
+                try {
+                    ImageIO.write(SwingFXUtils.fromFXImage(nodeshot, null), "png", file);
+                } catch (IOException e) {
+
+                }
+
+//-------------------------------------------------------------------------------------
+
+
+//------------------------------------------------------------------------------------
+
+
+
+                PDDocument doc    = new PDDocument();
+                PDPage page = new PDPage();
+                PDImageXObject pdimage;
+                PDPageContentStream content;
+                try {
+                    pdimage = PDImageXObject.createFromFile("chart.png",doc);
+                    content = new PDPageContentStream(doc, page);
+                    content.drawImage(pdimage, 50, 50);
+                    content.close();
+                    doc.addPage(page);
+                    doc.save("pdf_file.pdf");
+                    doc.close();
+                    file.delete();
+                } catch (IOException ex) {
+                    Logger.getLogger(NodeToPdf2.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
+            }
+        });
+
+
+
+
+
+
+
+
+
+        Scene scene = new Scene(root, 600, 600);
+
+
         primaryStage.setScene(scene);
         primaryStage.show();
-
-
-
     }
 
 
     public static void main(String[] args) {
         launch(args);
-    }}
+    }
+
+}

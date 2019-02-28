@@ -15,7 +15,6 @@
         <module name="fx" />
         <module name="gsondwarvesmaster" />
         <module name="loggers" />
-        <module name="med-analysis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
