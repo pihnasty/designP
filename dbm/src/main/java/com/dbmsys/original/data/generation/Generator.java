@@ -311,6 +311,7 @@ public class Generator {
 
         List<String> headerTemplate = new ArrayList<>();
 
+
         fileNames.forEach( fileName -> {
             System.out.println(fileName);
                 List<DmsSysElement> dmsSysElements = reader.readFromGzFile(path, fileName);
