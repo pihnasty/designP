@@ -10,3 +10,9 @@ C+O       You may easily override methods of the base class by pressing Ctrl+O (
 C+I       To implement methods of the interfaces that the current class implements (or of the abstract base class), use Ctrl+I (Code | Implement methods).
 
 A+Enter   Click the light bulb icon or press Alt+Enter, choose Inject language or reference, and then select Spring Bean Name:
+
+C+A+V     The Extract Variable refactoring helps you simplify complicated statements in your code.
+          For example, in the code fragment below, you can select an expression in the code:  and press Ctrl+Alt+V (Refactor | Extract | Variable...). This will result in the following:
+
+C+/       comments or uncomments the current line or selected block with single line comments (//...).
+C+S+/     encloses the selected block in a block comment (/*...*/).
