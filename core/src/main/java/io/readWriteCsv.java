@@ -17,7 +17,7 @@ public class readWriteCsv {
 //        CSVReader reader = new CSVReader(new FileReader("E:\\DBMSYS\\out2019_01_28\\sample_out2019_01_28.csv"), ';' , CSVWriter.NO_QUOTE_CHARACTER, 0);
 //        CSVWriter writer = new CSVWriter(new FileWriter("E:\\DBMSYS\\out2019_01_28\\sample_out2019_01_28_change.csv"),';',CSVWriter.NO_QUOTE_CHARACTER,CSVWriter.RFC4180_LINE_END);
 
-        CSVReader reader = new CSVReader(new FileReader("E:\\DBMSYS\\out2019_02_26\\sample_out2019_02_26.csv"), ';' , CSVWriter.NO_QUOTE_CHARACTER, 0);
+        CSVReader reader = new CSVReader(new FileReader("E:\\DBMSYS\\out2019_02_26\\sample_out2019_02_26.csv"), ';' , CSVWriter.NO_QUOTE_CHARACTER, CSVReader.DEFAULT_SKIP_LINES);
         CSVWriter writer = new CSVWriter(new FileWriter("E:\\DBMSYS\\out2019_02_26\\sample_out2019_02_26_change.csv"),';',CSVWriter.NO_QUOTE_CHARACTER,CSVWriter.RFC4180_LINE_END);
 
 
