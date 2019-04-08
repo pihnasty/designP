@@ -1,53 +1,53 @@
 package algorithm;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Recursion {
     public static void main(String[] args) {
-        List<String> factors = new ArrayList(Arrays.asList("1","2","3","4","5","6","7","8","9"));
         int n = 2;
-        List<List<String>> sample = new ArrayList();
+        int N = 40;
+        List<List<Long>> sample = new ArrayList<>();
 
         Recursion recursion = new Recursion();
 
+        long startTime = System.currentTimeMillis();
+//        factors.forEach(
+//                factor -> System.out.println(factor)
+//        );
 
-        factors.forEach(
-                factor -> System.out.println(factor)
-        );
+        recursion.forDynamyc (N, n, 0, sample, null);
 
-        recursion.forDynamyc (n, factors, sample, true, null);
+        long finishTime = System.currentTimeMillis();
 
-        System.out.println("    ");
+        System.out.printf("  %d   %d   %d   %d", N,n,sample.size(),(finishTime-startTime)/1000);
+
+
 
     }
 
 
-
-    public void forDynamyc (int n, List<String> factors, List sample, boolean isAddedRow, List<String> row) {
-
-
-            for (int i = 1; i<n; i++) {
-                if (isAddedRow) {
-                     row = new ArrayList<>();
-                }
-
-                row.add(factors.get(i));
-
-                if (n>0) {
-                    System.out.println("->"+n);
-                    forDynamyc(n-1,factors, sample, false, row);
-                }
-
-                if (isAddedRow) {
-                    sample.add(row);
+    public void forDynamyc(int N, int n, int k, List<List<Long>> sample, List<Long> row) {
+        for (long i = k; i < N; i++) {
+            if (k == 0) {
+                row = new ArrayList<>();
+                for (int i2 = 0; i2 < n; i2++) {
+                    row.add((long) -1);
                 }
             }
+            if (k == 0 || i > row.get(k - 1)) {
+                row.set(k, i);
 
-
-
-        System.out.println("<-"+n);
+                if (k < n - 1) {
+                    forDynamyc(N, n, k + 1, sample, row);
+                } else {
+                    sample.add(row);
+                    row = new ArrayList<>();
+                    for (int i2 = 0; i2 < n; i2++) {
+                        row.add(sample.get(sample.size() - 1).get(i2));
+                    }
+                }
+            }
+        }
     }
-
 }
