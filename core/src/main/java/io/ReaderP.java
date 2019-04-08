@@ -8,7 +8,7 @@ public class ReaderP {
     Reader reader;
 
     public static void main(String[] args) {
-        ReaderP readerP = new ReaderP();
+        ReaderP readerP =      new ReaderP();
         readerP.bufferedReaderTest();
 
     }

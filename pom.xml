@@ -47,6 +47,7 @@
         <module>dbm</module>
         <module>gson.dwarves-master</module>
         <module>fx</module>
+        <module>junit-mockito</module>
     </modules>
     <dependencies>
 
@@ -104,7 +105,7 @@
             <artifactId>opencsv</artifactId>
             <version>3.7</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
+        <!-- https://mvnrepository.com/artifact/org.apache.p/pdfbox -->
         <dependency>
             <groupId>org.apache.pdfbox</groupId>
             <artifactId>pdfbox</artifactId>

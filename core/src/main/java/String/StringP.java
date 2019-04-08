@@ -1,15 +1,64 @@
 package String;
 
+import java.util.Objects;
 import java.util.Optional;
 
 public class StringP {
 
     public static void main(String[] args) {
-       String s = " \"  ORCL12EE_PRIVATE_TEST_ORA_PG.168.15.19   2\"  2   ";
-      System.out.println(stringWithPoint(s));
+        // m1();
 
-       s = " \"  ORCL12EE_PRIVATE_TEST_ORA_PG.168.15.19        ";
-      System.out.println(stringWithPoint(s));
+        String s1="1111111111";
+//        System.out.println( "       check=   "+compare2( "Hello1", "Hello2"));
+//        System.out.println( "       check=   "+compare2( null, "Hello2"));
+//        System.out.println( "       check=   "+compare2( "Hello1", null));
+//
+//        System.out.println( "       check=   "+compare2( "1", "2"));
+//        System.out.println( "       check=   "+compare2( "2", "1"));
+//        System.out.println( "       check=   "+compare2( "1", "Hello2"));
+     //   System.out.println( "       check=   "+compare2( "Hello1", "2"));
+//        System.out.println( "       check=   "+compare2( "1", null));
+//        System.out.println( "       check=   "+compare2( null, "2"));
+//        System.out.println( "       check=   "+compare2( "1.5", "2.5"));
+
+        System.out.println( "       check=   "+compare2( s1, s1));
+
+     //   Long a = Long.valueOf(s1);
+
+    }
+
+    private static  int compare2( String leftAttribute, String rightAttribute) {
+        long numberNodeLeft = 0;
+        long numberNodeRight = 0;
+        if (nonNumber(leftAttribute) && nonNumber(rightAttribute)) {
+            System.out.println(leftAttribute+ "-------------" +  rightAttribute);
+            return 0;
+        } else {
+            if (nonNumber(leftAttribute)) {
+                System.out.println(leftAttribute+ "-------------" +  rightAttribute);
+                return -1;
+            }
+            if (nonNumber(rightAttribute)) {
+                System.out.println(leftAttribute+ "-------------" +  rightAttribute);
+                return 1;
+            }
+        }
+        numberNodeLeft = Long.valueOf(leftAttribute);
+        numberNodeRight = Long.valueOf(rightAttribute);
+        System.out.println(leftAttribute+ "-------------" +  rightAttribute);
+        return (int) (numberNodeLeft - numberNodeRight);
+    };
+
+
+
+
+
+    private static void m1() {
+        String s = " \"  ORCL12EE_PRIVATE_TEST_ORA_PG.168.15.19   2\"  2   ";
+        System.out.println(stringWithPoint(s));
+
+        s = " \"  ORCL12EE_PRIVATE_TEST_ORA_PG.168.15.19        ";
+        System.out.println(stringWithPoint(s));
 
         s = "   ORCL12EE_PRIVATE_TEST_ORA_PG.168.15.19        ";
         System.out.println(stringWithPoint(s));
@@ -21,13 +70,9 @@ public class StringP {
         System.out.println("----"+stringWithPoint(s));
 
 
-
         System.out.println(deleteBraces("  (2341   ", "(", ")"));
 
         String sInt = s.valueOf(5);
-
-
-
     }
 
     public static String stringWithPoint(String attribute) {
@@ -70,6 +115,20 @@ public class StringP {
             return tempText.substring(1, tempText.length() - 1);
         }
         return text;
+    }
+
+    private static boolean nonNumber(String attributeValue) {
+        boolean nonNumber = false;
+        if (Objects.isNull(attributeValue) || attributeValue.isEmpty()) {
+            nonNumber = true;
+        } else {
+            for (int i = 0; i < attributeValue.length(); i++) {
+                if (!Character.isDigit(attributeValue.charAt(i))) {
+                    nonNumber = true;
+                }
+            }
+        }
+        return nonNumber;
     }
 
 }

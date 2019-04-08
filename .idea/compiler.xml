@@ -14,6 +14,7 @@
         <module name="dbm" />
         <module name="fx" />
         <module name="gsondwarvesmaster" />
+        <module name="junit-mockito" />
         <module name="loggers" />
       </profile>
     </annotationProcessing>
@@ -25,6 +26,7 @@
       <module name="designP" target="1.8" />
       <module name="fx" target="1.8" />
       <module name="gsondwarvesmaster" target="1.7" />
+      <module name="junit-mockito" target="1.8" />
       <module name="loggers" target="1.8" />
       <module name="med-analysis" target="1.5" />
     </bytecodeTargetLevel>
