@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Recursion {
     public static void main(String[] args) {
-        int n = 2;
-        int N = 40;
+        int n = 10;
+        int N = 32;
         List<List<Long>> sample = new ArrayList<>();
 
         Recursion recursion = new Recursion();
