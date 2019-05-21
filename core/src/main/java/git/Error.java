@@ -1,5 +1,7 @@
 package git;
 
+// Hello
+
 public class Error {
 
     public static void main(String[] args) {
