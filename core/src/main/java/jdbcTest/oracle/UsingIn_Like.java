@@ -1,4 +1,4 @@
-package tests.jdbcTest.oracle;
+package jdbcTest.oracle;
 
 
 import java.io.UnsupportedEncodingException;
@@ -8,12 +8,12 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NullSymbolOracle {
+public class UsingIn_Like {
 
     static final String JDBC_DRIVER = "oracle.jdbc.OracleDriver";
     static final String DB_URL = "jdbc:oracle:thin:@192.168.15.19:1521:ORCL";
 
-    static final String path = "jar:file:C:///JDBCDrivers//ojdbc8.jar!/";
+    static final String path = "jar:file:C:/JDBCDrivers/ojdbc7.jar!/";
 
 
     static final String USER = "min_privs";
@@ -34,19 +34,32 @@ public class NullSymbolOracle {
         PreparedStatement stmt = null;
         try {
             URLClassLoader cl = new URLClassLoader(new URL[]{new URL(path)});
-            cl.loadClass(JDBC_DRIVER).newInstance();
+            cl.loadClass(JDBC_DRIVER);
             System.out.println("Connecting to database...");
-            Driver driver = DriverManager.getDriver(DB_URL);
+ //         Driver driver = DriverManager.getDriver(DB_URL);
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
             System.out.println("Creating statement...");
             int i = 2;
 
 
             String colunmName = "head_text";
-            String sql = getSql(i);
-            stmt = conn.prepareStatement(sql);
-            List<String> columnCells = getColumn(stmt,colunmName);
 
+            PreparedStatement statement = conn.prepareStatement(
+                    "SELECT to_clob(version) as v FROM sys.product_component_version WHERE UPPER(product) LIKE 'ORACLE%' OR UPPER(product) in ?");
+
+            String array= "A1,B2,C3";
+   //         Array array = conn.createArrayOf("VARCHAR", new Object[]{"A1", "B2","C3"});
+
+
+
+
+             statement.setString(1,array);
+
+            ResultSet rs = statement.executeQuery();
+
+            System.out.println(rs);
+
+//            System.out.println(columnCells );
 
             System.out.println("finish");
 
