@@ -50,5 +50,4 @@ public class MathP {
         return 0.0;
     }
 
-
 }

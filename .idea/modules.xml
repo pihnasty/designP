@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/junit-mockito/junit-mockito.iml" filepath="$PROJECT_DIR$/junit-mockito/junit-mockito.iml" />
       <module fileurl="file://$PROJECT_DIR$/loggers/loggers.iml" filepath="$PROJECT_DIR$/loggers/loggers.iml" />
       <module fileurl="file://$PROJECT_DIR$/math/math.iml" filepath="$PROJECT_DIR$/math/math.iml" />
+      <module fileurl="file://$PROJECT_DIR$/math/math.iml" filepath="$PROJECT_DIR$/math/math.iml" />
     </modules>
   </component>
 </project>
