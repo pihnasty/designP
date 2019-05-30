@@ -1,0 +1,4 @@
+settings\AbstractSettings.class
+settings\Settings.class
+settings\SettingsProvider.class
+settings\EnumSettings.class

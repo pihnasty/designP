@@ -1,0 +1,1536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5b9b1729-3da4-4ad8-ac47-4f7c6c74e5fb" name="Default" comment="addMath" />
+    <ignored path="$PROJECT_DIR$/applet/target/" />
+    <ignored path="$PROJECT_DIR$/loggers/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/core/target/" />
+    <ignored path="$PROJECT_DIR$/create-project/target/" />
+    <ignored path="$PROJECT_DIR$/dbm/target/" />
+    <ignored path="$PROJECT_DIR$/gson.dwarves-master/target/" />
+    <ignored path="$PROJECT_DIR$/med-analysis/target/" />
+    <ignored path="$PROJECT_DIR$/gson/target/" />
+    <ignored path="$PROJECT_DIR$/fx/target/" />
+    <ignored path="$PROJECT_DIR$/junit-mockito/target/" />
+    <ignored path="$PROJECT_DIR$/math/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/designP$Recursion.ic" NAME="Recursion Coverage Results" MODIFIED="1556394272053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>algorithm.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/IdeaTips">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/data/jsonExample.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/data/sample_out2018_12_18.csv">
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="79" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+            </state>
+          </provider>
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/algorithm/Recursion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/math/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/math/src/main/java/MathP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="53" column="1" selection-start-line="52" selection-end-line="53" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#Counter#0;class#MathP#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbm/src/test/java/com/dbmsys/math/linear/SolvingLinearSystemsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbm/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" selection-start-line="34" selection-end-line="38" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2805">
+              <caret line="182" column="23" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/io/PrintStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13056">
+              <caret line="819" column="16" selection-start-line="819" selection-start-column="16" selection-end-line="819" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SQLException|SQLException</find>
+      <find>SQLException</find>
+      <find>10</find>
+      <find>&quot;age&quot;</find>
+      <find>getGenericSuperclass</find>
+      <find>vm-dbmsys-stage</find>
+      <find>&quot;Started&quot;</find>
+      <find>columnsFormat</find>
+      <find>olumnsFormat</find>
+      <find>P</find>
+      <find>sample</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\A\designP\gson.dwarves-master</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="POM" />
+        <option value="POM &lt;pom7@bk.ru&gt;" />
+        <option value="POM &lt;innov@bk.ru&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/gson/deserialize/DwarvesBandDeserializer.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/gson/deserialize/DmsSysJsonElementTemplateDeserializer.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/gson/deserialize/DmsSysJsonArrayTemplateDeserializer.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/template/DmsSysTemplate.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/template/DmsSysJsonElement.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/gson/deserialize/DmsSysElementDeserializer.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/gson/deserialize/BodyDeserializer.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/template/DmsSysElement.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/gson/deserialize/DmsSysArrayElementDeserializer.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/template/Body.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/template/data/Head.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/template/data/DmsSysElement.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/template/data/Body.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/utilp/hashmap/HashMapP.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/utilp/hashset/HashSetP.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/io/Reader.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/template/rules/Rule.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/App.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/utilp/arraylist/ArrayListP.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/original/data/generation/CommonConstant.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/data2/Dbmsys.2018.10.19.092718501.json/Dbmsys.2018.10.19.092718501.json" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/core/map/hashmap/HashMapPut.java" />
+        <option value="$PROJECT_DIR$/dbm/src/test/java/com/dbmsys/csvapi/util/ManagerTest.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/csvapi/io/AbstractWriterP.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/csvapi/io/write/PrintWriterP.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/csvapi/io/converter/ConverterP.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/csvapi/io/write/Writer.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/data2/sample4" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/csvapi/io/write/CsvWriterP.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/original/data/generation/CommonConstants.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/original/data/generation/Generator.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/bi/Task.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/bi/Task2.java" />
+        <option value="$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/csvapi/io/write/AbstractWriterP.java" />
+        <option value="$PROJECT_DIR$/dbm/src/test/java/com/dbmsys/original/data/generation/GeneratorTest.java" />
+        <option value="$PROJECT_DIR$/med-analysis/src/test/java/util/read/CsvReaderPTest.java" />
+        <option value="$PROJECT_DIR$/create-project/src/main/java/m/AbstractSettings.java" />
+        <option value="$PROJECT_DIR$/fx/src/main/java/PrinterNodetExample.java" />
+        <option value="$PROJECT_DIR$/fx/src/main/java/NodePrinter.java" />
+        <option value="$PROJECT_DIR$/fx/src/main/java/PrintTest.java" />
+        <option value="$PROJECT_DIR$/fx/src/main/java/NodeToPdf2.java" />
+        <option value="$PROJECT_DIR$/fx/src/main/java/Print7.java" />
+        <option value="$PROJECT_DIR$/fx/src/main/java/PrinterNodetExample2.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/collection/ArrayListP.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/io/readWriteCsv.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/RandomP.java" />
+        <option value="$PROJECT_DIR$/common/IdeaTips" />
+        <option value="$PROJECT_DIR$/core/src/main/java/algorithm/Recursion.java" />
+        <option value="$PROJECT_DIR$/dbm/src/test/java/com/dbmsys/math/linear/SolvingLinearSystemsTest.java" />
+        <option value="$PROJECT_DIR$/math/pom.xml" />
+        <option value="$PROJECT_DIR$/math/src/main/java/MathP.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="designP" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="designP" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gson.dwarves" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="designP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="designP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designP" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="designP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designP" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="designP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designP" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="designP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designP" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/med-analysis/pom.xml" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\A\designP\gson.dwarves-master\src\main\resources" />
+      <recent name="D:\A\designP\gson.dwarves-master" />
+      <recent name="D:\A\designP\gson.dwarves-master\src" />
+      <recent name="D:\A\designP\gson.dwarves-master\src\main\java\app" />
+      <recent name="D:\A\designP\gson.dwarves-master\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="com.dbmsys.jsonapi.gson.deserialize" />
+      <recent name="com.dbmsys.jsonapi.io" />
+      <recent name="com.dbmsys" />
+      <recent name="com.dbmsys.util" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\A\designP\gson\src\main\java" />
+      <recent name="D:\A\designP\create-project\src\main\java\m" />
+      <recent name="D:\A\designP\dbm\src\main\java\com\dbmsys\csvapi\io" />
+      <recent name="D:\A\designP\dbm\src\main\java\com\dbmsys\jsonapi\template" />
+      <recent name="D:\A\designP\dbm\src\main\java\com\dbmsys\template" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Recursion">
+    <configuration name="ArrayListP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.ArrayListP" />
+      <module name="core" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NodeToPdf2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NodeToPdf2" />
+      <module name="fx" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrinterNodetExample2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrinterNodetExample2" />
+      <module name="fx" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RandomP" />
+      <module name="core" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Recursion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.Recursion" />
+      <module name="core" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="med-analysis" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="med-analysis" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.PrinterNodetExample2" />
+      <item itemvalue="Application.NodeToPdf2" />
+      <item itemvalue="Application.ArrayListP" />
+      <item itemvalue="Application.RandomP" />
+      <item itemvalue="Application.Recursion" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Recursion" />
+        <item itemvalue="Application.RandomP" />
+        <item itemvalue="Application.ArrayListP" />
+        <item itemvalue="Application.PrinterNodetExample2" />
+        <item itemvalue="Application.NodeToPdf2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b9b1729-3da4-4ad8-ac47-4f7c6c74e5fb" name="Default" comment="" />
+      <created>1537213892686</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537213892686</updated>
+      <workItem from="1537213894049" duration="1517000" />
+      <workItem from="1540147401917" duration="9721000" />
+      <workItem from="1540229387988" duration="11311000" />
+      <workItem from="1540326077527" duration="8690000" />
+      <workItem from="1540361553907" duration="2782000" />
+      <workItem from="1540746921385" duration="12018000" />
+      <workItem from="1540759604844" duration="4941000" />
+      <workItem from="1540788858664" duration="11270000" />
+      <workItem from="1540838250030" duration="13590000" />
+      <workItem from="1540880328059" duration="4266000" />
+      <workItem from="1540928053280" duration="684000" />
+      <workItem from="1540960246546" duration="1373000" />
+      <workItem from="1541014287596" duration="702000" />
+      <workItem from="1541275928917" duration="644000" />
+      <workItem from="1541331711692" duration="19185000" />
+      <workItem from="1541398532016" duration="7737000" />
+      <workItem from="1541452016490" duration="1272000" />
+      <workItem from="1541456193858" duration="174000" />
+      <workItem from="1542548597216" duration="3582000" />
+      <workItem from="1543435931470" duration="3435000" />
+      <workItem from="1543468254908" duration="722000" />
+      <workItem from="1543687677300" duration="4561000" />
+      <workItem from="1543750829687" duration="3111000" />
+      <workItem from="1543772510918" duration="3528000" />
+      <workItem from="1543947955332" duration="3821000" />
+      <workItem from="1545754209509" duration="3852000" />
+      <workItem from="1545943248451" duration="841000" />
+      <workItem from="1546024358214" duration="890000" />
+      <workItem from="1546464478195" duration="599000" />
+      <workItem from="1546781390202" duration="17182000" />
+      <workItem from="1547395191107" duration="4286000" />
+      <workItem from="1547840718047" duration="621000" />
+      <workItem from="1548024220431" duration="221000" />
+      <workItem from="1548099402254" duration="3369000" />
+      <workItem from="1548189202912" duration="1725000" />
+      <workItem from="1548191273937" duration="97000" />
+      <workItem from="1548191400102" duration="173000" />
+      <workItem from="1548192114764" duration="2254000" />
+      <workItem from="1548315742786" duration="74000" />
+      <workItem from="1548315845229" duration="379000" />
+      <workItem from="1549713526961" duration="6861000" />
+      <workItem from="1549797819107" duration="14923000" />
+      <workItem from="1550171118484" duration="1400000" />
+      <workItem from="1550205131214" duration="593000" />
+      <workItem from="1550304356139" duration="4515000" />
+      <workItem from="1550389767261" duration="641000" />
+      <workItem from="1550391650488" duration="1238000" />
+      <workItem from="1550521577929" duration="1519000" />
+      <workItem from="1550603393219" duration="828000" />
+      <workItem from="1550697133971" duration="630000" />
+      <workItem from="1550783757874" duration="877000" />
+      <workItem from="1550870714711" duration="1186000" />
+      <workItem from="1550914614866" duration="643000" />
+      <workItem from="1550992761200" duration="2955000" />
+      <workItem from="1551043264448" duration="865000" />
+      <workItem from="1551160362766" duration="741000" />
+      <workItem from="1551168102728" duration="147000" />
+      <workItem from="1551207205173" duration="1187000" />
+      <workItem from="1551219002385" duration="610000" />
+      <workItem from="1551221624152" duration="85000" />
+      <workItem from="1551476543622" duration="2198000" />
+      <workItem from="1551515536287" duration="1258000" />
+      <workItem from="1551572548871" duration="38000" />
+      <workItem from="1552343867693" duration="825000" />
+      <workItem from="1552890683198" duration="202000" />
+      <workItem from="1552943400976" duration="750000" />
+      <workItem from="1553430790437" duration="1539000" />
+      <workItem from="1554667016762" duration="4042000" />
+      <workItem from="1554703969539" duration="1561000" />
+      <workItem from="1554746715601" duration="757000" />
+      <workItem from="1555240651023" duration="1248000" />
+      <workItem from="1555525037689" duration="10848000" />
+      <workItem from="1555615441884" duration="599000" />
+      <workItem from="1556393515345" duration="3569000" />
+      <workItem from="1556567634368" duration="683000" />
+      <workItem from="1556648417708" duration="2281000" />
+      <workItem from="1556692016282" duration="1209000" />
+      <workItem from="1556715174754" duration="1010000" />
+      <workItem from="1556913998688" duration="643000" />
+      <workItem from="1559195153426" duration="1215000" />
+    </task>
+    <task id="LOCAL-00001" summary="2018_10_21">
+      <created>1540147854600</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540147854600</updated>
+    </task>
+    <task id="LOCAL-00002" summary="gson">
+      <created>1540157252328</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540157252328</updated>
+    </task>
+    <task id="LOCAL-00003" summary="gson in Progress">
+      <created>1540241724369</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540241724369</updated>
+    </task>
+    <task id="LOCAL-00004" summary="gson in Progress &#10;added Ping">
+      <created>1540334753288</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540334753289</updated>
+    </task>
+    <task id="LOCAL-00005" summary="gson in Progress &#10;added Bodies">
+      <created>1540364220379</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1540364220379</updated>
+    </task>
+    <task id="LOCAL-00006" summary="gson in Progress &#10;added Rules">
+      <created>1540764470962</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1540764470963</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added filtred data">
+      <created>1540799571134</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1540799571134</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added header columns">
+      <created>1540853568743</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1540853568743</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added header columns">
+      <created>1540887223585</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1540887223585</updated>
+    </task>
+    <task id="LOCAL-00010" summary="formated">
+      <created>1541406295379</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1541406295380</updated>
+    </task>
+    <task id="LOCAL-00011" summary="bi">
+      <created>1543468302414</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1543468302414</updated>
+    </task>
+    <task id="LOCAL-00012" summary="bi2">
+      <created>1543955628380</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1543955628380</updated>
+    </task>
+    <task id="LOCAL-00013" summary="bi2">
+      <created>1543955863508</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1543955863508</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ArrayKist">
+      <created>1545770433799</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1545770433799</updated>
+    </task>
+    <task id="LOCAL-00015" summary="dms">
+      <created>1546781483808</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1546781483808</updated>
+    </task>
+    <task id="LOCAL-00016" summary="med analys">
+      <created>1548024322828</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1548024322828</updated>
+    </task>
+    <task id="LOCAL-00017" summary="med analys">
+      <created>1548316159686</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1548316159686</updated>
+    </task>
+    <task id="LOCAL-00018" summary="med analysis">
+      <created>1549797882474</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1549797882474</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Merge branch 'master' of https://github.com/pihnasty/designP&#10;&#10;# Conflicts:&#10;#&#9;.idea/compiler.xml&#10;#&#9;.idea/modules.xml&#10;#&#9;fx/fx.iml&#10;#&#9;pom.xml">
+      <created>1550171184836</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1550171184836</updated>
+    </task>
+    <task id="LOCAL-00020" summary="added two factor model chair">
+      <created>1551038229446</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1551038229447</updated>
+    </task>
+    <task id="LOCAL-00021" summary="pdf">
+      <created>1551476668356</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1551476668356</updated>
+    </task>
+    <task id="LOCAL-00022" summary="pdf">
+      <created>1551476713374</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1551476713374</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Merge branch 'master' of https://github.com/pihnasty/designP&#10;&#10;# Conflicts:&#10;#&#9;pdf_file.pdf">
+      <created>1551476780405</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1551476780405</updated>
+    </task>
+    <task id="LOCAL-00024" summary="recursion">
+      <created>1554705750356</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1554705750356</updated>
+    </task>
+    <task id="LOCAL-00025" summary="recursion">
+      <created>1556394092151</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1556394092151</updated>
+    </task>
+    <task id="LOCAL-00026" summary="addMath">
+      <created>1559195904877</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1559195904877</updated>
+    </task>
+    <task id="LOCAL-00027" summary="addMath">
+      <created>1559196124842</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1559196124842</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SolvingLinearSystemsTest_solution200x200 - 2019.01.13 at 18h 43m 10s.xml">
+      <configuration name="SolvingLinearSystemsTest.solution200x200" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolvingLinearSystemsTest_solution200x200 - 2019.01.13 at 18h 45m 30s.xml">
+      <configuration name="SolvingLinearSystemsTest.solution200x200" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolvingLinearSystemsTest_solution200x200 - 2019.01.13 at 18h 46m 06s.xml">
+      <configuration name="SolvingLinearSystemsTest.solution200x200" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolvingLinearSystemsTest_solution200x200 - 2019.01.13 at 18h 46m 55s.xml">
+      <configuration name="SolvingLinearSystemsTest.solution200x200" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolvingLinearSystemsTest_solution200x200 - 2019.01.13 at 19h 01m 57s.xml">
+      <configuration name="SolvingLinearSystemsTest.solution200x200" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolvingLinearSystemsTest_solution200x200 - 2019.01.13 at 19h 22m 32s.xml">
+      <configuration name="SolvingLinearSystemsTest.solution200x200" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SolvingLinearSystemsTest_solution200x200 - 2019.01.13 at 19h 28m 25s.xml">
+      <configuration name="SolvingLinearSystemsTest.solution200x200" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CsvReaderPTest_readFromFileWriteToFileUpdate - 2019.01.21 at 22h 25m 55s.xml">
+      <configuration name="CsvReaderPTest.readFromFileWriteToFileUpdate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CsvReaderPTest_readFromFileWriteToFileUpdate - 2019.01.21 at 22h 26m 55s.xml">
+      <configuration name="CsvReaderPTest.readFromFileWriteToFileUpdate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CsvReaderPTest_readFromFileWriteToFileUpdate - 2019.01.21 at 22h 27m 42s.xml">
+      <configuration name="CsvReaderPTest.readFromFileWriteToFileUpdate" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="250119000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.76527333" visible="true" weight="0.2675906" />
+      <window_info id="Structure" order="1" sideWeight="0.23472668" side_tool="true" visible="true" weight="0.2675906" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49919093" weight="0.2575406" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49676377" weight="0.11484919" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41299304" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="11" sideWeight="0.42110875" visible="true" weight="0.3261105" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5788913" side_tool="true" weight="0.29956427" />
+      <window_info anchor="bottom" id="CheckStyle" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3267974" />
+      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32897604" />
+      <window_info anchor="right" id="Maven" weight="0.32995737" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="JSF" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.20064725" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="CDI" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Maven Projects" order="11" weight="0.19012944" />
+      <window_info anchor="right" id="Coverage" order="12" side_tool="true" weight="0.32928804" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2018_10_21" />
+    <MESSAGE value="gson" />
+    <MESSAGE value="gson in Progress" />
+    <MESSAGE value="gson in Progress &#10;added Ping" />
+    <MESSAGE value="gson in Progress &#10;added Bodies" />
+    <MESSAGE value="gson in Progress &#10;added Rules" />
+    <MESSAGE value="added filtred data" />
+    <MESSAGE value="added header columns" />
+    <MESSAGE value="formated" />
+    <MESSAGE value="bi" />
+    <MESSAGE value="bi2" />
+    <MESSAGE value="ArrayKist" />
+    <MESSAGE value="dms" />
+    <MESSAGE value="med analys" />
+    <MESSAGE value="med analysis" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/pihnasty/designP&#10;&#10;# Conflicts:&#10;#&#9;.idea/compiler.xml&#10;#&#9;.idea/modules.xml&#10;#&#9;fx/fx.iml&#10;#&#9;pom.xml" />
+    <MESSAGE value="added two factor model chair" />
+    <MESSAGE value="pdf" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/pihnasty/designP&#10;&#10;# Conflicts:&#10;#&#9;pdf_file.pdf" />
+    <MESSAGE value="recursion" />
+    <MESSAGE value="addMath" />
+    <option name="LAST_COMMIT_MESSAGE" value="addMath" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/util/Reader.java</url>
+          <line>34</line>
+          <properties />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/template/DmsSysTemplate.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/util/Reader2.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/template/DmsSysTemplate.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/util/Reader2.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gson.dwarves-master/src/main/java/app/serialize/Basic.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gson.dwarves-master/src/main/java/app/deserialize/Deserialize.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/io/Reader.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/jsonapi/io/Reader.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/main/java/utilp/hashset/HashSetP.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/main/java/utilp/arraylist/ArrayListP.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/test/java/com/dbmsys/csvapi/util/ManagerTest.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/test/java/com/dbmsys/original/data/generation/GeneratorTest.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/csvapi/io/write/CsvWriterP.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/original/data/generation/Generator.java</url>
+          <line>371</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/original/data/generation/Generator.java</url>
+          <line>453</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/original/data/generation/Generator.java</url>
+          <line>255</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/test/java/com/dbmsys/math/linear/SolvingLinearSystemsTest.java</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dbm/src/test/java/com/dbmsys/math/linear/SolvingLinearSystemsTest.java</url>
+          <line>99</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/main/java/collection/ArrayListP.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/main/java/algorithm/Recursion.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/main/java/algorithm/Recursion.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="factorNumbersRow" />
+        <watch expression=" factorNumbersRow" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>reverseSample</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>reverseFactorNumbersList</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>factorNumbersRow</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>k == 0 || i &gt; row.get(k - 1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>row.get(k - 1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>solution</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>solution.getEntry(1999)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>solution.getEntry(19999)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>solution[19999]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gson.dwarves-master/src/main/java/utils/BandUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gson.dwarves-master/src/main/java/app/deserialize/Deserialize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gson.dwarves-master/src/main/java/app/serialize/CompleteWithAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gson.dwarves-master/src/main/java/app/serialize/Advanced.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gson.dwarves-master/src/main/java/app/serialize/Basic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gson.dwarves-master/src/main/java/app/serialize/Complete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/javafxp/TabContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/javafx-src.zip!/javafx/scene/chart/XYChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="1607" column="15" selection-start-line="1607" selection-start-column="15" selection-end-line="1607" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fx/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fx/src/main/java/PrintTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fx/src/main/java/PrinterNodetExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/javafx-src.zip!/javafx/print/PrinterJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fx/src/main/java/ChartPdf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fx/src/main/java/NodePrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2873">
+          <caret line="193" column="1" selection-start-line="193" selection-start-column="1" selection-end-line="193" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fx/src/main/java/NodeToPdf2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fx/src/main/java/NodeToPdf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fx/src/main/java/Print7.java" />
+    <entry file="file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/data/sampleAvg_2018_11_16.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/io/task.zip">
+      <provider selected="true" editor-type-id="apk-viewer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/io/topdf.zip">
+      <provider selected="true" editor-type-id="apk-viewer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fx/src/main/java/PrinterNodetExample2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="55" column="50" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/LambdaExspression">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/Styl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forWokr/Discription">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forWokr/patternsPom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forWokr/pattersDescribe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16592">
+          <caret line="989" column="47" selection-start-line="989" selection-start-column="47" selection-end-line="989" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/med-analysis/src/test/java/util/read/CsvReaderPTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/collection/ArrayListP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbm/src/test/java/com/dbmsys/csvapi/io/WriterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbm/src/test/java/com/dbmsys/csvapi/util/ManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbm/src/test/java/com/dbmsys/original/data/generation/GeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/opencsv/opencsv/3.7/opencsv-3.7.jar!/com/opencsv/CSVReader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/opencsv/opencsv/3.7/opencsv-3.7.jar!/com/opencsv/CSVWriter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/io/readWriteCsv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="44" column="42" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/RandomP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/original/data/generation/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/original/data/generation/CommonConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/med-analysis/src/main/java/math/MathP.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/math/linear/SolvingLinearSystems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="27" column="67" lean-forward="true" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/IdeaTips">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/data/jsonExample.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbm/src/main/java/com/dbmsys/data/sample_out2018_12_18.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="79" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbm/src/test/java/com/dbmsys/math/linear/SolvingLinearSystemsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbm/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" selection-start-line="34" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2805">
+          <caret line="182" column="23" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13056">
+          <caret line="819" column="16" selection-start-line="819" selection-start-column="16" selection-end-line="819" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math/src/main/java/MathP">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1836" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/algorithm/Recursion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math/src/main/java/MathP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="53" column="1" selection-start-line="52" selection-end-line="53" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#Counter#0;class#MathP#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>designP</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>appserv-rt</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
