@@ -1,6 +1,8 @@
 package git;
 
-public class Error {
+// Hello2
+
+public class Error {  // Merge into Current
 
     public static void main(String[] args) {
 
@@ -8,7 +10,9 @@ public class Error {
 
         System.out.println("Added changes");
 
-        //------------
+        System.out.println("3");
+
+
 
     }
 }

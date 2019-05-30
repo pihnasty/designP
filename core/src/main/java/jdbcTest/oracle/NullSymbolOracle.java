@@ -47,6 +47,7 @@ public class NullSymbolOracle {
             stmt = conn.prepareStatement(sql);
             List<String> columnCells = getColumn(stmt,colunmName);
 
+            System.out.println(columnCells );
 
             System.out.println("finish");
 
