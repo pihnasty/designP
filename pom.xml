@@ -48,6 +48,8 @@
         <module>gson.dwarves-master</module>
         <module>fx</module>
         <module>junit-mockito</module>
+        <module>math</module>
+        <module>math</module>
     </modules>
     <dependencies>
 

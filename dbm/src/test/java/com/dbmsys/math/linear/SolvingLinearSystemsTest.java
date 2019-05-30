@@ -16,7 +16,8 @@ public class SolvingLinearSystemsTest {
 
         SolvingLinearSystems solvingLinearSystems = new SolvingLinearSystems();
 
-        double[][] arrayCoefficients = new double[][] {{2, 3, -2},
+        double[][] arrayCoefficients = new double[][]
+                {{2, 3, -2},
             {-1, 7, 6},
             {4, -3, -5}};
 
