@@ -2,7 +2,7 @@ package git;
 
 // Hello2
 
-public class Error {
+public class Error {  // Merge into Current
 
     public static void main(String[] args) {
 
