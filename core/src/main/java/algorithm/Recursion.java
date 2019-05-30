@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Recursion {
     public static void main(String[] args) {
-        int n = 1;
+        int n = 2;
         int N = 10;
         List<List<Long>> reverseSample = new ArrayList<>();
 
