@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="snowflake-jdbc-3.8.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/java/tests/jdbcTest/snowflake/snowflake-jdbc-3.8.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
