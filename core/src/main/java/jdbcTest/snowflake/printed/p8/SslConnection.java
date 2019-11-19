@@ -1,4 +1,4 @@
-package tests.jdbcTest.snowflake;
+package jdbcTest.snowflake.printed.p8;
 
 import javax.crypto.EncryptedPrivateKeyInfo;
 import javax.crypto.SecretKeyFactory;
@@ -18,7 +18,7 @@ import java.util.Properties;
 
 public class SslConnection {
     public static void main(String[] args) throws Exception {
-     //   File f = new File("C:\\MyCertificates\\snowflake\\rsa_key.p8");
+        //   File f = new File("C:\\MyCertificates\\snowflake\\rsa_key.p8");
         File f = new File("C:\\MyCertificates\\snowflake\\test\\MyComp\\rsa_key2.p8");
         //File f = new File("C:\\MyCertificates\\snowflake\\test\\MyComp\\rsa_key.p8");
 

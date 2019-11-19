@@ -25,3 +25,7 @@ C+B      To navigate to the declaration of a class, method or variable used some
 
 C+F11    Mark row
 Ctrl+F12 navigate in the currently edited file (Navigate | File Structure).
+
+Ctrl + H	Иерархии Типа
+Ctrl + Shift + H	Иерархия метода
+Ctrl + Alt + H	Иерархии вызовов
