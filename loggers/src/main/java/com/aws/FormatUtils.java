@@ -1,6 +1,6 @@
 package com.aws;
 
-import com.amazon.sct.util.StringUtils;
+
 import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

@@ -1,7 +1,6 @@
 package com.aws.settings;
 
 import com.aws.Logger;
-import com.google.gson.GsonBuilder;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

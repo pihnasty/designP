@@ -53,6 +53,29 @@
     </modules>
     <dependencies>
 
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.oracle.ojdbc/osdt_core &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.oracle.ojdbc</groupId>-->
+            <!--<artifactId>osdt_core</artifactId>-->
+            <!--<version>3.1.0</version>-->
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.oracle.ojdbc/osdt_cert &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.oracle.ojdbc</groupId>-->
+            <!--<artifactId>osdt_cert</artifactId>-->
+            <!--<version>3.1.0</version>-->
+        <!--</dependency>-->
+
+
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.oracle.ojdbc/oraclepki &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.oracle.ojdbc</groupId>-->
+            <!--<artifactId>oraclepki</artifactId>-->
+            <!--<version>19.3.0.0</version>-->
+        <!--</dependency>-->
+
+
         <dependency>
             <groupId>org.jboss.weld.se</groupId>
             <artifactId>weld-se</artifactId>
