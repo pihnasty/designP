@@ -11,12 +11,13 @@
         <module name="math" />
         <module name="gsondwarvesmaster" />
         <module name="dbdoc-logger" />
-        <module name="dbm" />
+        <module name="loggers" />
+        <module name="khpi" />
         <module name="create-project" />
         <module name="core" />
-        <module name="loggers" />
-        <module name="junit-mockito" />
         <module name="fx" />
+        <module name="junit-mockito" />
+        <module name="dbm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +29,7 @@
       <module name="fx" target="1.8" />
       <module name="gsondwarvesmaster" target="1.7" />
       <module name="junit-mockito" target="1.8" />
+      <module name="khpi" target="1.8" />
       <module name="loggers" target="1.8" />
       <module name="math" target="8" />
       <module name="med-analysis" target="1.5" />
