@@ -2,129 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b9b1729-3da4-4ad8-ac47-4f7c6c74e5fb" name="Default" comment="addMath">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/bcprov_jdk16_145.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc8P.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc8__3_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc8__4_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/ojdbc8__5_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/String/StringNullEquels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/String/StringQout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/String/StringSplit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/collection/Map2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/concurrent/condition/Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/concurrent/condition2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/WalletOracle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/WalletOracle4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/OracleWalletWithPKISample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/JksOracleRootUserOnlyP12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/JksOracleRootUserOnlyP12_noauto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/JksOracleRootUserOnlyP12_pwdstore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/another/CertificateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/another/KeyStoreTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/archive/KeyStoreTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/in_work/JksOracleRootUserDifferent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/in_work/ojdbc8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/in_work/oraclepki.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/in_work/osdt_cert.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/in_work/osdt_core.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/ojdbc8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/ojdbc8P.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/p12/ForgeP12Loader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/p12/JksOracleRootUserDifferent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/p12/JksOracleRootUserOnlyP12_P23_TrustP12_keySSO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/p12/PK12test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/p12/p12_2020_01_14.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/sso/JksOracle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/sso/JksOracleNoImpty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/sso/JksOracleRootUserDifferent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/sso/JksOracleRootUserOnly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/sso/JksOracleRootUserOnlyOnly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/testSSL/TestSSL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/testSSL/TestSSL2_Experiment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/testSSL/TestSSL2_Experiment2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle2/WalletOracle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle2/WalletOracle4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/readSertificate/CertificateReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/snowflake/printed/p8/SslConnectionOpenSSL111.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/jdbcTest/snowflake/printed/p8/archive/PBES2AlgorithmId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/regexp/RegExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/stream/stream8/StreamDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/testNG/Ignore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shild/chapter16/DirList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/shild/chapter30/_18_SimpleDateFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/Check2.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/Check2.java" afterDir="false" />
+    </list>
+    <list id="dfef8a2d-c62d-439c-9adf-7ac35b09f65e" name="Revert &quot;addMath&quot;" comment="Revert &quot;addMath&quot; 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core/core.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/jdbcTest/oracle/NullSymbolOracle.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/jdbcTest/oracle/NullSymbolOracle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/csvapi/io/converter/ConverterP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/csvapi/io/write/AbstractWriterP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/csvapi/io/write/CsvWriterP$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/csvapi/io/write/CsvWriterP$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/csvapi/io/write/CsvWriterP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/csvapi/io/write/FileWriterP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/csvapi/io/write/PrintWriterP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/csvapi/io/write/Writer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/csvapi/io/write/WriterP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/csvapi/util/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/jsonapi/gson/deserialize/BodyDeserializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/jsonapi/gson/deserialize/DmsSysArrayElementDeserializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/jsonapi/gson/deserialize/HeadDeserializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/jsonapi/io/Reader$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/jsonapi/io/Reader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/jsonapi/template/data/Body.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/jsonapi/template/data/DbmsysJsonConstant$BodyParametrNames.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/jsonapi/template/data/DbmsysJsonConstant$NodeNames.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/jsonapi/template/data/DbmsysJsonConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/jsonapi/template/data/DmsSysElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/jsonapi/template/data/Head.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/jsonapi/template/rules/Rule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/math/linear/Counter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/math/linear/SolvingLinearSystems.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/original/data/generation/CommonConstants$HeaderAttibute.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/original/data/generation/CommonConstants$HeaderFormatAttibute.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/original/data/generation/CommonConstants$IntervalKind.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/original/data/generation/CommonConstants$PartTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/original/data/generation/CommonConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/original/data/generation/Generator$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/classes/com/dbmsys/original/data/generation/Generator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/test-classes/com/dbmsys/csvapi/io/WriterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/test-classes/com/dbmsys/csvapi/util/ManagerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/test-classes/com/dbmsys/jsonapi/io/ReaderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/test-classes/com/dbmsys/jsonapi/ыыы.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/test-classes/com/dbmsys/math/linear/SolvingLinearSystemsTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/test-classes/com/dbmsys/original/data/generation/GeneratorTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/test-classes/com/dbmsys/original/data/generation/GeneratorTest$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/test-classes/com/dbmsys/original/data/generation/GeneratorTest$3$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/test-classes/com/dbmsys/original/data/generation/GeneratorTest$3$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/test-classes/com/dbmsys/original/data/generation/GeneratorTest$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbm/target/test-classes/com/dbmsys/original/data/generation/GeneratorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fx/target/classes/ChartPdf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fx/target/classes/NodePrinter$PrintInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fx/target/classes/NodePrinter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fx/target/classes/NodeToPdf$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fx/target/classes/NodeToPdf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fx/target/classes/NodeToPdf2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fx/target/classes/NodeToPdf2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fx/target/classes/PrintTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fx/target/classes/PrinterNodetExample$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fx/target/classes/PrinterNodetExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fx/target/classes/PrinterNodetExample2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fx/target/classes/PrinterNodetExample2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loggers/src/main/java/com/aws/FormatUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/loggers/src/main/java/com/aws/FormatUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loggers/src/main/java/com/aws/settings/AbstractSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/loggers/src/main/java/com/aws/settings/AbstractSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shild/charter28/FJExperiment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shild/chapter28/FJExperiment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shild/charter28/ForkJoinTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shild/chapter28/ForkJoinTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shild/charter28/LockDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shild/chapter28/LockDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shild/charter28/RecurTaskDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shild/chapter28/RecurTaskDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shild/charter28/forkJoinDemoAsyncExample/FolderProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shild/chapter28/forkJoinDemoAsyncExample/FolderProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/shild/charter28/forkJoinDemoAsyncExample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shild/chapter28/forkJoinDemoAsyncExample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RedshiftJDBC41-1.1.10.1010.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/shild/chapter30/_18_SimpleDateFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/shild/chapter30/_18_SimpleDateFormat.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/applet/target/" />
     <ignored path="$PROJECT_DIR$/loggers/target/" />
@@ -167,15 +49,14 @@
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shild/chapter16/DirList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
+            <state relative-caret-position="340">
               <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -184,29 +65,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/shild/chapter30/_18_SimpleDateFormat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/rmi/server/UnicastRemoteObject.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/Check2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="146" column="13" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/nio/file/attribute/BasicFileAttributes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+            <state relative-caret-position="17">
+              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -232,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/p12/PK12test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3213">
+            <state relative-caret-position="3349">
               <caret line="197" selection-start-line="197" selection-end-line="197" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -325,7 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle2/Wallet3.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle2/LoadDrivers.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle2/WalletOracle4.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle2/WalletOracle.java" />
@@ -376,6 +247,7 @@
         <option value="$PROJECT_DIR$/src/main/java/shild/chapter16/DirList.java" />
         <option value="$PROJECT_DIR$/src/main/java/shild/chapter30/InterfaceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/shild/chapter30/_18_SimpleDateFormat.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/Check2.java" />
       </list>
     </option>
   </component>
@@ -419,6 +291,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="designP" type="58d84e3e:PackageViewProjectNode" />
+              <item name="core" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -496,40 +379,11 @@
               <item name="designP" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="designP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 (2) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="designP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 (2) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="designP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 (2) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="designP" type="58d84e3e:PackageViewProjectNode" />
-              <item name="core" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -587,54 +441,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application._18_SimpleDateFormatDemo">
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="med-analysis" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="med-analysis" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.JksOracle">
     <configuration name="DirList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="shild.chapter16.DirList" />
       <module name="designP" />
@@ -760,7 +567,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="med-analysis" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="med-analysis" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -771,15 +626,14 @@
     <list>
       <item itemvalue="Application.JksOracle" />
       <item itemvalue="Application.WalletOracle" />
+      <item itemvalue="Application._18_SimpleDateFormat" />
       <item itemvalue="Application.TestSSL2_Experiment2" />
       <item itemvalue="Application.RegExpr8" />
       <item itemvalue="Application.DirList" />
       <item itemvalue="Application.InterfaceTest" />
-      <item itemvalue="Application._18_SimpleDateFormatDemo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application._18_SimpleDateFormatDemo" />
         <item itemvalue="Application.InterfaceTest" />
         <item itemvalue="Application.DirList" />
         <item itemvalue="Application.RegExpr8" />
@@ -877,6 +731,7 @@
       <workItem from="1556715174754" duration="1010000" />
       <workItem from="1556913998688" duration="643000" />
       <workItem from="1559195153426" duration="1215000" />
+      <workItem from="1585652553883" duration="260000" />
     </task>
     <task id="LOCAL-00001" summary="2018_10_21">
       <created>1540147854600</created>
@@ -1088,7 +943,21 @@
       <option name="project" value="LOCAL" />
       <updated>1574155704582</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="addMath">
+      <created>1585652598845</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1585652598845</updated>
+    </task>
+    <task id="LOCAL-00032" summary="addMath">
+      <created>1585652648418</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1585652648418</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1124,7 +993,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250119000" />
+    <option name="totallyTimeSpent" value="250379000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1137,9 +1006,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8049415" visible="true" weight="0.21428572" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8049415" visible="true" weight="0.21641791" />
       <window_info id="Structure" order="1" sideWeight="0.19505852" side_tool="true" weight="0.22014925" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1157,7 +1025,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.42110875" weight="0.34333333" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="11" sideWeight="0.42110875" visible="true" weight="0.66088843" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5788913" side_tool="true" weight="0.29956427" />
       <window_info anchor="bottom" id="CheckStyle" order="13" weight="0.37111112" />
       <window_info anchor="bottom" id="Messages" order="14" visible="true" weight="0.37222221" />
@@ -1306,10 +1174,10 @@
     <MESSAGE value="pdf" />
     <MESSAGE value="Merge branch 'master' of https://github.com/pihnasty/designP&#10;&#10;# Conflicts:&#10;#&#9;pdf_file.pdf" />
     <MESSAGE value="recursion" />
-    <MESSAGE value="addMath" />
     <MESSAGE value="addMath cherry-pick" />
     <MESSAGE value="generic" />
-    <option name="LAST_COMMIT_MESSAGE" value="generic" />
+    <MESSAGE value="addMath" />
+    <option name="LAST_COMMIT_MESSAGE" value="addMath" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1883,13 +1751,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/oracle/ojdbc/oraclepki/19.3.0.0/oraclepki-19.3.0.0.jar!/oracle/security/pki/OraclePKIProvider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1932,23 +1793,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/jre/lib/ext/sunmscapi.jar!/sun/security/mscapi/KeyStore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret line="160" column="16" selection-start-line="160" selection-start-column="16" selection-end-line="160" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/security/KeyStoreSpi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="204" column="25" selection-start-line="204" selection-start-column="25" selection-end-line="204" selection-end-column="25" />
-          <folding>
-            <element signature="docComment;method#engineGetKey#0;class#KeyStoreSpi#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/jre/lib/ext/sunmscapi.jar!/sun/security/mscapi/KeyStore.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/security/KeyStoreSpi.java" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/t3.java" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/t3/libs/oks/ExtraProcessor.java.orig" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/t3/libs/oks/OracleMain.java" />
@@ -1961,13 +1807,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/lang/String.java" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/collection/ArrayP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -2055,13 +1895,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/jre/lib/rt.jar!/sun/security/pkcs/EncryptedPrivateKeyInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/jre/lib/rt.jar!/sun/security/pkcs/EncryptedPrivateKeyInfo.class" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/OracleWalletWithPKISample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -2079,30 +1913,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/p12/JksOracleRootUserOnlyP12_P2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="method#getColumn#0;class#JksOracleRootUserOnlyP12_P2#0" />
-            <element signature="method#getSql#0;class#JksOracleRootUserOnlyP12_P2#0" />
-            <element signature="method#loadNewDriver#0;class#JksOracleRootUserOnlyP12_P2#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/security/KeyStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2543">
-          <caret line="1131" column="15" selection-start-line="1131" selection-start-column="15" selection-end-line="1131" selection-end-column="15" />
-          <folding>
-            <element signature="e#34586#34587#0" expanded="true" />
-            <element signature="e#34622#34623#0" expanded="true" />
-            <element signature="e#34809#35678#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/p12/JksOracleRootUserOnlyP12_P2.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/security/KeyStore.java" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/another/KeyStoreTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3570">
@@ -2124,13 +1936,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/jre/lib/rt.jar!/sun/security/pkcs12/PKCS12KeyStore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/jre/lib/rt.jar!/sun/security/pkcs12/PKCS12KeyStore.class" />
     <entry file="file://$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/testSSL/TestSSL2_Experiment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2108">
@@ -2190,17 +1996,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/rmi/server/UnicastRemoteObject.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/rmi/server/UnicastRemoteObject.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/nio/file/attribute/BasicFileAttributes.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/text/Annotation.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/shild/chapter16/DirList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="146" column="13" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/nio/file/attribute/BasicFileAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        <state relative-caret-position="340">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2220,7 +2025,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/p12/PK12test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3213">
+        <state relative-caret-position="3349">
           <caret line="197" selection-start-line="197" selection-end-line="197" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2242,30 +2047,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/shild/chapter16/DirList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/text/Annotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-          <folding>
-            <element signature="docComment;class#Annotation#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/shild/chapter30/_18_SimpleDateFormat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/Check2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
