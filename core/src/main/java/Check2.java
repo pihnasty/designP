@@ -1,0 +1,2 @@
+public class Check2 {
+}
