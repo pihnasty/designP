@@ -14,6 +14,20 @@
     <orderEntry type="library" name="mysql-connector-java-5.1.6 (5)" level="project" />
     <orderEntry type="library" name="nzjdbc3 (2)" level="project" />
     <orderEntry type="library" name="ojdbc7 (3)" level="project" />
+    <orderEntry type="library" name="ojdbc8 (3)" level="project" />
+    <orderEntry type="library" name="osdt_cert" level="project" />
+    <orderEntry type="library" name="osdt_core" level="project" />
+    <orderEntry type="library" name="oraclepki" level="project" />
+    <orderEntry type="library" name="ojdbc8 (4)" level="project" />
+    <orderEntry type="library" name="ojdbc7 (4)" level="project" />
+    <orderEntry type="library" name="ojdbc8 (5)" level="project" />
+    <orderEntry type="library" name="ojdbc10" level="project" />
+    <orderEntry type="library" name="ojdbc8P" level="project" />
+    <orderEntry type="library" name="oraclepki (2)" level="project" />
+    <orderEntry type="library" name="osdt_cert (2)" level="project" />
+    <orderEntry type="library" name="osdt_core (2)" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-crypto:5.2.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.weld.se:weld-se:2.3.2.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-api:7.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.sun.mail:javax.mail:1.5.0" level="project" />
@@ -96,5 +110,6 @@
     <orderEntry type="library" name="Maven: org.buncycastle:bcprov-ext-jdk15on:1.61" level="project" />
     <orderEntry type="library" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.61" level="project" />
     <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15on:1.61" level="project" />
+    <orderEntry type="library" name="bcprov-jdk16-145" level="project" />
   </component>
 </module>

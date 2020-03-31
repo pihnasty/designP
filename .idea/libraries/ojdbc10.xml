@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ojdbc10">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/core/src/main/java/jdbcTest/oracle/pki/test1/ojdbc10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
